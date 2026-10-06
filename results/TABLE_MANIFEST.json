@@ -1,0 +1,611 @@
+{
+  "schema": "thesis-result-table-manifest/1",
+  "source_document": "APPENDIX_TABLES.json",
+  "source_sha256": "b68731ad2cc30dbb464cde31ceeb67ff37d8028ef39efaaa172c42bbf80702c8",
+  "source_date_note": "Αρχείο πινάκων του τελικού πακέτου αποτελεσμάτων.",
+  "encoding": "UTF-8 with BOM",
+  "delimiter": ",",
+  "decimal_separator": ".",
+  "missing_value": "NA",
+  "rounding_applied": false,
+  "new_experimental_calculations": false,
+  "families": [
+    {
+      "family": "utility_release",
+      "title_el": "Χρησιμότητα δημοσιευμένων συνόλων και αρχικού συνόλου αναφοράς",
+      "record_count": 17,
+      "expected_record_count": 17,
+      "csv": "csv/utility_release.csv",
+      "json_pointer": "/tables/utility_release",
+      "source_pointer": "/tables/utility_release/records",
+      "columns": [
+        "config_id",
+        "group",
+        "holdout_rows",
+        "auroc",
+        "balanced_accuracy",
+        "average_precision",
+        "accuracy",
+        "auroc_ci95_low",
+        "auroc_ci95_high"
+      ],
+      "thesis_mapping": {
+        "tables": [
+          "Πίνακας 1 του Παραρτήματος"
+        ],
+        "sections": [
+          "4.6",
+          "5.2.1",
+          "5.2.3"
+        ]
+      },
+      "matches_expected_count": true
+    },
+    {
+      "family": "utility_counterfactual",
+      "title_el": "Χρησιμότητα αντιπαραθετικών συνόλων χωρίς καταστολή",
+      "record_count": 17,
+      "expected_record_count": 17,
+      "csv": "csv/utility_counterfactual.csv",
+      "json_pointer": "/tables/utility_counterfactual",
+      "source_pointer": "/tables/utility_counterfactual/records",
+      "columns": [
+        "config_id",
+        "group",
+        "holdout_rows",
+        "auroc",
+        "balanced_accuracy",
+        "average_precision",
+        "accuracy",
+        "auroc_ci95_low",
+        "auroc_ci95_high"
+      ],
+      "thesis_mapping": {
+        "tables": [
+          "Πίνακας 2 του Παραρτήματος"
+        ],
+        "sections": [
+          "4.5.2",
+          "4.6.2",
+          "6.1.2"
+        ]
+      },
+      "matches_expected_count": true
+    },
+    {
+      "family": "dummy_baseline",
+      "title_el": "Απλός ταξινομητής αναφοράς βάσει συχνοτήτων κλάσεων",
+      "record_count": 1,
+      "expected_record_count": 1,
+      "csv": "csv/dummy_baseline.csv",
+      "json_pointer": "/tables/dummy_baseline",
+      "source_pointer": "/tables/dummy_baseline/records",
+      "columns": [
+        "accuracy",
+        "auroc",
+        "average_precision",
+        "balanced_accuracy",
+        "threshold",
+        "intervals",
+        "fitted_class_prior_negative",
+        "fitted_class_prior_positive",
+        "training_class_counts_negative",
+        "training_class_counts_positive",
+        "holdout_class_counts_negative",
+        "holdout_class_counts_positive"
+      ],
+      "thesis_mapping": {
+        "tables": [
+          "Πίνακας 3 του Παραρτήματος"
+        ],
+        "sections": [
+          "4.6.2"
+        ]
+      },
+      "matches_expected_count": true
+    },
+    {
+      "family": "paired_delta_auroc",
+      "title_el": "Ζευγαρωμένη απώλεια AUROC έναντι του αρχικού συνόλου",
+      "record_count": 16,
+      "expected_record_count": 16,
+      "csv": "csv/paired_delta_auroc.csv",
+      "json_pointer": "/tables/paired_delta_auroc",
+      "source_pointer": "/tables/paired_delta_auroc/records",
+      "columns": [
+        "config_id",
+        "point_estimate",
+        "direction",
+        "ci95_low",
+        "ci95_high"
+      ],
+      "thesis_mapping": {
+        "tables": [
+          "Πίνακας 4 του Παραρτήματος"
+        ],
+        "sections": [
+          "4.7.2",
+          "5.2.3"
+        ],
+        "figures": [
+          "5.1",
+          "5.5"
+        ]
+      },
+      "matches_expected_count": true
+    },
+    {
+      "family": "structural",
+      "title_el": "Καταστολή, γενίκευση και μεταβολή της εισοδηματικής σύνθεσης",
+      "record_count": 17,
+      "expected_record_count": 17,
+      "csv": "csv/structural.csv",
+      "json_pointer": "/tables/structural",
+      "source_pointer": "/tables/structural/records",
+      "columns": [
+        "config_id",
+        "arx_loss",
+        "arx_loss_status",
+        "G",
+        "n_input",
+        "n_retained",
+        "n_suppressed",
+        "S",
+        "source_positive_prevalence",
+        "retained_positive_prevalence",
+        "suppressed_positive_prevalence",
+        "suppressed_prevalence_status",
+        "prevalence_absolute_error",
+        "prevalence_difference_percentage_points",
+        "prevalence_difference_retained_minus_source",
+        "suppressed_minus_retained_prevalence"
+      ],
+      "thesis_mapping": {
+        "tables": [
+          "Πίνακας 5 του Παραρτήματος"
+        ],
+        "sections": [
+          "4.5.1",
+          "5.3.2"
+        ],
+        "figures": [
+          "5.4"
+        ]
+      },
+      "matches_expected_count": true
+    },
+    {
+      "family": "tvd",
+      "title_el": "Αποστάσεις ολικής μεταβολής κατανομών",
+      "record_count": 17,
+      "expected_record_count": 17,
+      "csv": "csv/tvd.csv",
+      "json_pointer": "/tables/tvd",
+      "source_pointer": "/tables/tvd/records",
+      "columns": [
+        "config_id",
+        "TVD_marginal__age",
+        "TVD_marginal__education",
+        "TVD_marginal__marital-status",
+        "TVD_marginal__native-country",
+        "TVD_marginal__occupation",
+        "TVD_marginal__race",
+        "TVD_marginal__sex",
+        "TVD_marginal__workclass",
+        "TVD_marginal__unweighted_mean",
+        "TVD_marginal__maximum",
+        "TVD_QI_salary__age",
+        "TVD_QI_salary__education",
+        "TVD_QI_salary__marital-status",
+        "TVD_QI_salary__native-country",
+        "TVD_QI_salary__occupation",
+        "TVD_QI_salary__race",
+        "TVD_QI_salary__sex",
+        "TVD_QI_salary__workclass",
+        "TVD_QI_salary__unweighted_mean",
+        "TVD_QI_salary__maximum"
+      ],
+      "thesis_mapping": {
+        "tables": [
+          "Πίνακας 6 του Παραρτήματος"
+        ],
+        "sections": [
+          "4.5.2",
+          "5.3.2"
+        ],
+        "figures": [
+          "5.4"
+        ]
+      },
+      "matches_expected_count": true
+    },
+    {
+      "family": "equivalence_classes",
+      "title_el": "Μεγέθη κλάσεων ισοδυναμίας",
+      "record_count": 34,
+      "expected_record_count": 34,
+      "csv": "csv/equivalence_classes.csv",
+      "json_pointer": "/tables/equivalence_classes",
+      "source_pointer": "/tables/equivalence_classes/records",
+      "columns": [
+        "config_id",
+        "kind",
+        "item_count",
+        "size_sum",
+        "minimum",
+        "median",
+        "p95",
+        "maximum",
+        "unique_rows",
+        "uniqueness"
+      ],
+      "thesis_mapping": {
+        "tables": [
+          "Πίνακας 7 του Παραρτήματος"
+        ],
+        "sections": [
+          "4.3",
+          "5.3.2"
+        ]
+      },
+      "matches_expected_count": true
+    },
+    {
+      "family": "native_country",
+      "title_el": "Χειρισμός της σπάνιας τιμής Holand-Netherlands",
+      "record_count": 17,
+      "expected_record_count": 17,
+      "csv": "csv/native_country.csv",
+      "json_pointer": "/tables/native_country",
+      "source_pointer": "/tables/native_country/records",
+      "columns": [
+        "config_id",
+        "source_value",
+        "source_count",
+        "final_level",
+        "fate",
+        "rule_status"
+      ],
+      "thesis_mapping": {
+        "tables": [
+          "Πίνακας 5 του Παραρτήματος: συνοδευτική σημείωση"
+        ],
+        "sections": [
+          "5.3.2"
+        ]
+      },
+      "matches_expected_count": true
+    },
+    {
+      "family": "suppressed_retained_profiles",
+      "title_el": "Ευρετήριο οριακών κατανομών αρχικών γνωρισμάτων",
+      "record_count": 153,
+      "expected_record_count": 153,
+      "csv": "csv/suppressed_retained_profiles.csv",
+      "json_pointer": "/tables/suppressed_retained_profiles",
+      "source_pointer": "/tables/suppressed_retained_profiles/records",
+      "columns": [
+        "config_id",
+        "attribute",
+        "n_source",
+        "n_retained",
+        "n_suppressed"
+      ],
+      "thesis_mapping": {
+        "tables": [
+          "Πίνακας 5 του Παραρτήματος: συνοδευτική σημείωση"
+        ],
+        "sections": [
+          "4.5.1",
+          "4.5.2",
+          "5.3.2"
+        ]
+      },
+      "matches_expected_count": true
+    },
+    {
+      "family": "privacy_summary",
+      "title_el": "Παρατηρούμενα συντακτικά κριτήρια ιδιωτικότητας",
+      "record_count": 17,
+      "expected_record_count": 17,
+      "csv": "csv/privacy_summary.csv",
+      "json_pointer": "/tables/privacy_summary",
+      "source_pointer": "/tables/privacy_summary/records",
+      "columns": [
+        "config_id",
+        "k_required",
+        "k_hat",
+        "l_required",
+        "l_hat",
+        "t_required",
+        "t_hat_original_global",
+        "u_qi",
+        "u_full",
+        "equivalence_class_count",
+        "equivalence_class_size_min",
+        "equivalence_class_size_max"
+      ],
+      "thesis_mapping": {
+        "tables": [
+          "Πίνακας 12 του Παραρτήματος"
+        ],
+        "sections": [
+          "4.3",
+          "5.1",
+          "6.1.1"
+        ]
+      },
+      "matches_expected_count": true
+    },
+    {
+      "family": "ties",
+      "title_el": "Ισοπαλίες μεταξύ υποψήφιων εγγραφών",
+      "record_count": 85,
+      "expected_record_count": 85,
+      "csv": "csv/ties.csv",
+      "json_pointer": "/tables/ties",
+      "source_pointer": "/tables/ties/records",
+      "columns": [
+        "scenario",
+        "config_id",
+        "pair_count",
+        "item_count",
+        "abstention_count",
+        "minimum",
+        "median",
+        "p95",
+        "maximum",
+        "size_sum",
+        "empty_status"
+      ],
+      "thesis_mapping": {
+        "tables": [
+          "Πίνακας 8 του Παραρτήματος",
+          "Πίνακας 9 του Παραρτήματος"
+        ],
+        "sections": [
+          "4.4.2",
+          "5.3.1"
+        ]
+      },
+      "matches_expected_count": true
+    },
+    {
+      "family": "risk_points_and_controls",
+      "title_el": "Εκτιμήσεις κινδύνου και μάρτυρες σύγκρισης",
+      "record_count": 85,
+      "expected_record_count": 85,
+      "csv": "csv/risk_points_and_controls.csv",
+      "json_pointer": "/tables/risk_points_and_controls",
+      "source_pointer": "/tables/risk_points_and_controls/records",
+      "columns": [
+        "scenario",
+        "config_id",
+        "actual_R_all",
+        "actual_R_released",
+        "permuted_R_all",
+        "permuted_R_released",
+        "uniform_R_all",
+        "uniform_R_released",
+        "target_count",
+        "draw_count",
+        "pair_count",
+        "retained_target_count",
+        "candidate_row_count",
+        "attempt_count",
+        "abstention_count",
+        "true_row_in_best_count"
+      ],
+      "thesis_mapping": {
+        "tables": [
+          "Πίνακας 13 του Παραρτήματος",
+          "5.1",
+          "5.2"
+        ],
+        "sections": [
+          "4.4.3",
+          "4.4.4"
+        ],
+        "figures": [
+          "5.2",
+          "5.5"
+        ]
+      },
+      "matches_expected_count": true
+    },
+    {
+      "family": "success_coverage",
+      "title_el": "Κάλυψη και υπό συνθήκη επιτυχία σύνδεσης",
+      "record_count": 340,
+      "expected_record_count": 340,
+      "csv": "csv/success_coverage.csv",
+      "json_pointer": "/tables/success_coverage",
+      "source_pointer": "/tables/success_coverage/records",
+      "columns": [
+        "scenario",
+        "config_id",
+        "maximum_tie_size",
+        "attempt_count",
+        "conditional_success",
+        "coverage",
+        "coverage_denominator_pairs",
+        "conditional_success_status"
+      ],
+      "thesis_mapping": {
+        "tables": [
+          "Πίνακας 10 του Παραρτήματος"
+        ],
+        "sections": [
+          "4.4.3"
+        ]
+      },
+      "matches_expected_count": true
+    },
+    {
+      "family": "risk_intervals",
+      "title_el": "Διαστήματα σταθερότητας κινδύνου και διαφορών κινδύνου",
+      "record_count": 195,
+      "expected_record_count": 195,
+      "csv": "csv/risk_intervals.csv",
+      "json_pointer": "/tables/risk_intervals",
+      "source_pointer": "/tables/risk_intervals/records",
+      "columns": [
+        "scenario",
+        "kind",
+        "comparison_id",
+        "point_estimate",
+        "direction",
+        "endpoint_sign_classification",
+        "stability95_low",
+        "stability95_high"
+      ],
+      "thesis_mapping": {
+        "tables": [],
+        "sections": [
+          "5.2.2",
+          "5.3.1"
+        ],
+        "figures": [
+          "5.2",
+          "5.3"
+        ]
+      },
+      "matches_expected_count": true
+    },
+    {
+      "family": "ohe_unknown_categories",
+      "title_el": "Άγνωστες κατηγορίες ανά μοντέλο και γνώρισμα",
+      "record_count": 264,
+      "expected_record_count": 264,
+      "csv": "csv/ohe_unknown_categories.csv",
+      "json_pointer": "/tables/ohe_unknown_categories",
+      "source_pointer": "/tables/ohe_unknown_categories/records",
+      "columns": [
+        "model_id",
+        "config_id",
+        "group",
+        "all_zero_block_row_count",
+        "distinct_unknown_value_count",
+        "fitted_category_count",
+        "qi",
+        "unknown_row_count",
+        "unknown_row_rate",
+        "prediction_row_count"
+      ],
+      "thesis_mapping": {
+        "tables": [
+          "Πίνακας 11 του Παραρτήματος"
+        ],
+        "sections": [
+          "4.6.1",
+          "4.6.2",
+          "6.3.3"
+        ]
+      },
+      "matches_expected_count": true
+    },
+    {
+      "family": "ohe_model_summary",
+      "title_el": "Σύνοψη άγνωστων κατηγοριών ανά μοντέλο",
+      "record_count": 33,
+      "expected_record_count": 33,
+      "csv": "csv/ohe_model_summary.csv",
+      "json_pointer": "/tables/ohe_model_summary",
+      "source_pointer": "/tables/ohe_model_summary/records",
+      "columns": [
+        "model_id",
+        "config_id",
+        "group",
+        "prediction_row_count",
+        "qi_count",
+        "qi_with_unknown_rows_count",
+        "total_unknown_row_qi_incidences",
+        "total_distinct_unknown_levels_per_qi",
+        "unknown_levels_by_qi_text",
+        "unknown_rows_by_qi_text"
+      ],
+      "thesis_mapping": {
+        "tables": [
+          "Πίνακας 11 του Παραρτήματος"
+        ],
+        "sections": [
+          "4.6.1",
+          "4.6.2",
+          "6.3.3"
+        ]
+      },
+      "matches_expected_count": true
+    }
+  ],
+  "helper_tables": [
+    {
+      "csv": "csv/generalization_levels.csv",
+      "row_count": 17,
+      "columns": [
+        "config_id",
+        "age",
+        "education",
+        "marital-status",
+        "native-country",
+        "occupation",
+        "race",
+        "sex",
+        "workclass"
+      ]
+    },
+    {
+      "csv": "csv/salary_class_counts.csv",
+      "row_count": 17,
+      "columns": [
+        "config_id",
+        "source_negative_count",
+        "source_positive_count",
+        "retained_negative_count",
+        "retained_positive_count",
+        "suppressed_negative_count",
+        "suppressed_positive_count"
+      ]
+    },
+    {
+      "csv": "csv/equivalence_class_histograms.csv",
+      "row_count": 1534,
+      "columns": [
+        "config_id",
+        "kind",
+        "frequency",
+        "size"
+      ]
+    },
+    {
+      "csv": "csv/marginal_profile_values.csv",
+      "row_count": 2822,
+      "columns": [
+        "config_id",
+        "attribute",
+        "n_source",
+        "n_retained",
+        "n_suppressed",
+        "retained_count",
+        "retained_proportion",
+        "source_count",
+        "source_proportion",
+        "suppressed_count",
+        "suppressed_minus_retained_proportion",
+        "suppressed_proportion",
+        "value"
+      ]
+    },
+    {
+      "csv": "csv/tie_histograms.csv",
+      "row_count": 2046,
+      "columns": [
+        "scenario",
+        "config_id",
+        "frequency",
+        "size"
+      ]
+    }
+  ],
+  "family_count": 16,
+  "A14_all_16_counts_match": true
+}

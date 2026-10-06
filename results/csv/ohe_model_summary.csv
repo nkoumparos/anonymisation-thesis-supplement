@@ -1,0 +1,34 @@
+﻿model_id,config_id,group,prediction_row_count,qi_count,qi_with_unknown_rows_count,total_unknown_row_qi_incidences,total_distinct_unknown_levels_per_qi,unknown_levels_by_qi_text,unknown_rows_by_qi_text
+CFG00,CFG00,raw_reference,15060,8,1,2,2,age: 2,age: 2/15060
+CFG01/counterfactual,CFG01,counterfactual,15060,8,0,0,0,0,0/15060
+CFG01/release,CFG01,release,15060,8,0,0,0,0,0/15060
+CFG02/counterfactual,CFG02,counterfactual,15060,8,0,0,0,0,0/15060
+CFG02/release,CFG02,release,15060,8,0,0,0,0,0/15060
+CFG03/counterfactual,CFG03,counterfactual,15060,8,0,0,0,0,0/15060
+CFG03/release,CFG03,release,15060,8,0,0,0,0,0/15060
+CFG04/counterfactual,CFG04,counterfactual,15060,8,0,0,0,0,0/15060
+CFG04/release,CFG04,release,15060,8,0,0,0,0,0/15060
+CFG05/counterfactual,CFG05,counterfactual,15060,8,0,0,0,0,0/15060
+CFG05/release,CFG05,release,15060,8,0,0,0,0,0/15060
+CFG06/counterfactual,CFG06,counterfactual,15060,8,0,0,0,0,0/15060
+CFG06/release,CFG06,release,15060,8,0,0,0,0,0/15060
+CFG07/counterfactual,CFG07,counterfactual,15060,8,0,0,0,0,0/15060
+CFG07/release,CFG07,release,15060,8,0,0,0,0,0/15060
+CFG08/counterfactual,CFG08,counterfactual,15060,8,0,0,0,0,0/15060
+CFG08/release,CFG08,release,15060,8,0,0,0,0,0/15060
+CFG09/counterfactual,CFG09,counterfactual,15060,8,0,0,0,0,0/15060
+CFG09/release,CFG09,release,15060,8,0,0,0,0,0/15060
+CFG10/counterfactual,CFG10,counterfactual,15060,8,0,0,0,0,0/15060
+CFG10/release,CFG10,release,15060,8,0,0,0,0,0/15060
+CFG11/counterfactual,CFG11,counterfactual,15060,8,0,0,0,0,0/15060
+CFG11/release,CFG11,release,15060,8,1,7,1,workclass: 1,workclass: 7/15060
+CFG12/counterfactual,CFG12,counterfactual,15060,8,0,0,0,0,0/15060
+CFG12/release,CFG12,release,15060,8,2,37,2,native-country: 1; workclass: 1,native-country: 30/15060; workclass: 7/15060
+CFG13/counterfactual,CFG13,counterfactual,15060,8,0,0,0,0,0/15060
+CFG13/release,CFG13,release,15060,8,1,7,1,workclass: 1,workclass: 7/15060
+CFG14/counterfactual,CFG14,counterfactual,15060,8,0,0,0,0,0/15060
+CFG14/release,CFG14,release,15060,8,2,18,2,marital-status: 1; workclass: 1,marital-status: 11/15060; workclass: 7/15060
+CFG15/counterfactual,CFG15,counterfactual,15060,8,0,0,0,0,0/15060
+CFG15/release,CFG15,release,15060,8,2,87,2,native-country: 1; workclass: 1,native-country: 80/15060; workclass: 7/15060
+CFG16/counterfactual,CFG16,counterfactual,15060,8,0,0,0,0,0/15060
+CFG16/release,CFG16,release,15060,8,2,87,2,native-country: 1; workclass: 1,native-country: 80/15060; workclass: 7/15060

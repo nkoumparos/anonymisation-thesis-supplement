@@ -1,0 +1,419 @@
+{
+  "scope": "Επιλεγμένος κώδικας υπολογισμών και ελέγχων. Δεν αποτελεί αυτοτελές πακέτο επανεκτέλεσης.",
+  "files": [
+    {
+      "path": "code/export_aggregate_tables.py",
+      "role": "Αναδημιουργία συγκεντρωτικών πινάκων CSV.",
+      "bytes": 16531,
+      "sha256": "7beb4757b6e8b4da8a741919d48d1eedb14acca7bfb50d474aa03ccff647ea74"
+    },
+    {
+      "path": "code/runtime_compatibility/attack_compatibility_overlay.py",
+      "role": "Προσαρμογές συμβατότητας του βασικού σεναρίου.",
+      "bytes": 13668,
+      "sha256": "749d0077c6f7e944e2060ec0dded715333aaa6df0f0a694e272ef5694d17c03c"
+    },
+    {
+      "path": "code/runtime_compatibility/run_authorized_attack_continuation.py",
+      "role": "Προσαρμογές συμβατότητας του βασικού σεναρίου.",
+      "bytes": 54922,
+      "sha256": "1ac79dd5022526394989fb33e31e8cedaa37114abe25bb6afacfdcfc561b9573"
+    },
+    {
+      "path": "code/sensitivity_sources/frozen_python/attack_adapter.py",
+      "role": "Σενάρια S1–S4, διαγνωστικά και αμετάβλητες εξαρτήσεις",
+      "bytes": 57175,
+      "sha256": "a1a861663babdd327a635ee2e288b8feab5716a1774094821c962021dbbd61a7"
+    },
+    {
+      "path": "code/sensitivity_sources/frozen_python/attack_scorer.py",
+      "role": "Σενάρια S1–S4, διαγνωστικά και αμετάβλητες εξαρτήσεις",
+      "bytes": 6739,
+      "sha256": "e305b8390e5a079e26e9c993c5a6aeeb9204d431044042c6c0fa64b51736c765"
+    },
+    {
+      "path": "code/sensitivity_sources/frozen_python/common.py",
+      "role": "Σενάρια S1–S4, διαγνωστικά και αμετάβλητες εξαρτήσεις",
+      "bytes": 5584,
+      "sha256": "9439bf82e27621cc877db4d74460245752497e8de116d69ac52693cd479755fc"
+    },
+    {
+      "path": "code/sensitivity_sources/frozen_python/permutation_control.py",
+      "role": "Σενάρια S1–S4, διαγνωστικά και αμετάβλητες εξαρτήσεις",
+      "bytes": 22239,
+      "sha256": "0b1432589da687b7b05181a97d87dadc4bb5cd2cf3dd8f213b1d23bc698d4c11"
+    },
+    {
+      "path": "code/sensitivity_sources/frozen_python/pre_output_targets.py",
+      "role": "Σενάρια S1–S4, διαγνωστικά και αμετάβλητες εξαρτήσεις",
+      "bytes": 12048,
+      "sha256": "6dfe9814126008665b079af1e992c12f870d222067b12b9ba2e32375fe520dea"
+    },
+    {
+      "path": "code/sensitivity_sources/frozen_python/risk_consumer.py",
+      "role": "Σενάρια S1–S4, διαγνωστικά και αμετάβλητες εξαρτήσεις",
+      "bytes": 10480,
+      "sha256": "b77974e3e77b1b7974f2b38c6171026369e51d65d6031bb2e7717c0352941a3e"
+    },
+    {
+      "path": "code/sensitivity_sources/frozen_python/risk_metrics.py",
+      "role": "Σενάρια S1–S4, διαγνωστικά και αμετάβλητες εξαρτήσεις",
+      "bytes": 15753,
+      "sha256": "dd5844fc48d483a5d56e0383e76d716b67a28e7e07d988b04900e6de0dedc75e"
+    },
+    {
+      "path": "code/sensitivity_sources/frozen_python/risk_windows_acl.py",
+      "role": "Σενάρια S1–S4, διαγνωστικά και αμετάβλητες εξαρτήσεις",
+      "bytes": 13508,
+      "sha256": "6734f64542627e6708aeea3b612601ff5eb576a852a6b0f000db1b20762bf797"
+    },
+    {
+      "path": "code/sensitivity_sources/python/authorization.py",
+      "role": "Σενάρια S1–S4, διαγνωστικά και αμετάβλητες εξαρτήσεις",
+      "bytes": 3969,
+      "sha256": "c40bbcec58eccce4d8d0bcf50693997ee9ca7bfb4a1ea8363c5e14fbbc273bf8"
+    },
+    {
+      "path": "code/sensitivity_sources/python/bounded_reader.py",
+      "role": "Σενάρια S1–S4, διαγνωστικά και αμετάβλητες εξαρτήσεις",
+      "bytes": 8703,
+      "sha256": "5c269dbbf932d95ddbfeb09ce12e03826089a85e9022b60592c4348fde97b138"
+    },
+    {
+      "path": "code/sensitivity_sources/python/diagnostic_core.py",
+      "role": "Σενάρια S1–S4, διαγνωστικά και αμετάβλητες εξαρτήσεις",
+      "bytes": 7628,
+      "sha256": "f7f002e3f7ca407c831035546d3ba062fc04a734898af5bddc69126d0f15f527"
+    },
+    {
+      "path": "code/sensitivity_sources/python/io_boundary.py",
+      "role": "Σενάρια S1–S4, διαγνωστικά και αμετάβλητες εξαρτήσεις",
+      "bytes": 8264,
+      "sha256": "3534fa2fbe0b706f828ada3573a029516df862faeca263e8148e50f32f29daaa"
+    },
+    {
+      "path": "code/sensitivity_sources/python/native_review.py",
+      "role": "Σενάρια S1–S4, διαγνωστικά και αμετάβλητες εξαρτήσεις",
+      "bytes": 4425,
+      "sha256": "a8cc4975ffe67f32814719b089af3634027d070127848cb123306a9a2a7fa780"
+    },
+    {
+      "path": "code/sensitivity_sources/python/pinned_context.py",
+      "role": "Σενάρια S1–S4, διαγνωστικά και αμετάβλητες εξαρτήσεις",
+      "bytes": 8205,
+      "sha256": "455849da241c3cabe041a78a120876ad26cc66e8fd45a80bd3b5be4ddc950728"
+    },
+    {
+      "path": "code/sensitivity_sources/python/protected_sink.py",
+      "role": "Σενάρια S1–S4, διαγνωστικά και αμετάβλητες εξαρτήσεις",
+      "bytes": 5336,
+      "sha256": "5a1de6d93001a66d3bed36101bce22fdac2a5e121f6b059b03ff8caed1584349"
+    },
+    {
+      "path": "code/sensitivity_sources/python/public_export.py",
+      "role": "Σενάρια S1–S4, διαγνωστικά και αμετάβλητες εξαρτήσεις",
+      "bytes": 1455,
+      "sha256": "f7c32edb1cf416cb273f6304d1ea6ac13247171762f087ddb888ab6b279f6929"
+    },
+    {
+      "path": "code/sensitivity_sources/python/public_failure.py",
+      "role": "Σενάρια S1–S4, διαγνωστικά και αμετάβλητες εξαρτήσεις",
+      "bytes": 4384,
+      "sha256": "822a1d6caa04319c84e21f66a51bddc69fe176c68ffa957d3d94fbdecbf8a332"
+    },
+    {
+      "path": "code/sensitivity_sources/python/reader_controller.py",
+      "role": "Σενάρια S1–S4, διαγνωστικά και αμετάβλητες εξαρτήσεις",
+      "bytes": 7008,
+      "sha256": "3ebb809dd026929e8808dcb41458cdc75798dee96a586e221df0bc3f420dccb7"
+    },
+    {
+      "path": "code/sensitivity_sources/python/reader_pins.py",
+      "role": "Σενάρια S1–S4, διαγνωστικά και αμετάβλητες εξαρτήσεις",
+      "bytes": 1926,
+      "sha256": "44d01cdba4a9a14060b822ca4edacaafd28af96ed02b217cc39aceb9bbf4330b"
+    },
+    {
+      "path": "code/sensitivity_sources/python/saved_diagnostics.py",
+      "role": "Σενάρια S1–S4, διαγνωστικά και αμετάβλητες εξαρτήσεις",
+      "bytes": 12539,
+      "sha256": "2010091107274670fa6e877ea85c37e13600672e0dba5b2815c1442ee1692e3f"
+    },
+    {
+      "path": "code/sensitivity_sources/python/sensitivity_replay.py",
+      "role": "Σενάρια S1–S4, διαγνωστικά και αμετάβλητες εξαρτήσεις",
+      "bytes": 16968,
+      "sha256": "7bacb19817891bde86e2235a10f2f206fdf0c81ae80383ee51a86fac49e93a4f"
+    },
+    {
+      "path": "code/sensitivity_sources/python/sensitivity_runner.py",
+      "role": "Σενάρια S1–S4, διαγνωστικά και αμετάβλητες εξαρτήσεις",
+      "bytes": 16694,
+      "sha256": "76b46c573cf76b6ca1e32daf02ce3a80628b9244bd7c71753877dc2bf768fa86"
+    },
+    {
+      "path": "code/sensitivity_sources/python/verify_new_outputs.py",
+      "role": "Σενάρια S1–S4, διαγνωστικά και αμετάβλητες εξαρτήσεις",
+      "bytes": 4247,
+      "sha256": "b8644d3e1d41cc683637830cb055a7a62193360d889b9da6010c073c8c574f31"
+    },
+    {
+      "path": "code/verified_sources/java/org/nkoum/anonymisation/ArxConfigurationMatrix.java",
+      "role": "Διαμορφώσεις ARX, μετασχηματισμοί και βοηθητικοί έλεγχοι",
+      "bytes": 45780,
+      "sha256": "0e02d0d6b8d0a45e1a6b3786311f6510ebcc31be1f2a82cb3383ddf48b023fe1"
+    },
+    {
+      "path": "code/verified_sources/java/org/nkoum/anonymisation/ArxConfigurationMatrixTest.java",
+      "role": "Διαμορφώσεις ARX, μετασχηματισμοί και βοηθητικοί έλεγχοι",
+      "bytes": 60426,
+      "sha256": "0ff38c4a36f191d8234e65975a788196a7303498ddb9ad7017b3fcced75d51c2"
+    },
+    {
+      "path": "code/verified_sources/java/org/nkoum/anonymisation/ArxExperimentRunner.java",
+      "role": "Διαμορφώσεις ARX, μετασχηματισμοί και βοηθητικοί έλεγχοι",
+      "bytes": 42217,
+      "sha256": "f0ee2fb2a083802dc84f489b80efa1f49a164832dfb4cb10e6c1ec0394a5ef4a"
+    },
+    {
+      "path": "code/verified_sources/java/org/nkoum/anonymisation/ArxPilot.java",
+      "role": "Διαμορφώσεις ARX, μετασχηματισμοί και βοηθητικοί έλεγχοι",
+      "bytes": 101231,
+      "sha256": "1a5b7d415834194a6cc4906c2682aa51119bd70175d154abe503189d2a1e7123"
+    },
+    {
+      "path": "code/verified_sources/java/org/nkoum/anonymisation/ArxSyntheticTransformation.java",
+      "role": "Διαμορφώσεις ARX, μετασχηματισμοί και βοηθητικοί έλεγχοι",
+      "bytes": 10710,
+      "sha256": "e53f70cdf350419661e9bf41a19c5b1ac684065595c05ac55306670118b721b6"
+    },
+    {
+      "path": "code/verified_sources/java/org/nkoum/anonymisation/ArxTransformationCapture.java",
+      "role": "Διαμορφώσεις ARX, μετασχηματισμοί και βοηθητικοί έλεγχοι",
+      "bytes": 21869,
+      "sha256": "5ee48851cf63e24944daf83e68469a68d1fd2b786ef1eb657858b3c28dc5aae9"
+    },
+    {
+      "path": "code/verified_sources/java/org/nkoum/anonymisation/JavaDoubleStringOracle.java",
+      "role": "Διαμορφώσεις ARX, μετασχηματισμοί και βοηθητικοί έλεγχοι",
+      "bytes": 2384,
+      "sha256": "e1d733c68ee9600ae57d9ed5a7ef347d707b279a0ccab62b3f291fef471871e4"
+    },
+    {
+      "path": "code/verified_sources/python/acquire_adult_sources.py",
+      "role": "Απόκτηση και έλεγχος δεδομένων ή κατασκευή ιεραρχίας ηλικίας",
+      "bytes": 11636,
+      "sha256": "33424c63aa3f6ccf5db81dadc05c248fb3d1f293d4a3502ac164c83e585bce10"
+    },
+    {
+      "path": "code/verified_sources/python/anonymization_checks.py",
+      "role": "Προετοιμασία, μετασχηματισμοί, κοινές συναρτήσεις και διαγνωστικοί έλεγχοι",
+      "bytes": 18452,
+      "sha256": "edcfcc102163b4d36605188c0422ee817d05b09e3c0140cfb9d2f7a9fd71af43"
+    },
+    {
+      "path": "code/verified_sources/python/attack_adapter.py",
+      "role": "Σύνδεση εγγραφών, αξιολόγηση κινδύνου και έλεγχοι ορθότητας",
+      "bytes": 57175,
+      "sha256": "a1a861663babdd327a635ee2e288b8feab5716a1774094821c962021dbbd61a7"
+    },
+    {
+      "path": "code/verified_sources/python/attack_results_collector.py",
+      "role": "Σύνδεση εγγραφών, αξιολόγηση κινδύνου και έλεγχοι ορθότητας",
+      "bytes": 17878,
+      "sha256": "9dee94146a5beac1948ce3365e547bb325372a46bd7b381d254b10107b526648"
+    },
+    {
+      "path": "code/verified_sources/python/attack_runner.py",
+      "role": "Σύνδεση εγγραφών, αξιολόγηση κινδύνου και έλεγχοι ορθότητας",
+      "bytes": 51547,
+      "sha256": "209e1bc5fc0f0046745bc7d1e80da7a123c2199262be41477ea0bea6366d423a"
+    },
+    {
+      "path": "code/verified_sources/python/attack_scorer.py",
+      "role": "Σύνδεση εγγραφών, αξιολόγηση κινδύνου και έλεγχοι ορθότητας",
+      "bytes": 6739,
+      "sha256": "e305b8390e5a079e26e9c993c5a6aeeb9204d431044042c6c0fa64b51736c765"
+    },
+    {
+      "path": "code/verified_sources/python/build_age_semantic_hierarchy.py",
+      "role": "Απόκτηση και έλεγχος δεδομένων ή κατασκευή ιεραρχίας ηλικίας",
+      "bytes": 12341,
+      "sha256": "1872e38fa5cdf57fbb4608167298f0f20d4f12bb5bcf51fc662354d2f2ec6e88"
+    },
+    {
+      "path": "code/verified_sources/python/common.py",
+      "role": "Προετοιμασία, μετασχηματισμοί, κοινές συναρτήσεις και διαγνωστικοί έλεγχοι",
+      "bytes": 5584,
+      "sha256": "9439bf82e27621cc877db4d74460245752497e8de116d69ac52693cd479755fc"
+    },
+    {
+      "path": "code/verified_sources/python/dummy_baseline.py",
+      "role": "Μέτρηση χρησιμότητας, γραμμή βάσης και επαναδειγματοληψία",
+      "bytes": 18840,
+      "sha256": "9f8dce5ecf662d9baff30274a3370697a49a96dbf4d087efddee30e6ed8c3e44"
+    },
+    {
+      "path": "code/verified_sources/python/encoder_diagnostics.py",
+      "role": "Προετοιμασία, μετασχηματισμοί, κοινές συναρτήσεις και διαγνωστικοί έλεγχοι",
+      "bytes": 10149,
+      "sha256": "010a6ba21585926ccb385440d5fe54bb44847fbdddaec431d20c2d0552d56ed5"
+    },
+    {
+      "path": "code/verified_sources/python/model_artifact_verifier.py",
+      "role": "Εκπαίδευση, προβλέψεις και έλεγχος αποθηκευμένων μοντέλων",
+      "bytes": 53946,
+      "sha256": "0988ca61f99be2645df925b192d98d3038f7810a8c80d5c04c4bc7807d723cd7"
+    },
+    {
+      "path": "code/verified_sources/python/model_consumer.py",
+      "role": "Εκπαίδευση, προβλέψεις και έλεγχος αποθηκευμένων μοντέλων",
+      "bytes": 18491,
+      "sha256": "d3ec0d9ab535fe88805b5524a465b9e60197eb6eab10ffa34c780da57a67652c"
+    },
+    {
+      "path": "code/verified_sources/python/model_consumer_diagnostics.py",
+      "role": "Εκπαίδευση, προβλέψεις και έλεγχος αποθηκευμένων μοντέλων",
+      "bytes": 19998,
+      "sha256": "b35d3a17b5392b003b59952b97d54ac318323d57c6f340bb44a316f0ec67bba1"
+    },
+    {
+      "path": "code/verified_sources/python/model_driver.py",
+      "role": "Εκπαίδευση, προβλέψεις και έλεγχος αποθηκευμένων μοντέλων",
+      "bytes": 23722,
+      "sha256": "fb0de49ebd923bbb18b8e78080d9f92c3ba62360edff1664569f94e939534790"
+    },
+    {
+      "path": "code/verified_sources/python/model_driver_diagnostics.py",
+      "role": "Εκπαίδευση, προβλέψεις και έλεγχος αποθηκευμένων μοντέλων",
+      "bytes": 24087,
+      "sha256": "c1af9b300228c1f3b1697b0b89338c23bb8f003f6be6adbdfa549c2406a06f88"
+    },
+    {
+      "path": "code/verified_sources/python/model_pilot.py",
+      "role": "Εκπαίδευση, προβλέψεις και έλεγχος αποθηκευμένων μοντέλων",
+      "bytes": 7951,
+      "sha256": "550cd63261134a57b8f8dd412d3804517f2c16d328bea36886ccf06b16e11aa1"
+    },
+    {
+      "path": "code/verified_sources/python/model_pipeline.py",
+      "role": "Εκπαίδευση, προβλέψεις και έλεγχος αποθηκευμένων μοντέλων",
+      "bytes": 63121,
+      "sha256": "e27c967a858d4a6fff15aec2be832b8a34eaede7bee3c839a64770f0e70ead56"
+    },
+    {
+      "path": "code/verified_sources/python/permutation_control.py",
+      "role": "Σύνδεση εγγραφών, αξιολόγηση κινδύνου και έλεγχοι ορθότητας",
+      "bytes": 22239,
+      "sha256": "0b1432589da687b7b05181a97d87dadc4bb5cd2cf3dd8f213b1d23bc698d4c11"
+    },
+    {
+      "path": "code/verified_sources/python/pre_output_targets.py",
+      "role": "Σύνδεση εγγραφών, αξιολόγηση κινδύνου και έλεγχοι ορθότητας",
+      "bytes": 12048,
+      "sha256": "6dfe9814126008665b079af1e992c12f870d222067b12b9ba2e32375fe520dea"
+    },
+    {
+      "path": "code/verified_sources/python/privacy_metrics.py",
+      "role": "Προετοιμασία, μετασχηματισμοί, κοινές συναρτήσεις και διαγνωστικοί έλεγχοι",
+      "bytes": 6788,
+      "sha256": "a8b4d288e9b0c01300bbb40b0d949f374a8b1cab16ffcbd4ee274cfdb6e9a09e"
+    },
+    {
+      "path": "code/verified_sources/python/release_consumer.py",
+      "role": "Προετοιμασία, μετασχηματισμοί, κοινές συναρτήσεις και διαγνωστικοί έλεγχοι",
+      "bytes": 5747,
+      "sha256": "b466069e609a4b96f225bf22df08effb3aa63b2906b84ff3f326e7cd6960dfc1"
+    },
+    {
+      "path": "code/verified_sources/python/risk_admission.py",
+      "role": "Σύνδεση εγγραφών, αξιολόγηση κινδύνου και έλεγχοι ορθότητας",
+      "bytes": 8904,
+      "sha256": "d3aea8da8eddcbdd18f32e3aea14db6f79bbe2045431f730a0c91a31ec90dcba"
+    },
+    {
+      "path": "code/verified_sources/python/risk_bootstrap_compute.py",
+      "role": "Σύνδεση εγγραφών, αξιολόγηση κινδύνου και έλεγχοι ορθότητας",
+      "bytes": 13615,
+      "sha256": "ca0dcb4689f7e2e8950f476e059df0fde7d80e6e41e8d7595f4c869d1b957c8f"
+    },
+    {
+      "path": "code/verified_sources/python/risk_bootstrap_io.py",
+      "role": "Σύνδεση εγγραφών, αξιολόγηση κινδύνου και έλεγχοι ορθότητας",
+      "bytes": 5083,
+      "sha256": "9e5243f93383250054e9a6f93e11de7b75bb91422f8d82fc466dd8c3c07c334a"
+    },
+    {
+      "path": "code/verified_sources/python/risk_consumer.py",
+      "role": "Σύνδεση εγγραφών, αξιολόγηση κινδύνου και έλεγχοι ορθότητας",
+      "bytes": 10480,
+      "sha256": "b77974e3e77b1b7974f2b38c6171026369e51d65d6031bb2e7717c0352941a3e"
+    },
+    {
+      "path": "code/verified_sources/python/risk_metrics.py",
+      "role": "Σύνδεση εγγραφών, αξιολόγηση κινδύνου και έλεγχοι ορθότητας",
+      "bytes": 15753,
+      "sha256": "dd5844fc48d483a5d56e0383e76d716b67a28e7e07d988b04900e6de0dedc75e"
+    },
+    {
+      "path": "code/verified_sources/python/risk_windows_acl.py",
+      "role": "Σύνδεση εγγραφών, αξιολόγηση κινδύνου και έλεγχοι ορθότητας",
+      "bytes": 13508,
+      "sha256": "6734f64542627e6708aeea3b612601ff5eb576a852a6b0f000db1b20762bf797"
+    },
+    {
+      "path": "code/verified_sources/python/transformation_bridge.py",
+      "role": "Προετοιμασία, μετασχηματισμοί, κοινές συναρτήσεις και διαγνωστικοί έλεγχοι",
+      "bytes": 19403,
+      "sha256": "6fca1e3be65186bf31d793d1c4e2ee709bfa64816ca97c9b8533c02d46b00080"
+    },
+    {
+      "path": "code/verified_sources/python/utility_admission.py",
+      "role": "Μέτρηση χρησιμότητας, γραμμή βάσης και επαναδειγματοληψία",
+      "bytes": 8704,
+      "sha256": "3919a5207c5be5d197442816ca73951637df891f9be2062204fed6167d59a16b"
+    },
+    {
+      "path": "code/verified_sources/python/utility_compute.py",
+      "role": "Μέτρηση χρησιμότητας, γραμμή βάσης και επαναδειγματοληψία",
+      "bytes": 29697,
+      "sha256": "b95cfb98e058f7fa83efb2f3389ac1cb793f9b2442711f83268bf1ca6cd2dab4"
+    },
+    {
+      "path": "code/verified_sources/python/utility_consumer.py",
+      "role": "Μέτρηση χρησιμότητας, γραμμή βάσης και επαναδειγματοληψία",
+      "bytes": 6861,
+      "sha256": "a0306a71fb1a76a56ecc6d5d277c0732b243a9dcf8589ed4913a1c9a89cc04eb"
+    },
+    {
+      "path": "code/verified_sources/python/utility_evaluation.py",
+      "role": "Μέτρηση χρησιμότητας, γραμμή βάσης και επαναδειγματοληψία",
+      "bytes": 19918,
+      "sha256": "22baa62d7f82572df94e5846aa68f0fba78053e2d8a7b1c954263ba98cbc324d"
+    },
+    {
+      "path": "code/verified_sources/python/utility_io.py",
+      "role": "Μέτρηση χρησιμότητας, γραμμή βάσης και επαναδειγματοληψία",
+      "bytes": 3594,
+      "sha256": "fb6b530a6575e67cdf25dcaab2da5072b9e080c6c8cddfd044274540a7b40e64"
+    },
+    {
+      "path": "code/verified_sources/python/utility_metrics.py",
+      "role": "Μέτρηση χρησιμότητας, γραμμή βάσης και επαναδειγματοληψία",
+      "bytes": 12365,
+      "sha256": "c9bda248337d29296a662f506e3e4db8752fae8e8a3de20b737e5f39ad4b9300"
+    },
+    {
+      "path": "code/verified_sources/python/validate_adult_sources.py",
+      "role": "Απόκτηση και έλεγχος δεδομένων ή κατασκευή ιεραρχίας ηλικίας",
+      "bytes": 33037,
+      "sha256": "89b82af2265ca8439954e1add191e0ca02fbd33d053880143b2902b56a87985c"
+    },
+    {
+      "path": "verify_package.py",
+      "role": "Έλεγχος ακεραιότητας αρχείων και πληθών συγκεντρωτικών πινάκων",
+      "bytes": 2928,
+      "sha256": "67a4591a691286074d70106859e551915f424b95e6f185295376965e79bcd788"
+    }
+  ]
+}

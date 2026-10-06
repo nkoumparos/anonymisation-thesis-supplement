@@ -1,0 +1,30 @@
+{
+  "python": "3.12.10",
+  "implementation": "CPython",
+  "platform": "Windows 11, x86-64",
+  "arx": "3.9.2",
+  "numpy": "2.0.2",
+  "scikit-learn": "1.9.0",
+  "pandas": "2.3.3",
+  "scipy": "1.15.3",
+  "pycanon": "1.3.6",
+  "python_lock_source_sha256": "5fa81d547b32a189a3a12a20cdc526c305f3f7f9deac291e5785b09990004964",
+  "java_observed_in_initial_environment": "OpenJDK 21.0.12.1 LTS, Microsoft build 21.0.12.1+1-LTS, 64-bit",
+  "java_scope": "Η έκδοση OpenJDK 21.0.12.1, 64 bit επιβεβαιώνεται στις αναφορές και των 16 τελικών εξόδων ARX. Η κατασκευή Microsoft 21.0.12.1+1-LTS καταγράφεται στην εγκατάσταση.",
+  "arx_api_artifact": {
+    "filename": "libarx-3.9.2.jar",
+    "bytes": 36161310,
+    "sha256": "18040108e95ca7955d806bf32354b20601d664495653b8ee169d249f43f58d44"
+  },
+  "arx_release_url": "https://github.com/arx-deidentifier/arx/releases/tag/v3.9.2",
+  "java": "OpenJDK 21.0.12.1, 64-bit",
+  "java_initial_evidence_date": "2026-09-01",
+  "java_final_execution_evidence_date": "2026-09-14",
+  "java_final_execution_report_count": 16,
+  "evidence_scope": {
+    "arx": "Ταυτότητα JAR και SHA-256 στις τελικές εκτελέσεις.",
+    "python_numpy_scikit_learn": "Καταγραφή εγκατάστασης και καταγραφές εκπαίδευσης της 2026-09-14.",
+    "pandas_scipy_pycanon": "Καταγραφή πραγματικά εγκατεστημένων πακέτων της 2026-09-05.",
+    "platform": "Αναφορές των τελικών εκτελέσεων ARX."
+  }
+}

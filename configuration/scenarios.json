@@ -1,0 +1,117 @@
+{
+  "description": "Σενάρια γνώσης του αντιπάλου και σφάλματος παρατήρησης της ηλικίας.",
+  "source_module": "attack_scorer.py",
+  "age_compatibility": "max q_s(observed_age - leaf_age) over the leaves of the published age group",
+  "scenarios": [
+    {
+      "scenario": "BASE",
+      "known_attributes": [
+        "age",
+        "sex",
+        "education",
+        "marital-status"
+      ],
+      "age_error_pmf": {
+        "-2": 0.1,
+        "-1": 0.2,
+        "0": 0.4,
+        "1": 0.2,
+        "2": 0.1
+      },
+      "noise_seed_components": [
+        11003
+      ],
+      "draws_per_target": 30,
+      "note": "Οι πιθανότητες είναι μηδενικές εκτός του αναγραφόμενου στηρίγματος."
+    },
+    {
+      "scenario": "S1",
+      "known_attributes": [
+        "age",
+        "sex"
+      ],
+      "age_error_pmf": {
+        "-2": 0.1,
+        "-1": 0.2,
+        "0": 0.4,
+        "1": 0.2,
+        "2": 0.1
+      },
+      "noise_seed_components": [
+        11003
+      ],
+      "draws_per_target": 30,
+      "note": "Οι πιθανότητες είναι μηδενικές εκτός του αναγραφόμενου στηρίγματος."
+    },
+    {
+      "scenario": "S2",
+      "known_attributes": [
+        "age",
+        "sex",
+        "race",
+        "marital-status",
+        "education",
+        "native-country",
+        "workclass",
+        "occupation"
+      ],
+      "age_error_pmf": {
+        "-2": 0.1,
+        "-1": 0.2,
+        "0": 0.4,
+        "1": 0.2,
+        "2": 0.1
+      },
+      "noise_seed_components": [
+        11003
+      ],
+      "draws_per_target": 30,
+      "note": "Οι πιθανότητες είναι μηδενικές εκτός του αναγραφόμενου στηρίγματος."
+    },
+    {
+      "scenario": "S3",
+      "known_attributes": [
+        "age",
+        "sex",
+        "education",
+        "marital-status"
+      ],
+      "age_error_pmf": {
+        "0": 1.0
+      },
+      "noise_seed_components": [
+        11003
+      ],
+      "draws_per_target": 30,
+      "note": "Οι πιθανότητες είναι μηδενικές εκτός του αναγραφόμενου στηρίγματος."
+    },
+    {
+      "scenario": "S4",
+      "known_attributes": [
+        "age",
+        "sex",
+        "education",
+        "marital-status"
+      ],
+      "age_error_pmf": {
+        "-5": "1/11",
+        "-4": "1/11",
+        "-3": "1/11",
+        "-2": "1/11",
+        "-1": "1/11",
+        "0": "1/11",
+        "1": "1/11",
+        "2": "1/11",
+        "3": "1/11",
+        "4": "1/11",
+        "5": "1/11"
+      },
+      "noise_seed_components": [
+        11003,
+        4
+      ],
+      "draws_per_target": 30,
+      "note": "Οι πιθανότητες είναι μηδενικές εκτός του αναγραφόμενου στηρίγματος."
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+﻿accuracy,auroc,average_precision,balanced_accuracy,threshold,intervals,fitted_class_prior_negative,fitted_class_prior_positive,training_class_counts_negative,training_class_counts_positive,holdout_class_counts_negative,holdout_class_counts_positive
+0.7543160690571049,0.5,0.2456839309428951,0.5,0.5,NA,0.7510775147536636,0.24892248524633645,22654,7508,11360,3700

@@ -1,0 +1,55 @@
+{
+  "schema": "thesis-supplement-derived-identities/1.0",
+  "verification_scope": "Αναμενόμενα αποτυπώματα των παραγώγων αρχείων της έρευνας. Τα ίδια τα αρχεία δεν περιλαμβάνονται.",
+  "artifacts": [
+    {
+      "artifact_role": "training_canonical_table",
+      "included_payload": false,
+      "output_format": "UTF-8; semicolon; LF; header; source order; final LF",
+      "rows": 30162,
+      "columns": [
+        "sex",
+        "age",
+        "race",
+        "marital-status",
+        "education",
+        "native-country",
+        "workclass",
+        "occupation",
+        "salary-class"
+      ],
+      "expected_bytes": 2486772,
+      "expected_sha256": "0711f26a4ba718f2eb8fa04395fc296cb3be1ba67135c828b93f6506bf4d8ca9"
+    },
+    {
+      "artifact_role": "holdout_canonical_table",
+      "included_payload": false,
+      "output_format": "UTF-8; semicolon; LF; header; source order; final LF",
+      "rows": 15060,
+      "columns": [
+        "sex",
+        "age",
+        "race",
+        "marital-status",
+        "education",
+        "native-country",
+        "workclass",
+        "occupation",
+        "salary-class"
+      ],
+      "expected_bytes": 1241052,
+      "expected_sha256": "8e363515eda22f5b3545fdb427450c688b41f461d5eefce32eac9c515577019b"
+    },
+    {
+      "artifact_role": "effective_age_hierarchy",
+      "artifact": "adult_hierarchy_age_semantic.csv",
+      "included_payload": false,
+      "rows": 100,
+      "levels_including_leaf": 5,
+      "expected_bytes": 2282,
+      "expected_sha256": "de2a5bdc9b0ad72a31ca8199e7be5d39346646da604bf1fb8954afc7626e0ba5",
+      "source_artifact": "adult_hierarchy_age.csv",
+      "source_sha256": "463f35372e8b1ad31fc624eb73c5da9297878a044ae5d61038eaf7b431ac55ca"
+    }
+  ]
+}

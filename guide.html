@@ -1,0 +1,91 @@
+<!doctype html><html lang="el"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Οδηγός ανάγνωσης</title><style>
+:root{--ink:#19313c;--muted:#506775;--accent:#176b73;--line:#d5e2e6;--paper:#fff;--soft:#edf4f5}
+*{box-sizing:border-box}body{margin:0;background:#f3f6f7;color:var(--ink);font:17px/1.65 'Segoe UI',Arial,sans-serif}
+.top{background:#153c49;color:white;padding:16px max(24px,calc((100vw - 1180px)/2));display:flex;flex-wrap:wrap;gap:12px 25px;font-size:14px;align-items:center}
+.top a{color:#d8eff1;text-decoration:none}.top .brand{font-weight:700;color:white;margin-right:auto}
+main{max-width:1180px;margin:38px auto 50px;padding:44px 54px;background:var(--paper);border:1px solid var(--line);border-radius:8px;box-shadow:0 8px 24px #173b4710}
+.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:12px;color:var(--accent);font-weight:700;margin-bottom:12px}
+img{max-width:100%;height:auto}h1{font-size:34px;line-height:1.25;letter-spacing:-.02em;margin:0 0 22px;color:#153c49;max-width:1000px}
+h2{font-size:24px;line-height:1.4;margin:34px 0 14px;border-top:1px solid var(--line);padding-top:26px;color:#175360}
+h3{font-size:20px;margin:26px 0 12px}p{margin:12px 0 18px}li{margin:8px 0}a{color:#126572;text-decoration-thickness:1px;text-underline-offset:3px;overflow-wrap:anywhere}
+code{font-family:Consolas,monospace;font-size:.87em;background:#eff3f5;padding:2px 5px;border-radius:3px;overflow-wrap:anywhere}
+pre{background:#15313d;color:#f2f7f7;border-radius:6px;padding:18px 22px;overflow:auto;line-height:1.5}pre code{background:none;color:inherit;padding:0;overflow-wrap:normal}
+.table-wrap{overflow:auto;margin:20px 0 25px;border:1px solid var(--line);border-radius:5px}table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.5}
+th{background:#e7f0f1;color:#153c49;text-align:left;font-weight:650}th,td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}tr:last-child td{border-bottom:0}tr:nth-child(even) td{background:#f8fafb}td code{font-size:12px;word-break:normal}blockquote{border-left:4px solid #2d8790;background:#f2f8f8;margin:22px 0;padding:8px 22px}
+.foot{border-top:1px solid var(--line);margin-top:38px;padding-top:18px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:760px){body{font-size:16px}.top{padding:14px 18px}main{margin:14px 10px;padding:25px 20px}h1{font-size:27px}h2{font-size:21px}table{min-width:570px}th,td{padding:9px 11px}}
+@media print{body{background:white}main{margin:0;padding:0;box-shadow:none;border:0;max-width:none}.top{display:none}.table-wrap{overflow:visible}table{font-size:10px}a{color:inherit}h2{break-after:avoid}tr{break-inside:avoid}}
+</style></head><body><nav class="top"><a class="brand" href="./index.html">Συμπληρωματικό υλικό</a><a href="./contents.html">Ευρετήριο</a><a href="./guide.html">Οδηγός ανάγνωσης</a><a href="./results/DATA_DICTIONARY_EL.html">Λεξικό στηλών</a></nav><main><h1>Οδηγός ανάγνωσης</h1>
+<p>Το <a href="contents.html">ευρετήριο</a> αντιστοιχίζει τα αρχεία στις ενότητες και στους πίνακες της διπλωματικής εργασίας. Το <a href="results/DATA_DICTIONARY_EL.html">λεξικό στηλών</a> ορίζει κάθε μέτρηση. Η ανάγνωση των συγκεντρωτικών αποτελεσμάτων δεν απαιτεί εκτέλεση κώδικα.</p>
+<h2>Διαμορφώσεις και μετρήσεις</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Ένδειξη</th>
+<th>Σημασία</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>CFG00</code></td>
+<td>Αρχικά δεδομένα χωρίς ανωνυμοποίηση, ως κοινή αναφορά.</td>
+</tr>
+<tr>
+<td><code>CFG01</code>–<code>CFG16</code></td>
+<td>Διαμορφώσεις ανωνυμοποίησης του Πίνακα 4.3.</td>
+</tr>
+<tr>
+<td><code>BASE</code>, <code>S1</code>–<code>S4</code></td>
+<td>Βασικό σενάριο και μεταβολές της γνώσης του αντιπάλου ή του σφάλματος ηλικίας.</td>
+</tr>
+<tr>
+<td><code>release</code></td>
+<td>Εκπαίδευση του ταξινομητή στην έξοδο μετά τη γενίκευση και την καταστολή.</td>
+</tr>
+<tr>
+<td><code>counterfactual</code></td>
+<td>Εκπαίδευση με την ίδια γενίκευση σε όλες τις αρχικές εγγραφές, χωρίς καταστολή. Είναι συνθήκη σύγκρισης και δεν αποτελεί αυτομάτως επιτρεπτή δημοσίευση.</td>
+</tr>
+<tr>
+<td><code>QI</code>, <code>full</code></td>
+<td>Ομαδοποίηση με βάση τα οκτώ οιονεί αναγνωριστικά ή και τα εννέα πεδία, μαζί με το εισόδημα, αντίστοιχα.</td>
+</tr>
+<tr>
+<td><code>R_all</code></td>
+<td>Μέση επιτυχία σύνδεσης σε όλους τους 5.000 στόχους και στις επαναλήψεις ανά στόχο. Οι κατασταλμένοι στόχοι συνεισφέρουν μηδενική επιτυχία.</td>
+</tr>
+<tr>
+<td><code>R_released</code></td>
+<td>Μέση επιτυχία μόνο στους διατηρούμενους στόχους, με τις ίδιες επαναλήψεις ανά στόχο.</td>
+</tr>
+<tr>
+<td><code>AUROC</code></td>
+<td>Ικανότητα διάκρισης των δύο εισοδηματικών κατηγοριών στο σύνολο ελέγχου.</td>
+</tr>
+<tr>
+<td><code>ΔAUROC</code></td>
+<td>AUROC της CFG00 μείον AUROC της ανωνυμοποιημένης εξόδου. Θετική τιμή δηλώνει απώλεια.</td>
+</tr>
+</tbody></table></div>
+<p>Η CFG00 επαναλαμβάνεται στους πίνακες <code>release</code> και <code>counterfactual</code> ως κοινή αναφορά. Οι 34 καταγραφές αντιστοιχούν σε 33 μοντέλα: ένα για τη CFG00 και δύο για καθεμία από τις 16 διαμορφώσεις.</p>
+<h2>Αριθμοί και ελλείπουσες τιμές</h2>
+<p>Στα CSV χρησιμοποιείται δεκαδική τελεία, ενώ στην εργασία δεκαδικό κόμμα. Οι τιμές των αρχείων διατηρούνται χωρίς νέα στρογγυλοποίηση. Η αναλογία <code>0.05</code> αντιστοιχεί σε 5%. Η διαφορά δύο ποσοστών εκφράζεται σε ποσοστιαίες μονάδες. Η ΔAUROC είναι απόλυτη διαφορά βαθμολογιών, όχι σχετική ποσοστιαία μείωση.</p>
+<p>Το <code>NA</code> στα CSV και το <code>null</code> στο JSON δηλώνουν μη διαθέσιμη ή μη εφαρμοστέα τιμή. Δεν σημαίνουν μηδέν. Η αιτία εξηγείται στο λεξικό ή στη στήλη κατάστασης του αντίστοιχου αρχείου. Όπου το JSON διατηρεί ακριβές κλάσμα, ο παρονομαστής του μπορεί να έχει απλοποιηθεί και δεν ταυτίζεται υποχρεωτικά με το πλήθος παρατηρήσεων.</p>
+<h2>Παράδειγμα: κλάσεις ισοδυναμίας</h2>
+<p>Στη CFG01, οι 30.162 εγγραφές σχηματίζουν 60 κλάσεις ως προς τα οκτώ οιονεί αναγνωριστικά. Η διάμεσος μεγέθους είναι 57,50 εγγραφές ανά κλάση: ο μέσος όρος των δύο κεντρικών μεγεθών μετά την ταξινόμηση. Δεν υπάρχει κλάση με μισή εγγραφή.</p>
+<p>Το 95ο εκατοστημόριο είναι 2.648,10 εγγραφές ανά κλάση και υπολογίζεται με γραμμική παρεμβολή. Κάθε κλάση συμμετέχει μία φορά, ανεξάρτητα από το μέγεθός της. Επομένως, το μέτρο αφορά την κατανομή των μεγεθών κλάσεων, όχι την κατανομή των ανθρώπων μεταξύ κλάσεων.</p>
+<p>Με ομαδοποίηση και ως προς το εισόδημα, οι ίδιες εγγραφές σχηματίζουν 115 κλάσεις. Η διάμεσος γίνεται 27,00 και το 95ο εκατοστημόριο 1.903,20. Η προσθήκη πεδίου μπορεί να χωρίσει κλάσεις, χωρίς να προσθέσει ή να αφαιρέσει εγγραφές. Το <code>equivalence_classes.csv</code> έχει δύο καταγραφές ανά διαμόρφωση (<code>QI</code> και <code>full</code>).</p>
+<h2>Επίθεση, κάλυψη και παρονομαστές</h2>
+<p>Για κάθε διαμόρφωση και σενάριο υπάρχουν 5.000 στόχοι και 30 πραγματοποιήσεις ανά στόχο, συνολικά 150.000 προσπάθειες. Η ίδια δομή διατηρείται στο S3, παρότι η ηλικία είναι ακριβής. Αν καμία εγγραφή δεν έχει θετική βαθμολογία, η επίθεση απέχει. Αν η αληθής εγγραφή ανήκει στους ισόβαθμους καλύτερους υποψηφίους, η επιτυχία είναι 1 διαιρεμένο με το πλήθος τους· διαφορετικά είναι μηδέν. Οι υποψήφιοι δεν ταυτίζονται υποχρεωτικά με μία κλάση ισοδυναμίας.</p>
+<p>Το <code>success_coverage.csv</code> εξετάζει προσπάθειες χωρίς αποχή, με έως 1, 2, 5 ή 10 ισόβαθμους καλύτερους υποψηφίους. Η κάλυψη είναι η αναλογία τους στις 150.000 προσπάθειες. Η υπό συνθήκη επιτυχία υπολογίζεται μόνο στις επιλεγμένες προσπάθειες. Υψηλή επιτυχία με μικρή κάλυψη δεν συνεπάγεται υψηλή συνολική επιτυχία.</p>
+<p>Όταν υπάρχουν διατηρούμενοι στόχοι, ισχύει:</p>
+<p><code>R_all = (πλήθος διατηρούμενων στόχων / 5.000) × R_released</code>.</p>
+<p>Ο παρονομαστής αφορά τους στόχους, όχι τις 30.162 εγγραφές εκπαίδευσης. Η καταστολή διαφέρει από την αποχή: για έναν κατασταλμένο στόχο, η επίθεση μπορεί να επιλέξει λανθασμένα άλλη εγγραφή.</p>
+<h2>Διαστήματα και όρια ερμηνείας</h2>
+<p>Τα διαστήματα 95% διαφέρουν από το εύρος τιμών διαφορετικών διαμορφώσεων:</p>
+<ul>
+<li>Τα διαστήματα AUROC και ΔAUROC χρησιμοποιούν κοινή στρωματοποιημένη επαναδειγματοληψία των εγγραφών ελέγχου, χωριστά ανά εισοδηματική κατηγορία, με σταθερά μοντέλα και διαχωρισμό δεδομένων. Δεν περιλαμβάνουν επανεκπαίδευση.</li>
+<li>Τα διαστήματα κινδύνου χρησιμοποιούν επαναδειγματοληψία των αρχικών συστάδων στόχων με ίδιο συνδυασμό ηλικίας, φύλου, εκπαίδευσης και οικογενειακής κατάστασης. Βασίζονται στις ήδη πραγματοποιηθείσες επιθέσεις, χωρίς νέα επιλογή στόχων ή παραγωγή σφάλματος ηλικίας.</li>
+<li>Τα διαστήματα δεν παρέχουν ταυτόχρονη κάλυψη όλων των συγκρίσεων. Στις διαφορές πρέπει να ελέγχεται η δηλωμένη φορά αφαίρεσης. Τα άκρα ζευγαρωμένου διαστήματος δεν προκύπτουν με αφαίρεση των άκρων δύο χωριστών διαστημάτων.</li>
+</ul>
+<p>Οι μετρήσεις κινδύνου αφορούν τη συγκεκριμένη επίθεση και τις παραδοχές της, όχι καθολική πιθανότητα επαναταυτοποίησης. Για τον έλεγχο αρχείων και τα όρια επανεκτέλεσης, βλ. <a href="docs/VALIDATION_AND_USE.html">οδηγίες χρήσης</a>.</p>
+<footer class="foot"><a href="guide.md">Κείμενο σε Markdown</a></footer></main></body></html>

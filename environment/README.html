@@ -1,0 +1,98 @@
+<!doctype html><html lang="el"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Υπολογιστικό περιβάλλον</title><style>
+:root{--ink:#19313c;--muted:#506775;--accent:#176b73;--line:#d5e2e6;--paper:#fff;--soft:#edf4f5}
+*{box-sizing:border-box}body{margin:0;background:#f3f6f7;color:var(--ink);font:17px/1.65 'Segoe UI',Arial,sans-serif}
+.top{background:#153c49;color:white;padding:16px max(24px,calc((100vw - 1180px)/2));display:flex;flex-wrap:wrap;gap:12px 25px;font-size:14px;align-items:center}
+.top a{color:#d8eff1;text-decoration:none}.top .brand{font-weight:700;color:white;margin-right:auto}
+main{max-width:1180px;margin:38px auto 50px;padding:44px 54px;background:var(--paper);border:1px solid var(--line);border-radius:8px;box-shadow:0 8px 24px #173b4710}
+.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:12px;color:var(--accent);font-weight:700;margin-bottom:12px}
+img{max-width:100%;height:auto}h1{font-size:34px;line-height:1.25;letter-spacing:-.02em;margin:0 0 22px;color:#153c49;max-width:1000px}
+h2{font-size:24px;line-height:1.4;margin:34px 0 14px;border-top:1px solid var(--line);padding-top:26px;color:#175360}
+h3{font-size:20px;margin:26px 0 12px}p{margin:12px 0 18px}li{margin:8px 0}a{color:#126572;text-decoration-thickness:1px;text-underline-offset:3px;overflow-wrap:anywhere}
+code{font-family:Consolas,monospace;font-size:.87em;background:#eff3f5;padding:2px 5px;border-radius:3px;overflow-wrap:anywhere}
+pre{background:#15313d;color:#f2f7f7;border-radius:6px;padding:18px 22px;overflow:auto;line-height:1.5}pre code{background:none;color:inherit;padding:0;overflow-wrap:normal}
+.table-wrap{overflow:auto;margin:20px 0 25px;border:1px solid var(--line);border-radius:5px}table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.5}
+th{background:#e7f0f1;color:#153c49;text-align:left;font-weight:650}th,td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}tr:last-child td{border-bottom:0}tr:nth-child(even) td{background:#f8fafb}td code{font-size:12px;word-break:normal}blockquote{border-left:4px solid #2d8790;background:#f2f8f8;margin:22px 0;padding:8px 22px}
+.foot{border-top:1px solid var(--line);margin-top:38px;padding-top:18px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:760px){body{font-size:16px}.top{padding:14px 18px}main{margin:14px 10px;padding:25px 20px}h1{font-size:27px}h2{font-size:21px}table{min-width:570px}th,td{padding:9px 11px}}
+@media print{body{background:white}main{margin:0;padding:0;box-shadow:none;border:0;max-width:none}.top{display:none}.table-wrap{overflow:visible}table{font-size:10px}a{color:inherit}h2{break-after:avoid}tr{break-inside:avoid}}
+</style></head><body><nav class="top"><a class="brand" href="../index.html">Συμπληρωματικό υλικό</a><a href="../contents.html">Ευρετήριο</a><a href="../guide.html">Οδηγός ανάγνωσης</a><a href="../results/DATA_DICTIONARY_EL.html">Λεξικό στηλών</a></nav><main><h1>Υπολογιστικό περιβάλλον</h1>
+<p>Τα συγκεντρωτικά αποτελέσματα διαβάζονται χωρίς εγκατάσταση του πειραματικού περιβάλλοντος. Οι ακριβείς εκδόσεις συνοψίζονται στον Πίνακα 4.6 της §4.8 της εργασίας. Τα παρακάτω αρχεία καταγράφουν το περιβάλλον των πειραμάτων.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Αρχείο</th>
+<th>Χρήση</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="environment.json">environment.json</a></td>
+<td>Βασικά εργαλεία, στοιχεία ταυτότητας του αρχείου ARX και προέλευση των καταγεγραμμένων εκδόσεων</td>
+</tr>
+<tr>
+<td><a href="python_dependencies.csv">python_dependencies.csv</a></td>
+<td>Κατάλογος 30 καταγεγραμμένων εξαρτήσεων</td>
+</tr>
+<tr>
+<td><a href="requirements-win-py312.txt">requirements-win-py312.txt</a></td>
+<td>Εκδόσεις και SHA-256 των αρχείων εγκατάστασης Python</td>
+</tr>
+</tbody></table></div>
+<p>Το αρχείο απαιτήσεων αφορά CPython 3.12.10 σε Windows x86-64. Δεν περιλαμβάνονται εκτελέσιμα προγραμμάτων, βιβλιοθήκες τρίτων ή αρχικές καταγραφές εγκατάστασης και εκτέλεσης.</p>
+<p>Για διαφορετικό λειτουργικό σύστημα ή έκδοση Python απαιτείται επίλυση εξαρτήσεων και έλεγχος συμβατότητας. Δεν έχει επαληθευτεί πλήρης επανεκτέλεση των πειραμάτων σε άλλο περιβάλλον.</p>
+<h2>Επαληθευμένες εκδόσεις και τεκμήρια</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Εργαλείο</th>
+<th>Ακριβής έκδοση</th>
+<th>Τεκμηρίωση</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ARX</td>
+<td>3.9.2</td>
+<td>Το αρχείο <code>libarx-3.9.2.jar</code> και το SHA-256 του καταγράφονται στις τελικές εκτελέσεις.</td>
+</tr>
+<tr>
+<td>Python</td>
+<td>CPython 3.12.10, 64 bit</td>
+<td>Καταγραφή εγκατάστασης και καταγραφές εκπαίδευσης της 14/09/2026.</td>
+</tr>
+<tr>
+<td>Java</td>
+<td>OpenJDK 21.0.12.1, 64 bit</td>
+<td>Ίδια έκδοση στις αναφορές και των 16 τελικών εξόδων ARX.</td>
+</tr>
+<tr>
+<td>NumPy</td>
+<td>2.0.2</td>
+<td>Καταγραφή εγκατάστασης και καταγραφές εκπαίδευσης της 14/09/2026.</td>
+</tr>
+<tr>
+<td>scikit-learn</td>
+<td>1.9.0</td>
+<td>Καταγραφή εγκατάστασης και καταγραφές εκπαίδευσης της 14/09/2026.</td>
+</tr>
+<tr>
+<td>pandas</td>
+<td>2.3.3</td>
+<td>Καταγραφή των πραγματικά εγκατεστημένων πακέτων της 05/09/2026.</td>
+</tr>
+<tr>
+<td>SciPy</td>
+<td>1.15.3</td>
+<td>Καταγραφή των πραγματικά εγκατεστημένων πακέτων της 05/09/2026.</td>
+</tr>
+<tr>
+<td>pyCANON</td>
+<td>1.3.6</td>
+<td>Καταγραφή των πραγματικά εγκατεστημένων πακέτων της 05/09/2026.</td>
+</tr>
+<tr>
+<td>Λειτουργικό σύστημα</td>
+<td>Windows 11, x86-64</td>
+<td>Αναφορές των τελικών εκτελέσεων ARX.</td>
+</tr>
+</tbody></table></div>
+<p>Η πλήρης έκδοση της Java είναι Microsoft OpenJDK <code>21.0.12.1+1-LTS</code>. Για τις pandas, SciPy και pyCANON η τεκμηρίωση αφορά την καταγραφή εγκατεστημένων πακέτων της 05/09/2026, όχι νέα καταγραφή στις τελικές εκτελέσεις.</p>
+<footer class="foot"><a href="README.md">Κείμενο σε Markdown</a></footer></main></body></html>

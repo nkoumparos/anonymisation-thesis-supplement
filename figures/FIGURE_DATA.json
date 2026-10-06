@@ -1,0 +1,1466 @@
+{
+  "schema": "rtm-accepted-public-plot-data/1.0",
+  "source_sha256": "9f86f10f4803732141c54432a26e7f021b5a4afc30925d796de89c4216a84833",
+  "F01": [
+    {
+      "config_id": "CFG00",
+      "risk_percent": 7.265909759688484,
+      "delta_auroc": 0,
+      "pareto_role": "reference"
+    },
+    {
+      "config_id": "CFG01",
+      "risk_percent": 0.013293291676940794,
+      "delta_auroc": 0.07804123049105449,
+      "pareto_role": "nondominated"
+    },
+    {
+      "config_id": "CFG02",
+      "risk_percent": 0.0065940973476949615,
+      "delta_auroc": 0.20093840407308716,
+      "pareto_role": "nondominated"
+    },
+    {
+      "config_id": "CFG03",
+      "risk_percent": 0.0065940973476949615,
+      "delta_auroc": 0.20093840407308716,
+      "pareto_role": "nondominated"
+    },
+    {
+      "config_id": "CFG04",
+      "risk_percent": 0.06668054064160867,
+      "delta_auroc": 0.04624556290445381,
+      "pareto_role": "dominated"
+    },
+    {
+      "config_id": "CFG05",
+      "risk_percent": 0.0065940973476949615,
+      "delta_auroc": 0.20093840407308716,
+      "pareto_role": "nondominated"
+    },
+    {
+      "config_id": "CFG06",
+      "risk_percent": 0.0065940973476949615,
+      "delta_auroc": 0.20093840407308716,
+      "pareto_role": "nondominated"
+    },
+    {
+      "config_id": "CFG07",
+      "risk_percent": 0.0065940973476949615,
+      "delta_auroc": 0.20934727112676055,
+      "pareto_role": "dominated"
+    },
+    {
+      "config_id": "CFG08",
+      "risk_percent": 0.0033154300112724615,
+      "delta_auroc": 0.38409495146555006,
+      "pareto_role": "nondominated"
+    },
+    {
+      "config_id": "CFG09",
+      "risk_percent": 0.0065940973476949615,
+      "delta_auroc": 0.20934727112676055,
+      "pareto_role": "dominated"
+    },
+    {
+      "config_id": "CFG10",
+      "risk_percent": 0.0033154300112724615,
+      "delta_auroc": 0.38409495146555006,
+      "pareto_role": "nondominated"
+    },
+    {
+      "config_id": "CFG11",
+      "risk_percent": 0.1340478551860081,
+      "delta_auroc": 0.030471688237533323,
+      "pareto_role": "nondominated"
+    },
+    {
+      "config_id": "CFG12",
+      "risk_percent": 0.2003741772432106,
+      "delta_auroc": 0.03392492624666921,
+      "pareto_role": "dominated"
+    },
+    {
+      "config_id": "CFG13",
+      "risk_percent": 0.029708189139044876,
+      "delta_auroc": 0.04115660687095546,
+      "pareto_role": "nondominated"
+    },
+    {
+      "config_id": "CFG14",
+      "risk_percent": 0.0405958340360542,
+      "delta_auroc": 0.06817433146174345,
+      "pareto_role": "dominated"
+    },
+    {
+      "config_id": "CFG15",
+      "risk_percent": 0.00331702740735777,
+      "delta_auroc": 0.3576285568138561,
+      "pareto_role": "nondominated"
+    },
+    {
+      "config_id": "CFG16",
+      "risk_percent": 0.00331702740735777,
+      "delta_auroc": 0.3576285568138561,
+      "pareto_role": "nondominated"
+    }
+  ],
+  "F02": [
+    {
+      "scenario": "BASE",
+      "config_id": "CFG00",
+      "risk_percent": 7.265909759688484,
+      "interval_percent": [
+        6.632163341095677,
+        7.965438011931464
+      ]
+    },
+    {
+      "scenario": "BASE",
+      "config_id": "CFG01",
+      "risk_percent": 0.013293291676940794,
+      "interval_percent": [
+        0.012672503287159024,
+        0.01392616887258106
+      ]
+    },
+    {
+      "scenario": "BASE",
+      "config_id": "CFG02",
+      "risk_percent": 0.0065940973476949615,
+      "interval_percent": [
+        0.006422453711505309,
+        0.006760787543270625
+      ]
+    },
+    {
+      "scenario": "BASE",
+      "config_id": "CFG03",
+      "risk_percent": 0.0065940973476949615,
+      "interval_percent": [
+        0.006422453711505309,
+        0.006760787543270625
+      ]
+    },
+    {
+      "scenario": "BASE",
+      "config_id": "CFG04",
+      "risk_percent": 0.06668054064160867,
+      "interval_percent": [
+        0.061462709270394635,
+        0.07222915192154475
+      ]
+    },
+    {
+      "scenario": "BASE",
+      "config_id": "CFG05",
+      "risk_percent": 0.0065940973476949615,
+      "interval_percent": [
+        0.006422453711505309,
+        0.006760787543270625
+      ]
+    },
+    {
+      "scenario": "BASE",
+      "config_id": "CFG06",
+      "risk_percent": 0.0065940973476949615,
+      "interval_percent": [
+        0.006422453711505309,
+        0.006760787543270625
+      ]
+    },
+    {
+      "scenario": "BASE",
+      "config_id": "CFG07",
+      "risk_percent": 0.0065940973476949615,
+      "interval_percent": [
+        0.006422453711505309,
+        0.006760787543270625
+      ]
+    },
+    {
+      "scenario": "BASE",
+      "config_id": "CFG08",
+      "risk_percent": 0.0033154300112724615,
+      "interval_percent": [
+        0.0033154300112724615,
+        0.0033154300112724615
+      ]
+    },
+    {
+      "scenario": "BASE",
+      "config_id": "CFG09",
+      "risk_percent": 0.0065940973476949615,
+      "interval_percent": [
+        0.006422453711505309,
+        0.006760787543270625
+      ]
+    },
+    {
+      "scenario": "BASE",
+      "config_id": "CFG10",
+      "risk_percent": 0.0033154300112724615,
+      "interval_percent": [
+        0.0033154300112724615,
+        0.0033154300112724615
+      ]
+    },
+    {
+      "scenario": "BASE",
+      "config_id": "CFG11",
+      "risk_percent": 0.1340478551860081,
+      "interval_percent": [
+        0.11541571223693933,
+        0.15594148181314096
+      ]
+    },
+    {
+      "scenario": "BASE",
+      "config_id": "CFG12",
+      "risk_percent": 0.2003741772432106,
+      "interval_percent": [
+        0.18093568803735768,
+        0.22008776837929375
+      ]
+    },
+    {
+      "scenario": "BASE",
+      "config_id": "CFG13",
+      "risk_percent": 0.029708189139044876,
+      "interval_percent": [
+        0.027916616104820394,
+        0.03171906997394086
+      ]
+    },
+    {
+      "scenario": "BASE",
+      "config_id": "CFG14",
+      "risk_percent": 0.0405958340360542,
+      "interval_percent": [
+        0.03683342077356456,
+        0.04472972858116123
+      ]
+    },
+    {
+      "scenario": "BASE",
+      "config_id": "CFG15",
+      "risk_percent": 0.00331702740735777,
+      "interval_percent": [
+        0.003307445380826683,
+        0.0033261856352514553
+      ]
+    },
+    {
+      "scenario": "BASE",
+      "config_id": "CFG16",
+      "risk_percent": 0.00331702740735777,
+      "interval_percent": [
+        0.003307445380826683,
+        0.0033261856352514553
+      ]
+    },
+    {
+      "scenario": "S1",
+      "config_id": "CFG00",
+      "risk_percent": 0.20898338342786324,
+      "interval_percent": [
+        0.18096198052667775,
+        0.24659331108277424
+      ]
+    },
+    {
+      "scenario": "S1",
+      "config_id": "CFG01",
+      "risk_percent": 0.0065940973476949615,
+      "interval_percent": [
+        0.006422453711505309,
+        0.006760787543270625
+      ]
+    },
+    {
+      "scenario": "S1",
+      "config_id": "CFG02",
+      "risk_percent": 0.0065940973476949615,
+      "interval_percent": [
+        0.006422453711505309,
+        0.006760787543270625
+      ]
+    },
+    {
+      "scenario": "S1",
+      "config_id": "CFG03",
+      "risk_percent": 0.0065940973476949615,
+      "interval_percent": [
+        0.006422453711505309,
+        0.006760787543270625
+      ]
+    },
+    {
+      "scenario": "S1",
+      "config_id": "CFG04",
+      "risk_percent": 0.0065940973476949615,
+      "interval_percent": [
+        0.006422453711505309,
+        0.006760787543270625
+      ]
+    },
+    {
+      "scenario": "S1",
+      "config_id": "CFG05",
+      "risk_percent": 0.0065940973476949615,
+      "interval_percent": [
+        0.006422453711505309,
+        0.006760787543270625
+      ]
+    },
+    {
+      "scenario": "S1",
+      "config_id": "CFG06",
+      "risk_percent": 0.0065940973476949615,
+      "interval_percent": [
+        0.006422453711505309,
+        0.006760787543270625
+      ]
+    },
+    {
+      "scenario": "S1",
+      "config_id": "CFG07",
+      "risk_percent": 0.0065940973476949615,
+      "interval_percent": [
+        0.006422453711505309,
+        0.006760787543270625
+      ]
+    },
+    {
+      "scenario": "S1",
+      "config_id": "CFG08",
+      "risk_percent": 0.0033154300112724615,
+      "interval_percent": [
+        0.0033154300112724615,
+        0.0033154300112724615
+      ]
+    },
+    {
+      "scenario": "S1",
+      "config_id": "CFG09",
+      "risk_percent": 0.0065940973476949615,
+      "interval_percent": [
+        0.006422453711505309,
+        0.006760787543270625
+      ]
+    },
+    {
+      "scenario": "S1",
+      "config_id": "CFG10",
+      "risk_percent": 0.0033154300112724615,
+      "interval_percent": [
+        0.0033154300112724615,
+        0.0033154300112724615
+      ]
+    },
+    {
+      "scenario": "S1",
+      "config_id": "CFG11",
+      "risk_percent": 0.030987602902845156,
+      "interval_percent": [
+        0.024869166552160683,
+        0.039435599455417206
+      ]
+    },
+    {
+      "scenario": "S1",
+      "config_id": "CFG12",
+      "risk_percent": 0.026887131162099523,
+      "interval_percent": [
+        0.023735919532433078,
+        0.031215200045332743
+      ]
+    },
+    {
+      "scenario": "S1",
+      "config_id": "CFG13",
+      "risk_percent": 0.006594595891014418,
+      "interval_percent": [
+        0.006414661096972774,
+        0.006771386916685174
+      ]
+    },
+    {
+      "scenario": "S1",
+      "config_id": "CFG14",
+      "risk_percent": 0.006609583107846273,
+      "interval_percent": [
+        0.0064117913584265445,
+        0.006796469508032005
+      ]
+    },
+    {
+      "scenario": "S1",
+      "config_id": "CFG15",
+      "risk_percent": 0.00331702740735777,
+      "interval_percent": [
+        0.003307445380826683,
+        0.0033261856352514553
+      ]
+    },
+    {
+      "scenario": "S1",
+      "config_id": "CFG16",
+      "risk_percent": 0.00331702740735777,
+      "interval_percent": [
+        0.003307445380826683,
+        0.0033261856352514553
+      ]
+    },
+    {
+      "scenario": "S2",
+      "config_id": "CFG00",
+      "risk_percent": 46.32677757987751,
+      "interval_percent": [
+        44.46770754997008,
+        48.34895057063418
+      ]
+    },
+    {
+      "scenario": "S2",
+      "config_id": "CFG01",
+      "risk_percent": 0.20894090478626215,
+      "interval_percent": [
+        0.18262128228778424,
+        0.2391223577014624
+      ]
+    },
+    {
+      "scenario": "S2",
+      "config_id": "CFG02",
+      "risk_percent": 0.10603506523988154,
+      "interval_percent": [
+        0.0951276131206128,
+        0.11758291560162991
+      ]
+    },
+    {
+      "scenario": "S2",
+      "config_id": "CFG03",
+      "risk_percent": 0.10603506523988154,
+      "interval_percent": [
+        0.0951276131206128,
+        0.11758291560162991
+      ]
+    },
+    {
+      "scenario": "S2",
+      "config_id": "CFG04",
+      "risk_percent": 0.06668054064160867,
+      "interval_percent": [
+        0.061462709270394635,
+        0.07222915192154475
+      ]
+    },
+    {
+      "scenario": "S2",
+      "config_id": "CFG05",
+      "risk_percent": 0.10603506523988154,
+      "interval_percent": [
+        0.0951276131206128,
+        0.11758291560162991
+      ]
+    },
+    {
+      "scenario": "S2",
+      "config_id": "CFG06",
+      "risk_percent": 0.10603506523988154,
+      "interval_percent": [
+        0.0951276131206128,
+        0.11758291560162991
+      ]
+    },
+    {
+      "scenario": "S2",
+      "config_id": "CFG07",
+      "risk_percent": 0.019778675951446653,
+      "interval_percent": [
+        0.01924342703891023,
+        0.020318477022953085
+      ]
+    },
+    {
+      "scenario": "S2",
+      "config_id": "CFG08",
+      "risk_percent": 0.0033154300112724615,
+      "interval_percent": [
+        0.0033154300112724615,
+        0.0033154300112724615
+      ]
+    },
+    {
+      "scenario": "S2",
+      "config_id": "CFG09",
+      "risk_percent": 0.019778675951446653,
+      "interval_percent": [
+        0.01924342703891023,
+        0.020318477022953085
+      ]
+    },
+    {
+      "scenario": "S2",
+      "config_id": "CFG10",
+      "risk_percent": 0.0033154300112724615,
+      "interval_percent": [
+        0.0033154300112724615,
+        0.0033154300112724615
+      ]
+    },
+    {
+      "scenario": "S2",
+      "config_id": "CFG11",
+      "risk_percent": 1.2698506379128318,
+      "interval_percent": [
+        1.1844383876695281,
+        1.3637433665682324
+      ]
+    },
+    {
+      "scenario": "S2",
+      "config_id": "CFG12",
+      "risk_percent": 0.6811497703160186,
+      "interval_percent": [
+        0.636430112341525,
+        0.7309138612703876
+      ]
+    },
+    {
+      "scenario": "S2",
+      "config_id": "CFG13",
+      "risk_percent": 0.5918963486673838,
+      "interval_percent": [
+        0.5439437674549533,
+        0.6419509464074444
+      ]
+    },
+    {
+      "scenario": "S2",
+      "config_id": "CFG14",
+      "risk_percent": 0.4804522439729898,
+      "interval_percent": [
+        0.4457951814860366,
+        0.5170726969012933
+      ]
+    },
+    {
+      "scenario": "S2",
+      "config_id": "CFG15",
+      "risk_percent": 0.016267387965840905,
+      "interval_percent": [
+        0.014393349074402534,
+        0.018307797289041267
+      ]
+    },
+    {
+      "scenario": "S2",
+      "config_id": "CFG16",
+      "risk_percent": 0.016267387965840905,
+      "interval_percent": [
+        0.014393349074402534,
+        0.018307797289041267
+      ]
+    },
+    {
+      "scenario": "S3",
+      "config_id": "CFG00",
+      "risk_percent": 13.625719492680929,
+      "interval_percent": [
+        12.581140113600538,
+        14.753841935853076
+      ]
+    },
+    {
+      "scenario": "S3",
+      "config_id": "CFG01",
+      "risk_percent": 0.013293291676940794,
+      "interval_percent": [
+        0.012672503287159024,
+        0.01392616887258106
+      ]
+    },
+    {
+      "scenario": "S3",
+      "config_id": "CFG02",
+      "risk_percent": 0.0065940973476949615,
+      "interval_percent": [
+        0.006422453711505309,
+        0.006760787543270625
+      ]
+    },
+    {
+      "scenario": "S3",
+      "config_id": "CFG03",
+      "risk_percent": 0.0065940973476949615,
+      "interval_percent": [
+        0.006422453711505309,
+        0.006760787543270625
+      ]
+    },
+    {
+      "scenario": "S3",
+      "config_id": "CFG04",
+      "risk_percent": 0.06668054064160867,
+      "interval_percent": [
+        0.061462709270394635,
+        0.07222915192154475
+      ]
+    },
+    {
+      "scenario": "S3",
+      "config_id": "CFG05",
+      "risk_percent": 0.0065940973476949615,
+      "interval_percent": [
+        0.006422453711505309,
+        0.006760787543270625
+      ]
+    },
+    {
+      "scenario": "S3",
+      "config_id": "CFG06",
+      "risk_percent": 0.0065940973476949615,
+      "interval_percent": [
+        0.006422453711505309,
+        0.006760787543270625
+      ]
+    },
+    {
+      "scenario": "S3",
+      "config_id": "CFG07",
+      "risk_percent": 0.0065940973476949615,
+      "interval_percent": [
+        0.006422453711505309,
+        0.006760787543270625
+      ]
+    },
+    {
+      "scenario": "S3",
+      "config_id": "CFG08",
+      "risk_percent": 0.0033154300112724615,
+      "interval_percent": [
+        0.0033154300112724615,
+        0.0033154300112724615
+      ]
+    },
+    {
+      "scenario": "S3",
+      "config_id": "CFG09",
+      "risk_percent": 0.0065940973476949615,
+      "interval_percent": [
+        0.006422453711505309,
+        0.006760787543270625
+      ]
+    },
+    {
+      "scenario": "S3",
+      "config_id": "CFG10",
+      "risk_percent": 0.0033154300112724615,
+      "interval_percent": [
+        0.0033154300112724615,
+        0.0033154300112724615
+      ]
+    },
+    {
+      "scenario": "S3",
+      "config_id": "CFG11",
+      "risk_percent": 0.14107575266085634,
+      "interval_percent": [
+        0.12176146830639512,
+        0.16371732272914838
+      ]
+    },
+    {
+      "scenario": "S3",
+      "config_id": "CFG12",
+      "risk_percent": 0.21188737086869405,
+      "interval_percent": [
+        0.19064193273297197,
+        0.2337396246892067
+      ]
+    },
+    {
+      "scenario": "S3",
+      "config_id": "CFG13",
+      "risk_percent": 0.029708189139044876,
+      "interval_percent": [
+        0.027916616104820394,
+        0.03171906997394086
+      ]
+    },
+    {
+      "scenario": "S3",
+      "config_id": "CFG14",
+      "risk_percent": 0.0405958340360542,
+      "interval_percent": [
+        0.03683342077356456,
+        0.04472972858116123
+      ]
+    },
+    {
+      "scenario": "S3",
+      "config_id": "CFG15",
+      "risk_percent": 0.00331702740735777,
+      "interval_percent": [
+        0.003307445380826683,
+        0.0033261856352514553
+      ]
+    },
+    {
+      "scenario": "S3",
+      "config_id": "CFG16",
+      "risk_percent": 0.00331702740735777,
+      "interval_percent": [
+        0.003307445380826683,
+        0.0033261856352514553
+      ]
+    },
+    {
+      "scenario": "S4",
+      "config_id": "CFG00",
+      "risk_percent": 2.813659302497014,
+      "interval_percent": [
+        2.5109443370596964,
+        3.138257006233426
+      ]
+    },
+    {
+      "scenario": "S4",
+      "config_id": "CFG01",
+      "risk_percent": 0.013293291676940794,
+      "interval_percent": [
+        0.012672503287159024,
+        0.01392616887258106
+      ]
+    },
+    {
+      "scenario": "S4",
+      "config_id": "CFG02",
+      "risk_percent": 0.0065940973476949615,
+      "interval_percent": [
+        0.006422453711505309,
+        0.006760787543270625
+      ]
+    },
+    {
+      "scenario": "S4",
+      "config_id": "CFG03",
+      "risk_percent": 0.0065940973476949615,
+      "interval_percent": [
+        0.006422453711505309,
+        0.006760787543270625
+      ]
+    },
+    {
+      "scenario": "S4",
+      "config_id": "CFG04",
+      "risk_percent": 0.06668054064160867,
+      "interval_percent": [
+        0.061462709270394635,
+        0.07222915192154475
+      ]
+    },
+    {
+      "scenario": "S4",
+      "config_id": "CFG05",
+      "risk_percent": 0.0065940973476949615,
+      "interval_percent": [
+        0.006422453711505309,
+        0.006760787543270625
+      ]
+    },
+    {
+      "scenario": "S4",
+      "config_id": "CFG06",
+      "risk_percent": 0.0065940973476949615,
+      "interval_percent": [
+        0.006422453711505309,
+        0.006760787543270625
+      ]
+    },
+    {
+      "scenario": "S4",
+      "config_id": "CFG07",
+      "risk_percent": 0.0065940973476949615,
+      "interval_percent": [
+        0.006422453711505309,
+        0.006760787543270625
+      ]
+    },
+    {
+      "scenario": "S4",
+      "config_id": "CFG08",
+      "risk_percent": 0.0033154300112724615,
+      "interval_percent": [
+        0.0033154300112724615,
+        0.0033154300112724615
+      ]
+    },
+    {
+      "scenario": "S4",
+      "config_id": "CFG09",
+      "risk_percent": 0.0065940973476949615,
+      "interval_percent": [
+        0.006422453711505309,
+        0.006760787543270625
+      ]
+    },
+    {
+      "scenario": "S4",
+      "config_id": "CFG10",
+      "risk_percent": 0.0033154300112724615,
+      "interval_percent": [
+        0.0033154300112724615,
+        0.0033154300112724615
+      ]
+    },
+    {
+      "scenario": "S4",
+      "config_id": "CFG11",
+      "risk_percent": 0.0941397446244305,
+      "interval_percent": [
+        0.08196896077784248,
+        0.10800240396859803
+      ]
+    },
+    {
+      "scenario": "S4",
+      "config_id": "CFG12",
+      "risk_percent": 0.1415934209377355,
+      "interval_percent": [
+        0.12959799244574408,
+        0.1546946685021151
+      ]
+    },
+    {
+      "scenario": "S4",
+      "config_id": "CFG13",
+      "risk_percent": 0.029708189139044876,
+      "interval_percent": [
+        0.027916616104820394,
+        0.03171906997394086
+      ]
+    },
+    {
+      "scenario": "S4",
+      "config_id": "CFG14",
+      "risk_percent": 0.0405958340360542,
+      "interval_percent": [
+        0.03683342077356456,
+        0.04472972858116123
+      ]
+    },
+    {
+      "scenario": "S4",
+      "config_id": "CFG15",
+      "risk_percent": 0.00331702740735777,
+      "interval_percent": [
+        0.003307445380826683,
+        0.0033261856352514553
+      ]
+    },
+    {
+      "scenario": "S4",
+      "config_id": "CFG16",
+      "risk_percent": 0.00331702740735777,
+      "interval_percent": [
+        0.003307445380826683,
+        0.0033261856352514553
+      ]
+    }
+  ],
+  "F03": [
+    {
+      "config_id": "CFG01",
+      "delta_auroc": 0.07804123049105449,
+      "interval": [
+        0.07248620634278641,
+        0.08324053548486875
+      ]
+    },
+    {
+      "config_id": "CFG02",
+      "delta_auroc": 0.20093840407308716,
+      "interval": [
+        0.19189288934621238,
+        0.20955002319661212
+      ]
+    },
+    {
+      "config_id": "CFG03",
+      "delta_auroc": 0.20093840407308716,
+      "interval": [
+        0.19189288934621238,
+        0.20955002319661212
+      ]
+    },
+    {
+      "config_id": "CFG04",
+      "delta_auroc": 0.04624556290445381,
+      "interval": [
+        0.042106948872287706,
+        0.05042333162828321
+      ]
+    },
+    {
+      "config_id": "CFG05",
+      "delta_auroc": 0.20093840407308716,
+      "interval": [
+        0.19189288934621238,
+        0.20955002319661212
+      ]
+    },
+    {
+      "config_id": "CFG06",
+      "delta_auroc": 0.20093840407308716,
+      "interval": [
+        0.19189288934621238,
+        0.20955002319661212
+      ]
+    },
+    {
+      "config_id": "CFG07",
+      "delta_auroc": 0.20934727112676055,
+      "interval": [
+        0.2005035309407118,
+        0.2177734743766654
+      ]
+    },
+    {
+      "config_id": "CFG08",
+      "delta_auroc": 0.38409495146555006,
+      "interval": [
+        0.3786727558764751,
+        0.3897089877950134
+      ]
+    },
+    {
+      "config_id": "CFG09",
+      "delta_auroc": 0.20934727112676055,
+      "interval": [
+        0.2005035309407118,
+        0.2177734743766654
+      ]
+    },
+    {
+      "config_id": "CFG10",
+      "delta_auroc": 0.38409495146555006,
+      "interval": [
+        0.3786727558764751,
+        0.3897089877950134
+      ]
+    },
+    {
+      "config_id": "CFG11",
+      "delta_auroc": 0.030471688237533323,
+      "interval": [
+        0.026725001784354874,
+        0.03429225471069658
+      ]
+    },
+    {
+      "config_id": "CFG12",
+      "delta_auroc": 0.03392492624666921,
+      "interval": [
+        0.030252662257327805,
+        0.037815887894937145
+      ]
+    },
+    {
+      "config_id": "CFG13",
+      "delta_auroc": 0.04115660687095546,
+      "interval": [
+        0.03698427745527218,
+        0.04532774285068513
+      ]
+    },
+    {
+      "config_id": "CFG14",
+      "delta_auroc": 0.06817433146174345,
+      "interval": [
+        0.06263162739103546,
+        0.07331401253806624
+      ]
+    },
+    {
+      "config_id": "CFG15",
+      "delta_auroc": 0.3576285568138561,
+      "interval": [
+        0.3487120027598021,
+        0.36696411781499805
+      ]
+    },
+    {
+      "config_id": "CFG16",
+      "delta_auroc": 0.3576285568138561,
+      "interval": [
+        0.3487120027598021,
+        0.36696411781499805
+      ]
+    }
+  ],
+  "F04": [
+    {
+      "scenario": "BASE",
+      "pair": "CFG11_minus_CFG02",
+      "risk_difference_pp": 0.12745375783831314,
+      "interval_pp": [
+        0.1088090420583643,
+        0.14932803541404868
+      ]
+    },
+    {
+      "scenario": "BASE",
+      "pair": "CFG12_minus_CFG03",
+      "risk_difference_pp": 0.19378007989551563,
+      "interval_pp": [
+        0.17439460179098357,
+        0.21337605326607087
+      ]
+    },
+    {
+      "scenario": "BASE",
+      "pair": "CFG13_minus_CFG05",
+      "risk_difference_pp": 0.023114091791349912,
+      "interval_pp": [
+        0.02140799554407179,
+        0.02502629262266745
+      ]
+    },
+    {
+      "scenario": "BASE",
+      "pair": "CFG14_minus_CFG06",
+      "risk_difference_pp": 0.034001736688359235,
+      "interval_pp": [
+        0.030257301209936978,
+        0.038096159791792296
+      ]
+    },
+    {
+      "scenario": "BASE",
+      "pair": "CFG15_minus_CFG08",
+      "risk_difference_pp": 1.5973960853081525e-06,
+      "interval_pp": [
+        -7.984630445778478e-06,
+        1.0755623978993764e-05
+      ]
+    },
+    {
+      "scenario": "BASE",
+      "pair": "CFG16_minus_CFG10",
+      "risk_difference_pp": 1.5973960853081525e-06,
+      "interval_pp": [
+        -7.984630445778478e-06,
+        1.0755623978993764e-05
+      ]
+    },
+    {
+      "scenario": "S1",
+      "pair": "CFG11_minus_CFG02",
+      "risk_difference_pp": 0.024393505555150196,
+      "interval_pp": [
+        0.018292909964686636,
+        0.032848337778543214
+      ]
+    },
+    {
+      "scenario": "S1",
+      "pair": "CFG12_minus_CFG03",
+      "risk_difference_pp": 0.020293033814404563,
+      "interval_pp": [
+        0.017201052201854777,
+        0.024531441455746254
+      ]
+    },
+    {
+      "scenario": "S1",
+      "pair": "CFG13_minus_CFG05",
+      "risk_difference_pp": 4.9854331945668e-07,
+      "interval_pp": [
+        -5.193127055239287e-05,
+        4.8895985025493496e-05
+      ]
+    },
+    {
+      "scenario": "S1",
+      "pair": "CFG14_minus_CFG06",
+      "risk_difference_pp": 1.5485760151311883e-05,
+      "interval_pp": [
+        -4.4308840967330174e-05,
+        7.001294083694862e-05
+      ]
+    },
+    {
+      "scenario": "S1",
+      "pair": "CFG15_minus_CFG08",
+      "risk_difference_pp": 1.5973960853081525e-06,
+      "interval_pp": [
+        -7.984630445778478e-06,
+        1.0755623978993764e-05
+      ]
+    },
+    {
+      "scenario": "S1",
+      "pair": "CFG16_minus_CFG10",
+      "risk_difference_pp": 1.5973960853081525e-06,
+      "interval_pp": [
+        -7.984630445778478e-06,
+        1.0755623978993764e-05
+      ]
+    },
+    {
+      "scenario": "S2",
+      "pair": "CFG11_minus_CFG02",
+      "risk_difference_pp": 1.1638155726729502,
+      "interval_pp": [
+        1.0801673747674858,
+        1.25170589165823
+      ]
+    },
+    {
+      "scenario": "S2",
+      "pair": "CFG12_minus_CFG03",
+      "risk_difference_pp": 0.5751147050761372,
+      "interval_pp": [
+        0.5323769394168308,
+        0.6215935666641986
+      ]
+    },
+    {
+      "scenario": "S2",
+      "pair": "CFG13_minus_CFG05",
+      "risk_difference_pp": 0.48586128342750234,
+      "interval_pp": [
+        0.4371788864637692,
+        0.533776845445211
+      ]
+    },
+    {
+      "scenario": "S2",
+      "pair": "CFG14_minus_CFG06",
+      "risk_difference_pp": 0.37441717873310826,
+      "interval_pp": [
+        0.34160341295804086,
+        0.40993283897041305
+      ]
+    },
+    {
+      "scenario": "S2",
+      "pair": "CFG15_minus_CFG08",
+      "risk_difference_pp": 0.012951957954568442,
+      "interval_pp": [
+        0.011077919063130073,
+        0.014992367277768804
+      ]
+    },
+    {
+      "scenario": "S2",
+      "pair": "CFG16_minus_CFG10",
+      "risk_difference_pp": 0.012951957954568442,
+      "interval_pp": [
+        0.011077919063130073,
+        0.014992367277768804
+      ]
+    },
+    {
+      "scenario": "S3",
+      "pair": "CFG11_minus_CFG02",
+      "risk_difference_pp": 0.13448165531316136,
+      "interval_pp": [
+        0.11516164381962385,
+        0.15709010415142782
+      ]
+    },
+    {
+      "scenario": "S3",
+      "pair": "CFG12_minus_CFG03",
+      "risk_difference_pp": 0.2052932735209991,
+      "interval_pp": [
+        0.1841062787105385,
+        0.2270914423634249
+      ]
+    },
+    {
+      "scenario": "S3",
+      "pair": "CFG13_minus_CFG05",
+      "risk_difference_pp": 0.023114091791349912,
+      "interval_pp": [
+        0.02140799554407179,
+        0.02502629262266745
+      ]
+    },
+    {
+      "scenario": "S3",
+      "pair": "CFG14_minus_CFG06",
+      "risk_difference_pp": 0.034001736688359235,
+      "interval_pp": [
+        0.030257301209936978,
+        0.038096159791792296
+      ]
+    },
+    {
+      "scenario": "S3",
+      "pair": "CFG15_minus_CFG08",
+      "risk_difference_pp": 1.5973960853081525e-06,
+      "interval_pp": [
+        -7.984630445778478e-06,
+        1.0755623978993764e-05
+      ]
+    },
+    {
+      "scenario": "S3",
+      "pair": "CFG16_minus_CFG10",
+      "risk_difference_pp": 1.5973960853081525e-06,
+      "interval_pp": [
+        -7.984630445778478e-06,
+        1.0755623978993764e-05
+      ]
+    },
+    {
+      "scenario": "S4",
+      "pair": "CFG11_minus_CFG02",
+      "risk_difference_pp": 0.08754564727673554,
+      "interval_pp": [
+        0.07546077658108512,
+        0.10139332010978266
+      ]
+    },
+    {
+      "scenario": "S4",
+      "pair": "CFG12_minus_CFG03",
+      "risk_difference_pp": 0.13499932359004055,
+      "interval_pp": [
+        0.12302632233197827,
+        0.14801410801211745
+      ]
+    },
+    {
+      "scenario": "S4",
+      "pair": "CFG13_minus_CFG05",
+      "risk_difference_pp": 0.023114091791349912,
+      "interval_pp": [
+        0.02140799554407179,
+        0.02502629262266745
+      ]
+    },
+    {
+      "scenario": "S4",
+      "pair": "CFG14_minus_CFG06",
+      "risk_difference_pp": 0.034001736688359235,
+      "interval_pp": [
+        0.030257301209936978,
+        0.038096159791792296
+      ]
+    },
+    {
+      "scenario": "S4",
+      "pair": "CFG15_minus_CFG08",
+      "risk_difference_pp": 1.5973960853081525e-06,
+      "interval_pp": [
+        -7.984630445778478e-06,
+        1.0755623978993764e-05
+      ]
+    },
+    {
+      "scenario": "S4",
+      "pair": "CFG16_minus_CFG10",
+      "risk_difference_pp": 1.5973960853081525e-06,
+      "interval_pp": [
+        -7.984630445778478e-06,
+        1.0755623978993764e-05
+      ]
+    }
+  ],
+  "F05": [
+    {
+      "config_id": "CFG00",
+      "arx_loss": null,
+      "G": 0.0,
+      "S_percent": 0.0,
+      "prevalence_difference_pp": 0.0,
+      "TVD_marginal_mean": 0.0,
+      "TVD_marginal_max": 0.0,
+      "TVD_joint_mean": 0.0,
+      "TVD_joint_max": 0.0
+    },
+    {
+      "config_id": "CFG01",
+      "arx_loss": 0.589986827525,
+      "G": 0.625,
+      "S_percent": 0.0,
+      "prevalence_difference_pp": 0.0,
+      "TVD_marginal_mean": 0.0,
+      "TVD_marginal_max": 0.0,
+      "TVD_joint_mean": 0.0,
+      "TVD_joint_max": 0.0
+    },
+    {
+      "config_id": "CFG02",
+      "arx_loss": 0.6608417111625,
+      "G": 0.6875,
+      "S_percent": 0.0,
+      "prevalence_difference_pp": 0.0,
+      "TVD_marginal_mean": 0.0,
+      "TVD_marginal_max": 0.0,
+      "TVD_joint_mean": 0.0,
+      "TVD_joint_max": 0.0
+    },
+    {
+      "config_id": "CFG03",
+      "arx_loss": 0.6608417111625,
+      "G": 0.6875,
+      "S_percent": 0.0,
+      "prevalence_difference_pp": 0.0,
+      "TVD_marginal_mean": 0.0,
+      "TVD_marginal_max": 0.0,
+      "TVD_joint_mean": 0.0,
+      "TVD_joint_max": 0.0
+    },
+    {
+      "config_id": "CFG04",
+      "arx_loss": 0.70287558295,
+      "G": 0.7291666666666666,
+      "S_percent": 0.0,
+      "prevalence_difference_pp": 0.0,
+      "TVD_marginal_mean": 0.0,
+      "TVD_marginal_max": 0.0,
+      "TVD_joint_mean": 0.0,
+      "TVD_joint_max": 0.0
+    },
+    {
+      "config_id": "CFG05",
+      "arx_loss": 0.6608417111625,
+      "G": 0.6875,
+      "S_percent": 0.0,
+      "prevalence_difference_pp": 0.0,
+      "TVD_marginal_mean": 0.0,
+      "TVD_marginal_max": 0.0,
+      "TVD_joint_mean": 0.0,
+      "TVD_joint_max": 0.0
+    },
+    {
+      "config_id": "CFG06",
+      "arx_loss": 0.6608417111625,
+      "G": 0.6875,
+      "S_percent": 0.0,
+      "prevalence_difference_pp": 0.0,
+      "TVD_marginal_mean": 0.0,
+      "TVD_marginal_max": 0.0,
+      "TVD_joint_mean": 0.0,
+      "TVD_joint_max": 0.0
+    },
+    {
+      "config_id": "CFG07",
+      "arx_loss": 0.7858417111625,
+      "G": 0.8125,
+      "S_percent": 0.0,
+      "prevalence_difference_pp": 0.0,
+      "TVD_marginal_mean": 0.0,
+      "TVD_marginal_max": 0.0,
+      "TVD_joint_mean": 0.0,
+      "TVD_joint_max": 0.0
+    },
+    {
+      "config_id": "CFG08",
+      "arx_loss": 1.0,
+      "G": 1.0,
+      "S_percent": 0.0,
+      "prevalence_difference_pp": 0.0,
+      "TVD_marginal_mean": 0.0,
+      "TVD_marginal_max": 0.0,
+      "TVD_joint_mean": 0.0,
+      "TVD_joint_max": 0.0
+    },
+    {
+      "config_id": "CFG09",
+      "arx_loss": 0.7858417111625,
+      "G": 0.8125,
+      "S_percent": 0.0,
+      "prevalence_difference_pp": 0.0,
+      "TVD_marginal_mean": 0.0,
+      "TVD_marginal_max": 0.0,
+      "TVD_joint_mean": 0.0,
+      "TVD_joint_max": 0.0
+    },
+    {
+      "config_id": "CFG10",
+      "arx_loss": 1.0,
+      "G": 1.0,
+      "S_percent": 0.0,
+      "prevalence_difference_pp": 0.0,
+      "TVD_marginal_mean": 0.0,
+      "TVD_marginal_max": 0.0,
+      "TVD_joint_mean": 0.0,
+      "TVD_joint_max": 0.0
+    },
+    {
+      "config_id": "CFG11",
+      "arx_loss": 0.261756959025,
+      "G": 0.4270833333333333,
+      "S_percent": 4.137656654068032,
+      "prevalence_difference_pp": 0.2581976260200176,
+      "TVD_marginal_mean": 0.00831426892277723,
+      "TVD_marginal_max": 0.020993930279430827,
+      "TVD_joint_mean": 0.008917007769306725,
+      "TVD_joint_max": 0.020993930279430827
+    },
+    {
+      "config_id": "CFG12",
+      "arx_loss": 0.33154433916250003,
+      "G": 0.4479166666666667,
+      "S_percent": 4.920098136728333,
+      "prevalence_difference_pp": 0.12692993969441135,
+      "TVD_marginal_mean": 0.010678591331292042,
+      "TVD_marginal_max": 0.02667302635461883,
+      "TVD_joint_mean": 0.010870629735953272,
+      "TVD_joint_max": 0.02667302635461883
+    },
+    {
+      "config_id": "CFG13",
+      "arx_loss": 0.3588243983375,
+      "G": 0.4583333333333333,
+      "S_percent": 4.250381274451296,
+      "prevalence_difference_pp": 0.7344827773054132,
+      "TVD_marginal_mean": 0.009716045588356577,
+      "TVD_marginal_max": 0.021684604428789982,
+      "TVD_joint_mean": 0.011143035135659864,
+      "TVD_joint_max": 0.021773122277283462
+    },
+    {
+      "config_id": "CFG14",
+      "arx_loss": 0.3877128421375,
+      "G": 0.4375,
+      "S_percent": 4.979775876931238,
+      "prevalence_difference_pp": 0.697423492114436,
+      "TVD_marginal_mean": 0.011698999455047883,
+      "TVD_marginal_max": 0.030474713125072505,
+      "TVD_joint_mean": 0.013718065965535353,
+      "TVD_joint_max": 0.03051748980719282
+    },
+    {
+      "config_id": "CFG15",
+      "arx_loss": 0.8218377162,
+      "G": 0.875,
+      "S_percent": 1.047675883562098,
+      "prevalence_difference_pp": 0.03236448883549661,
+      "TVD_marginal_mean": 0.0017031141576601854,
+      "TVD_marginal_max": 0.009674015093006909,
+      "TVD_joint_mean": 0.0019483488929709653,
+      "TVD_joint_max": 0.009694023645363353
+    },
+    {
+      "config_id": "CFG16",
+      "arx_loss": 0.8218377162,
+      "G": 0.875,
+      "S_percent": 1.047675883562098,
+      "prevalence_difference_pp": 0.03236448883549661,
+      "TVD_marginal_mean": 0.0017031141576601854,
+      "TVD_marginal_max": 0.009674015093006909,
+      "TVD_joint_mean": 0.0019483488929709653,
+      "TVD_joint_max": 0.009694023645363353
+    }
+  ]
+}

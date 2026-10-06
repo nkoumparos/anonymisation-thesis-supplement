@@ -1,0 +1,78 @@
+<!doctype html><html lang="el"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Πειραματικές ρυθμίσεις</title><style>
+:root{--ink:#19313c;--muted:#506775;--accent:#176b73;--line:#d5e2e6;--paper:#fff;--soft:#edf4f5}
+*{box-sizing:border-box}body{margin:0;background:#f3f6f7;color:var(--ink);font:17px/1.65 'Segoe UI',Arial,sans-serif}
+.top{background:#153c49;color:white;padding:16px max(24px,calc((100vw - 1180px)/2));display:flex;flex-wrap:wrap;gap:12px 25px;font-size:14px;align-items:center}
+.top a{color:#d8eff1;text-decoration:none}.top .brand{font-weight:700;color:white;margin-right:auto}
+main{max-width:1180px;margin:38px auto 50px;padding:44px 54px;background:var(--paper);border:1px solid var(--line);border-radius:8px;box-shadow:0 8px 24px #173b4710}
+.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:12px;color:var(--accent);font-weight:700;margin-bottom:12px}
+img{max-width:100%;height:auto}h1{font-size:34px;line-height:1.25;letter-spacing:-.02em;margin:0 0 22px;color:#153c49;max-width:1000px}
+h2{font-size:24px;line-height:1.4;margin:34px 0 14px;border-top:1px solid var(--line);padding-top:26px;color:#175360}
+h3{font-size:20px;margin:26px 0 12px}p{margin:12px 0 18px}li{margin:8px 0}a{color:#126572;text-decoration-thickness:1px;text-underline-offset:3px;overflow-wrap:anywhere}
+code{font-family:Consolas,monospace;font-size:.87em;background:#eff3f5;padding:2px 5px;border-radius:3px;overflow-wrap:anywhere}
+pre{background:#15313d;color:#f2f7f7;border-radius:6px;padding:18px 22px;overflow:auto;line-height:1.5}pre code{background:none;color:inherit;padding:0;overflow-wrap:normal}
+.table-wrap{overflow:auto;margin:20px 0 25px;border:1px solid var(--line);border-radius:5px}table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.5}
+th{background:#e7f0f1;color:#153c49;text-align:left;font-weight:650}th,td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}tr:last-child td{border-bottom:0}tr:nth-child(even) td{background:#f8fafb}td code{font-size:12px;word-break:normal}blockquote{border-left:4px solid #2d8790;background:#f2f8f8;margin:22px 0;padding:8px 22px}
+.foot{border-top:1px solid var(--line);margin-top:38px;padding-top:18px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:760px){body{font-size:16px}.top{padding:14px 18px}main{margin:14px 10px;padding:25px 20px}h1{font-size:27px}h2{font-size:21px}table{min-width:570px}th,td{padding:9px 11px}}
+@media print{body{background:white}main{margin:0;padding:0;box-shadow:none;border:0;max-width:none}.top{display:none}.table-wrap{overflow:visible}table{font-size:10px}a{color:inherit}h2{break-after:avoid}tr{break-inside:avoid}}
+</style></head><body><nav class="top"><a class="brand" href="../index.html">Συμπληρωματικό υλικό</a><a href="../contents.html">Ευρετήριο</a><a href="../guide.html">Οδηγός ανάγνωσης</a><a href="../results/DATA_DICTIONARY_EL.html">Λεξικό στηλών</a></nav><main><h1>Πειραματικές ρυθμίσεις</h1>
+<p>Η διαμόρφωση δηλώνει τους περιορισμούς που ζητήθηκαν από το εργαλείο. Οι παρατηρούμενες τιμές κάθε εξόδου βρίσκονται στους πίνακες του φακέλου <code>results/</code>.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Αρχείο</th>
+<th>Περιεχόμενο</th>
+<th>Θέση στην εργασία</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="configurations.csv">configurations.csv</a></td>
+<td>CFG00 και δεκαέξι διαμορφώσεις ανωνυμοποίησης</td>
+<td>§§4.2–4.3, Πίνακας 4.3</td>
+</tr>
+<tr>
+<td><a href="random_processes.csv">random_processes.csv</a></td>
+<td>Σπόροι και σκοπός κάθε ψευδοτυχαίας διεργασίας</td>
+<td>§§4.4, 4.6–4.8</td>
+</tr>
+<tr>
+<td><a href="scenarios.json">scenarios.json</a></td>
+<td>Γνώση και κατανομή σφάλματος ηλικίας για BASE και S1–S4</td>
+<td>§§4.4 και 4.7.3</td>
+</tr>
+<tr>
+<td><a href="model_settings.json">model_settings.json</a></td>
+<td>Κωδικοποίηση, ταξινομητής και επαναδειγματοληψία χρησιμότητας</td>
+<td>§§4.6–4.8</td>
+</tr>
+</tbody></table></div>
+<p>Στο <code>configurations.csv</code>, η στήλη <code>config_id</code> είναι το αναγνωριστικό διαμόρφωσης. Η <code>family</code> προσδιορίζει τον συνδυασμό κριτηρίων ιδιωτικότητας. Οι <code>k</code>, <code>l</code> και <code>t</code> είναι οι ζητούμενες παράμετροι. Η <code>t_distance</code> προσδιορίζει το μέτρο απόστασης όπου εφαρμόζεται. Η <code>suppression_limit</code> είναι το επιτρεπόμενο μέγιστο ποσοστό καταστολής, ως αναλογία από 0 έως 1. Η <code>arx_salary_attribute_type</code> καταγράφει τον τεχνικό ρόλο του εισοδήματος στο ARX. Η τιμή <code>null</code> σημαίνει ότι το αντίστοιχο πεδίο δεν εφαρμόζεται.</p>
+<p>Η CFG00 είναι η κοινή αναφορά χωρίς ανωνυμοποίηση. Δεν επιβάλλεται κριτήριο ιδιωτικότητας σε αυτήν και δεν περιλαμβάνεται στις υποψήφιες διαμορφώσεις της σύγκρισης κατά Pareto. Το όριο καταστολής δεν είναι το ποσοστό που τελικά καταστάλθηκε.</p>
+<h2>Αναζήτηση των μετασχηματισμών στο ARX</h2>
+<p>Χρησιμοποιήθηκε η ακριβής αναζήτηση <code>OPTIMAL</code> του ARX, με απενεργοποιημένη την επιλογή πρακτικής μονοτονίας (<code>practical monotonicity</code>), μέσω της ρύθμισης <code>setPracticalMonotonicity(false)</code>. Η επιλογή αυτή δηλώνει αν το εργαλείο επιτρέπεται να υποθέσει μονοτονία για την επιτάχυνση της αναζήτησης. Δεν αποτελεί γενικό χαρακτηρισμό όλων των κριτηρίων ιδιωτικότητας ως μονότονων ή μη μονότονων.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Ρύθμιση</th>
+<th>Τιμή</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Στρατηγική αναζήτησης</td>
+<td><code>OPTIMAL</code></td>
+</tr>
+<tr>
+<td>Πρακτική μονοτονία</td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td>Κατώφλι ευρετικής αναζήτησης</td>
+<td><code>Integer.MAX_VALUE</code>, δηλαδή 2.147.483.647</td>
+</tr>
+</tbody></table></div>
+<p>Οι ρυθμίσεις δηλώνονται στον <a href="../code/verified_sources/java/org/nkoum/anonymisation/ArxConfigurationMatrix.java">κώδικα διαμορφώσεων ARX</a>. Στις αρχικές καταγραφές και των 16 τελικών εκτελέσεων CFG01–CFG16 οι σχετικοί έλεγχοι είναι επιτυχείς τόσο πριν από την ανωνυμοποίηση όσο και στη διαμόρφωση του αποτελέσματος. Η CFG00 είναι αναφορά και δεν υποβλήθηκε σε τέτοια αναζήτηση.</p>
+<p>Η δήλωση των ρυθμίσεων δεν σημαίνει ότι εξετάστηκαν ένας προς έναν και οι 6.480 δυνατοί συνδυασμοί επιπέδων γενίκευσης. Η ακριβής αναζήτηση μπορεί να αποκλείει τμήματα του χώρου με τους κανόνες του αλγορίθμου. Οι τιμές αυτές αφορούν την επιλογή μετασχηματισμού βάσει της συνάρτησης απώλειας πληροφοριών του ARX. Η μέτρηση της επιτυχίας σύνδεσης και της χρησιμότητας ακολουθεί χωριστά.</p>
+<h2>Σενάρια και ψευδοτυχαίες διεργασίες</h2>
+<p>Στο S3 το σφάλμα ηλικίας είναι πάντοτε μηδέν, αλλά διατηρούνται οι 30 επαναλήψεις για την κοινή δομή αξιολόγησης. Στο S4 η συμβολοσειρά <code>1/11</code> εκφράζει ακριβή πιθανότητα για καθένα από τα έντεκα σφάλματα από −5 έως 5. Δεν πρόκειται για καταγεγραμμένη συχνότητα του συγκεκριμένου δείγματος.</p>
+<p>Για επανάληψη των ίδιων ψευδοτυχαίων επιλογών απαιτούνται ο ίδιος σπόρος και η ίδια γεννήτρια, σειρά εισόδων, σειρά κλήσεων και έκδοση λογισμικού. Οι λεπτομερείς υλοποιήσεις βρίσκονται στον φάκελο <code>code/</code>.</p>
+<footer class="foot"><a href="README.md">Κείμενο σε Markdown</a></footer></main></body></html>

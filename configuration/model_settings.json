@@ -1,0 +1,52 @@
+{
+  "predictors": [
+    "age",
+    "sex",
+    "race",
+    "marital-status",
+    "education",
+    "native-country",
+    "workclass",
+    "occupation"
+  ],
+  "all_predictors_categorical": true,
+  "target": "salary-class",
+  "label_encoding": {
+    "<=50K": 0,
+    ">50K": 1
+  },
+  "encoding": {
+    "name": "OneHotEncoder",
+    "handle_unknown": "ignore"
+  },
+  "estimator": "LogisticRegression",
+  "candidate_C": [
+    0.1,
+    1,
+    10
+  ],
+  "selected_C": 1.0,
+  "selection": "Mean AUROC in five-fold StratifiedKFold on raw training only, shuffle=True, random_state=11004. Ties choose smaller C.",
+  "parameters": {
+    "solver": "liblinear",
+    "penalty": "l2",
+    "max_iter": 2000,
+    "fit_intercept": true,
+    "class_weight": null,
+    "random_state": 11008
+  },
+  "reference_estimator": "DummyClassifier(strategy=prior)",
+  "test_rows": 15060,
+  "test_class_counts": {
+    "0": 11360,
+    "1": 3700
+  },
+  "utility_bootstrap": {
+    "replicates": 2000,
+    "seed": 11006,
+    "paired": true,
+    "stratified_by_target": true,
+    "refitting": false
+  },
+  "source": "Ενότητες 4.6 και 4.7.2 της διπλωματικής εργασίας."
+}

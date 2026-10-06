@@ -1,0 +1,173 @@
+<!doctype html><html lang="el"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Πηγές και προετοιμασία των δεδομένων</title><style>
+:root{--ink:#19313c;--muted:#506775;--accent:#176b73;--line:#d5e2e6;--paper:#fff;--soft:#edf4f5}
+*{box-sizing:border-box}body{margin:0;background:#f3f6f7;color:var(--ink);font:17px/1.65 'Segoe UI',Arial,sans-serif}
+.top{background:#153c49;color:white;padding:16px max(24px,calc((100vw - 1180px)/2));display:flex;flex-wrap:wrap;gap:12px 25px;font-size:14px;align-items:center}
+.top a{color:#d8eff1;text-decoration:none}.top .brand{font-weight:700;color:white;margin-right:auto}
+main{max-width:1180px;margin:38px auto 50px;padding:44px 54px;background:var(--paper);border:1px solid var(--line);border-radius:8px;box-shadow:0 8px 24px #173b4710}
+.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:12px;color:var(--accent);font-weight:700;margin-bottom:12px}
+img{max-width:100%;height:auto}h1{font-size:34px;line-height:1.25;letter-spacing:-.02em;margin:0 0 22px;color:#153c49;max-width:1000px}
+h2{font-size:24px;line-height:1.4;margin:34px 0 14px;border-top:1px solid var(--line);padding-top:26px;color:#175360}
+h3{font-size:20px;margin:26px 0 12px}p{margin:12px 0 18px}li{margin:8px 0}a{color:#126572;text-decoration-thickness:1px;text-underline-offset:3px;overflow-wrap:anywhere}
+code{font-family:Consolas,monospace;font-size:.87em;background:#eff3f5;padding:2px 5px;border-radius:3px;overflow-wrap:anywhere}
+pre{background:#15313d;color:#f2f7f7;border-radius:6px;padding:18px 22px;overflow:auto;line-height:1.5}pre code{background:none;color:inherit;padding:0;overflow-wrap:normal}
+.table-wrap{overflow:auto;margin:20px 0 25px;border:1px solid var(--line);border-radius:5px}table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.5}
+th{background:#e7f0f1;color:#153c49;text-align:left;font-weight:650}th,td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}tr:last-child td{border-bottom:0}tr:nth-child(even) td{background:#f8fafb}td code{font-size:12px;word-break:normal}blockquote{border-left:4px solid #2d8790;background:#f2f8f8;margin:22px 0;padding:8px 22px}
+.foot{border-top:1px solid var(--line);margin-top:38px;padding-top:18px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:760px){body{font-size:16px}.top{padding:14px 18px}main{margin:14px 10px;padding:25px 20px}h1{font-size:27px}h2{font-size:21px}table{min-width:570px}th,td{padding:9px 11px}}
+@media print{body{background:white}main{margin:0;padding:0;box-shadow:none;border:0;max-width:none}.top{display:none}.table-wrap{overflow:visible}table{font-size:10px}a{color:inherit}h2{break-after:avoid}tr{break-inside:avoid}}
+</style></head><body><nav class="top"><a class="brand" href="../index.html">Συμπληρωματικό υλικό</a><a href="../contents.html">Ευρετήριο</a><a href="../guide.html">Οδηγός ανάγνωσης</a><a href="../results/DATA_DICTIONARY_EL.html">Λεξικό στηλών</a></nav><main><h1>Πηγές και προετοιμασία των δεδομένων</h1>
+<p>Ο φάκελος προσδιορίζει ποια δεδομένα χρησιμοποιήθηκαν και πώς προκύπτουν οι δύο πίνακες ανάλυσης. Περιέχει οδηγίες και στοιχεία ταυτότητας αρχείων. Δεν περιέχει εγγραφές του Adult, ατομικές προβλέψεις ή αντιστοιχίσεις εγγραφών.</p>
+<h2>Τι να διαβάσετε</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Αρχείο</th>
+<th>Περιεχόμενο</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="source_registry.csv">source_registry.csv</a></td>
+<td>Αναγνώσιμος κατάλογος 13 αρχείων προέλευσης με ακριβή URL, μέγεθος σε bytes και αναμενόμενο SHA-256.</td>
+</tr>
+<tr>
+<td><a href="source_registry.json">source_registry.json</a></td>
+<td>Ο ίδιος κατάλογος σε δομημένη μορφή, μαζί με την προέλευση και τα όρια του ελέγχου.</td>
+</tr>
+<tr>
+<td><a href="derived_artifacts.json">derived_artifacts.json</a></td>
+<td>Αναμενόμενα μεγέθη και SHA-256 για τους δύο κανονικοποιημένους πίνακες και τη διορθωμένη ιεραρχία ηλικίας.</td>
+</tr>
+<tr>
+<td><a href="RIGHTS_AND_SOURCES.html">RIGHTS_AND_SOURCES.md</a></td>
+<td>Πηγές, άδειες και όρια της παρούσας επαλήθευσης.</td>
+</tr>
+<tr>
+<td><a href="../hierarchies/README.html">Ιεραρχίες γενίκευσης</a></td>
+<td>Τεκμηρίωση για τις οκτώ ιεραρχίες και τη διόρθωση των ετικετών ηλικίας.</td>
+</tr>
+</tbody></table></div>
+<p>Τα αναμενόμενα SHA-256 προέρχονται από τα αρχεία που χρησιμοποιήθηκαν στην εργασία, όχι από δημοσιευμένο κατάλογο αποτυπωμάτων του UCI ή του ARX.</p>
+<h2>Ακριβής απόκτηση</h2>
+<ol>
+<li>Αποκτήστε το επίσημο αρχείο <a href="https://archive.ics.uci.edu/static/public/2/adult.zip">adult.zip</a>. Η περιγραφή και η βιβλιογραφική αναφορά του συνόλου παρέχονται στη <a href="https://archive.ics.uci.edu/dataset/2/adult">σελίδα Adult του UCI</a>.</li>
+<li>Ελέγξτε το μέγεθος και το SHA-256 του ZIP έναντι του <code>source_registry.csv</code> πριν το χρησιμοποιήσετε. Εξαγάγετε μόνο τα ονομαστικά καταγεγραμμένα μέλη <code>adult.data</code>, <code>adult.test</code> και <code>adult.names</code> και ελέγξτε καθένα χωριστά. Το πεδίο <code>archive_member</code> προσδιορίζει το μέλος του ZIP. Δεν αποτελεί ξεχωριστή διεύθυνση λήψης.</li>
+<li>Αποκτήστε το <code>adult.csv</code> και τις οκτώ ιεραρχίες από τα εννέα ακριβή URL του ARX στον κατάλογο. Χρησιμοποιήστε τα καταγεγραμμένα URL, ώστε να αποκτήσετε τα ίδια αρχεία εισόδου.</li>
+<li>Ελέγξτε μέγεθος και SHA-256 σε κάθε αρχείο χωρίς προηγούμενη αποθήκευση από πρόγραμμα υπολογιστικών φύλλων ή αλλαγή των τερματισμών γραμμής. Αν υπάρχει διαφορά, δεν έχει επιβεβαιωθεί ότι διαθέτετε την ίδια είσοδο με την εργασία.</li>
+<li>Προετοιμάστε τα δεδομένα με τη σειρά που περιγράφεται παρακάτω και εφαρμόστε τη διόρθωση ηλικίας του φακέλου <code>hierarchies</code>.</li>
+</ol>
+<p>Ο <a href="../code/verified_sources/python/acquire_adult_sources.py">αρχικός κώδικας απόκτησης</a> τεκμηριώνει τα URL και τους ελέγχους ταυτότητας. Ο <a href="../code/verified_sources/python/validate_adult_sources.py">αρχικός έλεγχος πηγών</a> τεκμηριώνει τον καθαρισμό και τη σύγκριση του Adult του ARX με την προβολή του Adult του UCI. Οι προϋποθέσεις εκτέλεσης περιγράφονται στον <a href="../code/README.html">οδηγό κώδικα</a>.</p>
+<h2>Σειρά προετοιμασίας</h2>
+<p>Ο αρχικός διαχωρισμός του UCI διατηρείται. Το <code>adult.data</code> παρέχει το σύνολο εκπαίδευσης και το <code>adult.test</code> το χωριστό σύνολο ελέγχου (holdout). Οι δύο πηγές δεν ενώνονται για νέο τυχαίο διαχωρισμό.</p>
+<ol>
+<li>Διαβάζονται τα 15 πεδία κάθε εγγραφής με διαχωριστικό το κόμμα. Αφαιρούνται τα περιβάλλοντα κενά από τις τιμές. Στο <code>adult.test</code> αφαιρείται η αρχική γραμμή μεταδεδομένων <code>|1x3 Cross validator</code>, η οποία δεν είναι εγγραφή. Η αναμενόμενη τελική κενή γραμμή των αρχείων δεν μετράται ως εγγραφή.</li>
+<li>Το σύμβολο <code>?</code> αντιμετωπίζεται ως ελλείπουσα τιμή. Απορρίπτεται κάθε εγγραφή που έχει τουλάχιστον μία τέτοια τιμή σε οποιοδήποτε από τα <strong>15 αρχικά πεδία</strong>. Ο έλεγχος προηγείται της επιλογής των εννέα πεδίων της ανάλυσης.</li>
+<li>Στις διατηρούμενες εγγραφές του <code>adult.test</code> αφαιρείται ακριβώς μία τελική τελεία από την εισοδηματική κατηγορία: <code>&lt;=50K.</code> γίνεται <code>&lt;=50K</code> και <code>&gt;50K.</code> γίνεται <code>&gt;50K</code>. Δεν αφαιρούνται τελείες από άλλα πεδία.</li>
+<li>Επιλέγονται και αναδιατάσσονται τα εννέα πεδία με την ακόλουθη σειρά. Η σχετική σειρά των εγγραφών διατηρείται όπως στην αντίστοιχη αρχική πηγή.</li>
+</ol>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th align="right">Θέση στον πίνακα ανάλυσης</th>
+<th>Πεδίο</th>
+<th align="right">Θέση στα 15 αρχικά πεδία του UCI</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">1</td>
+<td><code>sex</code></td>
+<td align="right">10</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td><code>age</code></td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td><code>race</code></td>
+<td align="right">9</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td><code>marital-status</code></td>
+<td align="right">6</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td><code>education</code></td>
+<td align="right">4</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td><code>native-country</code></td>
+<td align="right">14</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td><code>workclass</code></td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td><code>occupation</code></td>
+<td align="right">7</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td><code>salary-class</code></td>
+<td align="right">15</td>
+</tr>
+</tbody></table></div>
+<p>Οι θέσεις στον πίνακα αριθμούνται από το 1. Τα πρώτα οκτώ πεδία είναι τα οιονεί αναγνωριστικά και το τελευταίο είναι η εισοδηματική κατηγορία. Στους πίνακες επιπέδων γενίκευσης, η σειρά πεδίων δηλώνεται από τις επικεφαλίδες.</p>
+<h2>Αναμενόμενα μεγέθη και κατηγορίες</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Σύνολο</th>
+<th align="right">Αρχικές εγγραφές</th>
+<th align="right">Εγγραφές που απορρίπτονται λόγω ελλείψεων</th>
+<th align="right">Διατηρούμενες εγγραφές</th>
+<th align="right"><code>&lt;=50K</code></th>
+<th align="right"><code>&gt;50K</code></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Εκπαίδευση, από <code>adult.data</code></td>
+<td align="right">32.561</td>
+<td align="right">2.399</td>
+<td align="right">30.162</td>
+<td align="right">22.654</td>
+<td align="right">7.508</td>
+</tr>
+<tr>
+<td>Έλεγχος, από <code>adult.test</code></td>
+<td align="right">16.281</td>
+<td align="right">1.221</td>
+<td align="right">15.060</td>
+<td align="right">11.360</td>
+<td align="right">3.700</td>
+</tr>
+</tbody></table></div>
+<p>Η διαθέσιμη τεκμηρίωση του πειράματος καταγράφει ισότητα, εγγραφή προς εγγραφή, του <code>adult.csv</code> του ARX με την παραπάνω προβολή των πλήρων εγγραφών του <code>adult.data</code>. Το hash του αρχικού <code>adult.csv</code> διαφέρει από το hash της κανονικοποιημένης αναπαράστασης. Η ταυτότητα των αρχείων σε bytes και η ισότητα του περιεχομένου των πινάκων είναι διαφορετικοί έλεγχοι.</p>
+<p>Για τον έλεγχο της κανονικοποιημένης αναπαράστασης χρησιμοποιούνται UTF-8, διαχωριστικό <code>;</code>, επικεφαλίδα στην παραπάνω σειρά, τερματισμοί γραμμών LF, τελικό LF και διατήρηση της σειράς εγγραφών. Οι αναμενόμενες ταυτότητες είναι:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Παράγωγο</th>
+<th align="right">Bytes</th>
+<th>SHA-256</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Πίνακας εκπαίδευσης</td>
+<td align="right">2.486.772</td>
+<td><code>0711f26a4ba718f2eb8fa04395fc296cb3be1ba67135c828b93f6506bf4d8ca9</code></td>
+</tr>
+<tr>
+<td>Πίνακας ελέγχου</td>
+<td align="right">1.241.052</td>
+<td><code>8e363515eda22f5b3545fdb427450c688b41f461d5eefce32eac9c515577019b</code></td>
+</tr>
+</tbody></table></div>
+<p>Τα αρχεία δεδομένων δεν περιλαμβάνονται. Η προετοιμασία περιγράφεται στις §§4.1–4.2 της εργασίας.</p>
+<footer class="foot"><a href="README.md">Κείμενο σε Markdown</a></footer></main></body></html>

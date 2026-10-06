@@ -1,0 +1,77 @@
+<!doctype html><html lang="el"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Σχήματα και δεδομένα απεικόνισης</title><style>
+:root{--ink:#19313c;--muted:#506775;--accent:#176b73;--line:#d5e2e6;--paper:#fff;--soft:#edf4f5}
+*{box-sizing:border-box}body{margin:0;background:#f3f6f7;color:var(--ink);font:17px/1.65 'Segoe UI',Arial,sans-serif}
+.top{background:#153c49;color:white;padding:16px max(24px,calc((100vw - 1180px)/2));display:flex;flex-wrap:wrap;gap:12px 25px;font-size:14px;align-items:center}
+.top a{color:#d8eff1;text-decoration:none}.top .brand{font-weight:700;color:white;margin-right:auto}
+main{max-width:1180px;margin:38px auto 50px;padding:44px 54px;background:var(--paper);border:1px solid var(--line);border-radius:8px;box-shadow:0 8px 24px #173b4710}
+.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:12px;color:var(--accent);font-weight:700;margin-bottom:12px}
+img{max-width:100%;height:auto}h1{font-size:34px;line-height:1.25;letter-spacing:-.02em;margin:0 0 22px;color:#153c49;max-width:1000px}
+h2{font-size:24px;line-height:1.4;margin:34px 0 14px;border-top:1px solid var(--line);padding-top:26px;color:#175360}
+h3{font-size:20px;margin:26px 0 12px}p{margin:12px 0 18px}li{margin:8px 0}a{color:#126572;text-decoration-thickness:1px;text-underline-offset:3px;overflow-wrap:anywhere}
+code{font-family:Consolas,monospace;font-size:.87em;background:#eff3f5;padding:2px 5px;border-radius:3px;overflow-wrap:anywhere}
+pre{background:#15313d;color:#f2f7f7;border-radius:6px;padding:18px 22px;overflow:auto;line-height:1.5}pre code{background:none;color:inherit;padding:0;overflow-wrap:normal}
+.table-wrap{overflow:auto;margin:20px 0 25px;border:1px solid var(--line);border-radius:5px}table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.5}
+th{background:#e7f0f1;color:#153c49;text-align:left;font-weight:650}th,td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}tr:last-child td{border-bottom:0}tr:nth-child(even) td{background:#f8fafb}td code{font-size:12px;word-break:normal}blockquote{border-left:4px solid #2d8790;background:#f2f8f8;margin:22px 0;padding:8px 22px}
+.foot{border-top:1px solid var(--line);margin-top:38px;padding-top:18px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:760px){body{font-size:16px}.top{padding:14px 18px}main{margin:14px 10px;padding:25px 20px}h1{font-size:27px}h2{font-size:21px}table{min-width:570px}th,td{padding:9px 11px}}
+@media print{body{background:white}main{margin:0;padding:0;box-shadow:none;border:0;max-width:none}.top{display:none}.table-wrap{overflow:visible}table{font-size:10px}a{color:inherit}h2{break-after:avoid}tr{break-inside:avoid}}
+</style></head><body><nav class="top"><a class="brand" href="../index.html">Συμπληρωματικό υλικό</a><a href="../contents.html">Ευρετήριο</a><a href="../guide.html">Οδηγός ανάγνωσης</a><a href="../results/DATA_DICTIONARY_EL.html">Λεξικό στηλών</a></nav><main><h1>Σχήματα και δεδομένα απεικόνισης</h1>
+<p>Τα πέντε σχήματα των §§5.2–5.4 παρέχονται σε PNG, SVG και PDF. Οι σημειώσεις εξηγούν τις μονάδες και τα όρια ερμηνείας.</p>
+<h2>Αντιστοίχιση δεδομένων</h2>
+<p>Το <a href="FIGURE_DATA.json">FIGURE_DATA.json</a> περιέχει τα δεδομένα απεικόνισης με κλειδιά F01–F05. Τα σχετικά συγκεντρωτικά αποτελέσματα είναι:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Σχήμα</th>
+<th>Κλειδί JSON</th>
+<th>Σχετικά συγκεντρωτικά δεδομένα</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>5.1</td>
+<td>F03</td>
+<td><a href="../results/csv/paired_delta_auroc.csv">paired_delta_auroc.csv</a></td>
+</tr>
+<tr>
+<td>5.2</td>
+<td>F02</td>
+<td><a href="../results/csv/risk_points_and_controls.csv">risk_points_and_controls.csv</a>, <a href="../results/csv/risk_intervals.csv">risk_intervals.csv</a></td>
+</tr>
+<tr>
+<td>5.3</td>
+<td>F04</td>
+<td><a href="../results/csv/risk_intervals.csv">risk_intervals.csv</a></td>
+</tr>
+<tr>
+<td>5.4</td>
+<td>F05</td>
+<td><a href="../results/csv/structural.csv">structural.csv</a>, <a href="../results/csv/tvd.csv">tvd.csv</a></td>
+</tr>
+<tr>
+<td>5.5</td>
+<td>F01</td>
+<td><a href="../results/csv/risk_points_and_controls.csv">risk_points_and_controls.csv</a>, <a href="../results/csv/paired_delta_auroc.csv">paired_delta_auroc.csv</a></td>
+</tr>
+</tbody></table></div>
+<h2>Σχήμα 5.1 Απώλεια προγνωστικής χρησιμότητας και ζευγαρωμένα διαστήματα 95%</h2>
+<p><a href="figure_5_1.png">PNG</a> | <a href="figure_5_1.svg">SVG</a> | <a href="figure_5_1.pdf">PDF</a></p>
+<p><img src="figure_5_1.png" alt="Σχήμα 5.1"></p>
+<p>Η ΔAUROC ισούται με AUROC(CFG00) − AUROC(ανωνυμοποιημένης εξόδου). Θετική τιμή δηλώνει απώλεια διακριτικής ικανότητας. Τα διαστήματα προκύπτουν από κοινή στρωματοποιημένη επαναδειγματοληψία του συνόλου ελέγχου, χωριστά ανά εισοδηματική κατηγορία, με σταθερά μοντέλα και διαχωρισμό δεδομένων. Δεν περιλαμβάνουν επανεκπαίδευση ή ταυτόχρονη κάλυψη όλων των συγκρίσεων. Τα άκρα τους δεν προκύπτουν με αφαίρεση των άκρων χωριστών διαστημάτων AUROC.</p>
+<h2>Σχήμα 5.2 Κίνδυνος σύνδεσης στα πέντε σενάρια και διαστήματα σταθερότητας 95%</h2>
+<p><a href="figure_5_2.png">PNG</a> | <a href="figure_5_2.svg">SVG</a> | <a href="figure_5_2.pdf">PDF</a></p>
+<p><img src="figure_5_2.png" alt="Σχήμα 5.2"></p>
+<p>Παρουσιάζεται η R<sub>all</sub> για 85 συνδυασμούς διαμόρφωσης και σεναρίου: 16 ανωνυμοποιημένες έξοδοι και CFG00 στα BASE και S1–S4. Η κοινή λογαριθμική κλίμακα εκφράζει τον κίνδυνο σε ποσοστό. Τα διαστήματα βασίζονται στην επαναδειγματοληψία των 1.744 αρχικών συστάδων και στις ήδη πραγματοποιηθείσες επιθέσεις. Δεν περιλαμβάνουν νέα επιλογή στόχων ή παραγωγή σφάλματος ηλικίας και δεν παρέχουν ταυτόχρονη κάλυψη. Διάστημα μηδενικού εύρους εμφανίζεται ως σημείο. Οι 85 συνδυασμοί δεν αποτελούν ανεξάρτητες παρατηρήσεις.</p>
+<h2>Σχήμα 5.3 Προκαθορισμένες συγκρίσεις καταστολής και διαστήματα σταθερότητας 95%</h2>
+<p><a href="figure_5_3.png">PNG</a> | <a href="figure_5_3.svg">SVG</a> | <a href="figure_5_3.pdf">PDF</a></p>
+<p><img src="figure_5_3.png" alt="Σχήμα 5.3"></p>
+<p>Παρουσιάζονται έξι ζευγαρωμένες διαφορές R<sub>all</sub> ανά σενάριο. Από τον κίνδυνο της διαμόρφωσης που επιτρέπει καταστολή έως 5% αφαιρείται ο κίνδυνος της αντίστοιχης διαμόρφωσης χωρίς καταστολή. Οι διαφορές εκφράζονται σε ποσοστιαίες μονάδες. Η συμμετρική λογαριθμική κλίμακα έχει γραμμική περιοχή |ΔR<sub>all</sub>| ≤ 0,00005 ποσοστιαίες μονάδες. Αν το διάστημα περιλαμβάνει το μηδέν, δεν τεκμηριώνεται διαφορά με σταθερό πρόσημο. Μαζί με το όριο καταστολής μπορεί να αλλάζει η γενίκευση, οπότε δεν απομονώνεται η επίδραση της αφαίρεσης εγγραφών. Δεν έχουν υπολογιστεί διαστήματα διαφορών μεταξύ σεναρίων.</p>
+<h2>Σχήμα 5.4 Γενίκευση, καταστολή και μεταβολές κατανομών</h2>
+<p><a href="figure_5_4.png">PNG</a> | <a href="figure_5_4.svg">SVG</a> | <a href="figure_5_4.pdf">PDF</a></p>
+<p><img src="figure_5_4.png" alt="Σχήμα 5.4"></p>
+<p>Παρουσιάζονται η ARX Loss, ο βαθμός γενίκευσης G, το ποσοστό καταστολής S, η μεταβολή της αναλογίας &gt;50K σε ποσοστιαίες μονάδες και δύο οικογένειες αποστάσεων ολικής μεταβολής (TVD): ανά οιονεί αναγνωριστικό και ανά κοινή κατανομή οιονεί αναγνωριστικού–εισοδήματος. Οι κύκλοι δίνουν τον απλό μέσο όρο και τα τετράγωνα τη μέγιστη τιμή των οκτώ αποστάσεων κάθε οικογένειας. Η μικρή κατακόρυφη μετατόπιση διαχωρίζει σημεία που συμπίπτουν.</p>
+<p>Οι TVD συγκρίνουν την έξοδο R<sub>c</sub> με το T<sub>c</sub>(D), δηλαδή όλες τις αρχικές εγγραφές με την ίδια γενίκευση, χωρίς καταστολή. Μηδενική TVD σημαίνει ίδιες κατανομές σε αυτή τη σύγκριση, όχι μηδενική συνολική απώλεια πληροφορίας. Η ARX Loss της CFG00 δεν είναι διαθέσιμη (<code>NA</code>). Τα G και S παραμένουν χωριστές μετρήσεις. Θετική μεταβολή της αναλογίας &gt;50K δηλώνει μεγαλύτερη εκπροσώπηση της κατηγορίας μετά την καταστολή, χωρίς να συνεπάγεται βελτίωση.</p>
+<h2>Σχήμα 5.5 Κίνδυνος σύνδεσης και απώλεια χρησιμότητας στο βασικό σενάριο (BASE)</h2>
+<p><a href="figure_5_5.png">PNG</a> | <a href="figure_5_5.svg">SVG</a> | <a href="figure_5_5.pdf">PDF</a></p>
+<p><img src="figure_5_5.png" alt="Σχήμα 5.5"></p>
+<p>Συγκρίνονται η R<sub>all</sub> και η ΔAUROC των 16 ανωνυμοποιημένων εξόδων. Η CFG00 εμφανίζεται μόνο ως αναφορά. Μικρότερες τιμές και στους δύο άξονες είναι προτιμότερες. Στο μέτωπο Pareto αντιστοιχούν 11 μη κυριαρχούμενες διαμορφώσεις, σε 6 διαφορετικά σημεία. Οι κωδικοί που συμπίπτουν αναγράφονται μαζί. Η διαφορά κινδύνου μεταξύ CFG08/10 και CFG15/16 είναι 0,000001597396 ποσοστιαίες μονάδες και δεν διακρίνεται στη συγκεκριμένη κλίμακα. Ο οριζόντιος άξονας είναι λογαριθμικός και εκφράζει τον κίνδυνο σε ποσοστό. Το μέτωπο βασίζεται σε σημειακές εκτιμήσεις και δεν τεκμηριώνει στατιστική υπεροχή.</p>
+<footer class="foot"><a href="README.md">Κείμενο σε Markdown</a></footer></main></body></html>

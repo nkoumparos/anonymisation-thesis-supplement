@@ -1,0 +1,129 @@
+<!doctype html><html lang="el"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Συγκεντρωτικά αποτελέσματα</title><style>
+:root{--ink:#19313c;--muted:#506775;--accent:#176b73;--line:#d5e2e6;--paper:#fff;--soft:#edf4f5}
+*{box-sizing:border-box}body{margin:0;background:#f3f6f7;color:var(--ink);font:17px/1.65 'Segoe UI',Arial,sans-serif}
+.top{background:#153c49;color:white;padding:16px max(24px,calc((100vw - 1180px)/2));display:flex;flex-wrap:wrap;gap:12px 25px;font-size:14px;align-items:center}
+.top a{color:#d8eff1;text-decoration:none}.top .brand{font-weight:700;color:white;margin-right:auto}
+main{max-width:1180px;margin:38px auto 50px;padding:44px 54px;background:var(--paper);border:1px solid var(--line);border-radius:8px;box-shadow:0 8px 24px #173b4710}
+.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:12px;color:var(--accent);font-weight:700;margin-bottom:12px}
+img{max-width:100%;height:auto}h1{font-size:34px;line-height:1.25;letter-spacing:-.02em;margin:0 0 22px;color:#153c49;max-width:1000px}
+h2{font-size:24px;line-height:1.4;margin:34px 0 14px;border-top:1px solid var(--line);padding-top:26px;color:#175360}
+h3{font-size:20px;margin:26px 0 12px}p{margin:12px 0 18px}li{margin:8px 0}a{color:#126572;text-decoration-thickness:1px;text-underline-offset:3px;overflow-wrap:anywhere}
+code{font-family:Consolas,monospace;font-size:.87em;background:#eff3f5;padding:2px 5px;border-radius:3px;overflow-wrap:anywhere}
+pre{background:#15313d;color:#f2f7f7;border-radius:6px;padding:18px 22px;overflow:auto;line-height:1.5}pre code{background:none;color:inherit;padding:0;overflow-wrap:normal}
+.table-wrap{overflow:auto;margin:20px 0 25px;border:1px solid var(--line);border-radius:5px}table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.5}
+th{background:#e7f0f1;color:#153c49;text-align:left;font-weight:650}th,td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}tr:last-child td{border-bottom:0}tr:nth-child(even) td{background:#f8fafb}td code{font-size:12px;word-break:normal}blockquote{border-left:4px solid #2d8790;background:#f2f8f8;margin:22px 0;padding:8px 22px}
+.foot{border-top:1px solid var(--line);margin-top:38px;padding-top:18px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:760px){body{font-size:16px}.top{padding:14px 18px}main{margin:14px 10px;padding:25px 20px}h1{font-size:27px}h2{font-size:21px}table{min-width:570px}th,td{padding:9px 11px}}
+@media print{body{background:white}main{margin:0;padding:0;box-shadow:none;border:0;max-width:none}.top{display:none}.table-wrap{overflow:visible}table{font-size:10px}a{color:inherit}h2{break-after:avoid}tr{break-inside:avoid}}
+</style></head><body><nav class="top"><a class="brand" href="../index.html">Συμπληρωματικό υλικό</a><a href="../contents.html">Ευρετήριο</a><a href="../guide.html">Οδηγός ανάγνωσης</a><a href="../results/DATA_DICTIONARY_EL.html">Λεξικό στηλών</a></nav><main><h1>Συγκεντρωτικά αποτελέσματα</h1>
+<p>Οι 16 κύριοι πίνακες περιλαμβάνουν τα συγκεντρωτικά αποτελέσματα που αντιστοιχίζονται στις ενότητες και στους πίνακες της εργασίας μέσω του ευρετηρίου. Πέντε βοηθητικοί πίνακες αναπτύσσουν ιστογράμματα και αναλυτικές συχνότητες. Το <code>aggregates.json</code> διατηρεί τις πλήρεις συγκεντρωτικές δομές και τα διαθέσιμα ακριβή κλάσματα. Οι τιμές εξήχθησαν χωρίς στρογγυλοποίηση.</p>
+<h2>Μορφή αρχείων</h2>
+<p>Τα CSV χρησιμοποιούν UTF-8 με BOM, κόμμα μεταξύ πεδίων και δεκαδική τελεία. Στο Excel επιλέξτε εισαγωγή «Από κείμενο/CSV», με διαχωριστικό κόμμα και κατάλληλη τοπική ρύθμιση για τη δεκαδική τελεία. Για την πλήρη αριθμητική ακρίβεια συμβουλευτείτε το αρχικό CSV ή το JSON, επειδή τα υπολογιστικά φύλλα μπορεί να περιορίζουν τα σημαντικά ψηφία.</p>
+<p>Το <code>NA</code> στα CSV και το <code>null</code> στο JSON δηλώνουν μη διαθέσιμη ή μη εφαρμοστέα τιμή, όχι μηδέν. Οι αναλογίες είναι συνήθως στην κλίμακα 0–1. Η <code>prevalence_difference_percentage_points</code> εκφράζεται ήδη σε ποσοστιαίες μονάδες. Οι διαφορές μπορεί να είναι αρνητικές. Το <a href="DATA_DICTIONARY_EL.html">λεξικό στηλών</a> εξηγεί τις μονάδες και τους παρονομαστές.</p>
+<h2>Πίνακες</h2>
+<p>Επιλέξτε διαμόρφωση <code>CFG00</code>–<code>CFG16</code> και, όπου υπάρχει σενάριο, <code>BASE</code> ή <code>S1</code>–<code>S4</code>. Η CFG00 είναι η αρχική αναφορά χωρίς ανωνυμοποίηση.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Αρχείο στο <code>csv/</code></th>
+<th align="right">Πλήθος κύριων εγγραφών</th>
+<th>Αντικείμενο</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>utility_release.csv</code></td>
+<td align="right">17</td>
+<td>Επίδοση μοντέλων που εκπαιδεύτηκαν στις ανωνυμοποιημένες εξόδους και στην αρχική αναφορά</td>
+</tr>
+<tr>
+<td><code>utility_counterfactual.csv</code></td>
+<td align="right">17</td>
+<td>Χρησιμότητα μετασχηματισμένων συνόλων χωρίς καταστολή</td>
+</tr>
+<tr>
+<td><code>dummy_baseline.csv</code></td>
+<td align="right">1</td>
+<td>Απλός ταξινομητής αναφοράς</td>
+</tr>
+<tr>
+<td><code>paired_delta_auroc.csv</code></td>
+<td align="right">16</td>
+<td>Απώλεια AUROC έναντι CFG00</td>
+</tr>
+<tr>
+<td><code>structural.csv</code></td>
+<td align="right">17</td>
+<td>Γενίκευση, καταστολή και εισοδηματική σύνθεση</td>
+</tr>
+<tr>
+<td><code>tvd.csv</code></td>
+<td align="right">17</td>
+<td>Αποστάσεις κατανομών, με 272 επιμέρους τιμές συνολικά: 17 διαμορφώσεις × 8 γνωρίσματα × 2 οικογένειες</td>
+</tr>
+<tr>
+<td><code>equivalence_classes.csv</code></td>
+<td align="right">34</td>
+<td>Δύο ορισμοί κλάσεων ανά διαμόρφωση</td>
+</tr>
+<tr>
+<td><code>native_country.csv</code></td>
+<td align="right">17</td>
+<td>Χειρισμός της τιμής Holand-Netherlands</td>
+</tr>
+<tr>
+<td><code>suppressed_retained_profiles.csv</code></td>
+<td align="right">153</td>
+<td>17 διαμορφώσεις × 9 αρχικά γνωρίσματα</td>
+</tr>
+<tr>
+<td><code>privacy_summary.csv</code></td>
+<td align="right">17</td>
+<td>Συντακτικά κριτήρια και μοναδικότητα, με NA για CFG00</td>
+</tr>
+<tr>
+<td><code>ties.csv</code></td>
+<td align="right">85</td>
+<td>17 διαμορφώσεις × 5 σενάρια</td>
+</tr>
+<tr>
+<td><code>risk_points_and_controls.csv</code></td>
+<td align="right">85</td>
+<td>Κίνδυνος, αναδιάταξη αντιστοιχίσεων και ομοιόμορφη επιλογή</td>
+</tr>
+<tr>
+<td><code>success_coverage.csv</code></td>
+<td align="right">340</td>
+<td>17 διαμορφώσεις × 5 σενάρια × 4 όρια ισοπαλίας</td>
+</tr>
+<tr>
+<td><code>risk_intervals.csv</code></td>
+<td align="right">195</td>
+<td>5 σενάρια × 39 διαστήματα</td>
+</tr>
+<tr>
+<td><code>ohe_unknown_categories.csv</code></td>
+<td align="right">264</td>
+<td>33 μοντέλα × 8 οιονεί αναγνωριστικά</td>
+</tr>
+<tr>
+<td><code>ohe_model_summary.csv</code></td>
+<td align="right">33</td>
+<td>Σύνοψη ανά τελικό μοντέλο λογιστικής παλινδρόμησης</td>
+</tr>
+</tbody></table></div>
+<p>Οι βοηθητικοί πίνακες είναι:</p>
+<ul>
+<li><code>generalization_levels.csv</code>: επίπεδα γενίκευσης ανά γνώρισμα και διαμόρφωση.</li>
+<li><code>salary_class_counts.csv</code>: πλήθη των εισοδηματικών κατηγοριών στο αρχικό, διατηρούμενο και κατασταλμένο σύνολο.</li>
+<li><code>equivalence_class_histograms.csv</code>: πλήθος κλάσεων ανά μέγεθος.</li>
+<li><code>marginal_profile_values.csv</code>: πλήθη και αναλογίες ανά αρχική τιμή γνωρίσματος.</li>
+<li><code>tie_histograms.csv</code>: πλήθος προσπαθειών ανά μέγεθος ισοπαλίας.</li>
+</ul>
+<h2>Όρια ερμηνείας</h2>
+<p>Η χρησιμότητα αξιολογήθηκε στις ίδιες 15.060 εγγραφές ελέγχου. Η CFG00 των <code>release</code> και <code>counterfactual</code> αντιστοιχεί στο ίδιο μοντέλο. Έτσι, οι 34 καταγραφές χρησιμότητας αφορούν 33 τελικά μοντέλα λογιστικής παλινδρόμησης. Ο απλός ταξινομητής αναφοράς παρατίθεται χωριστά.</p>
+<p>Τα διαστήματα AUROC και ΔAUROC αφορούν σταθερά εκπαιδευμένα μοντέλα και συγκεκριμένο διαχωρισμό δεδομένων. Τα διαστήματα κινδύνου περιγράφουν σταθερότητα υπό επαναδειγματοληψία των 1.744 αρχικών συστάδων, με 2.000 κοινές επαναλήψεις. Δεν είναι διαστήματα πληθυσμιακού κινδύνου. Κανένα από αυτά τα διαστήματα δεν παρέχει ταυτόχρονη κάλυψη όλων των συγκρίσεων. Δεν διατίθενται διαστήματα διαφορών μεταξύ σεναρίων.</p>
+<p>Η <code>R_all</code> αφορά όλους τους δειγματοληπτημένους στόχους και η <code>R_released</code> μόνο τους διατηρούμενους. Οι παρονομαστές δεν είναι τα πλήθη γραμμών των δημοσιευμένων πινάκων. Στα μεγέθη κλάσεων κάθε κλάση έχει ίσο βάρος, ενώ στις ισοπαλίες κάθε προσπάθεια χωρίς αποχή έχει ίσο βάρος.</p>
+<p>Οι οριακές κατανομές δίνουν συχνότητες ανά γνώρισμα, όχι ατομικές εγγραφές. Δεν περιλαμβάνονται ατομικές προβλέψεις, αντιστοιχίσεις ή βαθμολογίες σύνδεσης. Ο <a href="../guide.html">οδηγός ανάγνωσης</a> επεξηγεί αυτές τις διακρίσεις.</p>
+<h2>Αρχεία τεκμηρίωσης και αναδημιουργία CSV</h2>
+<p>Το <code>TABLE_MANIFEST.json</code> καταγράφει αρχεία, στήλες και πλήθη. Το <code>SOURCE.txt</code> προσδιορίζει την πηγή των συγκεντρωτικών αποτελεσμάτων. Η αναδημιουργία των 21 CSV από το JSON περιγράφεται στις <a href="../docs/VALIDATION_AND_USE.html">οδηγίες ελέγχου και χρήσης</a>. Δεν αποτελεί επανεκτέλεση των πειραμάτων.</p>
+<footer class="foot"><a href="RESULTS_README_EL.md">Κείμενο σε Markdown</a></footer></main></body></html>

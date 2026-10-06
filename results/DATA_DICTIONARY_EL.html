@@ -1,0 +1,606 @@
+<!doctype html><html lang="el"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Λεξικό στηλών</title><style>
+:root{--ink:#19313c;--muted:#506775;--accent:#176b73;--line:#d5e2e6;--paper:#fff;--soft:#edf4f5}
+*{box-sizing:border-box}body{margin:0;background:#f3f6f7;color:var(--ink);font:17px/1.65 'Segoe UI',Arial,sans-serif}
+.top{background:#153c49;color:white;padding:16px max(24px,calc((100vw - 1180px)/2));display:flex;flex-wrap:wrap;gap:12px 25px;font-size:14px;align-items:center}
+.top a{color:#d8eff1;text-decoration:none}.top .brand{font-weight:700;color:white;margin-right:auto}
+main{max-width:1180px;margin:38px auto 50px;padding:44px 54px;background:var(--paper);border:1px solid var(--line);border-radius:8px;box-shadow:0 8px 24px #173b4710}
+.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:12px;color:var(--accent);font-weight:700;margin-bottom:12px}
+img{max-width:100%;height:auto}h1{font-size:34px;line-height:1.25;letter-spacing:-.02em;margin:0 0 22px;color:#153c49;max-width:1000px}
+h2{font-size:24px;line-height:1.4;margin:34px 0 14px;border-top:1px solid var(--line);padding-top:26px;color:#175360}
+h3{font-size:20px;margin:26px 0 12px}p{margin:12px 0 18px}li{margin:8px 0}a{color:#126572;text-decoration-thickness:1px;text-underline-offset:3px;overflow-wrap:anywhere}
+code{font-family:Consolas,monospace;font-size:.87em;background:#eff3f5;padding:2px 5px;border-radius:3px;overflow-wrap:anywhere}
+pre{background:#15313d;color:#f2f7f7;border-radius:6px;padding:18px 22px;overflow:auto;line-height:1.5}pre code{background:none;color:inherit;padding:0;overflow-wrap:normal}
+.table-wrap{overflow:auto;margin:20px 0 25px;border:1px solid var(--line);border-radius:5px}table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.5}
+th{background:#e7f0f1;color:#153c49;text-align:left;font-weight:650}th,td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}tr:last-child td{border-bottom:0}tr:nth-child(even) td{background:#f8fafb}td code{font-size:12px;word-break:normal}blockquote{border-left:4px solid #2d8790;background:#f2f8f8;margin:22px 0;padding:8px 22px}
+.foot{border-top:1px solid var(--line);margin-top:38px;padding-top:18px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:760px){body{font-size:16px}.top{padding:14px 18px}main{margin:14px 10px;padding:25px 20px}h1{font-size:27px}h2{font-size:21px}table{min-width:570px}th,td{padding:9px 11px}}
+@media print{body{background:white}main{margin:0;padding:0;box-shadow:none;border:0;max-width:none}.top{display:none}.table-wrap{overflow:visible}table{font-size:10px}a{color:inherit}h2{break-after:avoid}tr{break-inside:avoid}}
+</style></head><body><nav class="top"><a class="brand" href="../index.html">Συμπληρωματικό υλικό</a><a href="../contents.html">Ευρετήριο</a><a href="../guide.html">Οδηγός ανάγνωσης</a><a href="../results/DATA_DICTIONARY_EL.html">Λεξικό στηλών</a></nav><main><h1>Λεξικό στηλών</h1>
+<p>Οι στήλες έχουν σταθερά τεχνικά ονόματα για να διαβάζονται και από λογισμικό. Παρακάτω εξηγούνται στα ελληνικά. Οι αναλογίες παραμένουν στην κλίμακα 0–1, εκτός αν δηλώνεται διαφορετικά. Το <code>NA</code> διατηρεί την απουσία τιμής και δεν αντικαθίσταται από μηδέν.</p>
+<h2>Κοινά αναγνωριστικά</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Στήλη</th>
+<th>Ερμηνεία</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>config_id</code></td>
+<td>Πειραματική διαμόρφωση. CFG00: αρχικό σύνολο αναφοράς. CFG01–CFG16: διαμορφώσεις ανωνυμοποίησης.</td>
+</tr>
+<tr>
+<td><code>scenario</code></td>
+<td>BASE ή S1–S4. Προσδιορίζει το σενάριο γνώσης και σύνδεσης της εργασίας.</td>
+</tr>
+<tr>
+<td><code>group</code></td>
+<td><code>release</code>: εκπαίδευση στην ανωνυμοποιημένη έξοδο, μετά τη γενίκευση και την καταστολή. <code>counterfactual</code>: εκπαίδευση με την ίδια γενίκευση σε όλες τις αρχικές εγγραφές εκπαίδευσης, χωρίς διαγραφή εγγραφών. <code>raw_reference</code>: αρχικό σύνολο εκπαίδευσης χωρίς ανωνυμοποίηση, ως κοινή αναφορά.</td>
+</tr>
+<tr>
+<td><code>model_id</code></td>
+<td>Μοντέλο με διαμόρφωση και, όπου χρειάζεται, ομάδα εκπαίδευσης.</td>
+</tr>
+<tr>
+<td><code>qi</code>, <code>attribute</code></td>
+<td>Όνομα γνωρίσματος. Τα οκτώ οιονεί αναγνωριστικά είναι age, sex, race, marital-status, education, native-country, workclass, occupation. Η salary-class είναι η εισοδηματική κατηγορία.</td>
+</tr>
+</tbody></table></div>
+<h2>Χρησιμότητα: <code>utility_release.csv</code>, <code>utility_counterfactual.csv</code></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Στήλη</th>
+<th>Ερμηνεία και μονάδα</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>holdout_rows</code></td>
+<td>Πλήθος εγγραφών του συνόλου ελέγχου, 15.060.</td>
+</tr>
+<tr>
+<td><code>auroc</code></td>
+<td>Εμβαδόν κάτω από την καμπύλη ROC, αδιάστατο μέτρο διάκρισης των δύο εισοδηματικών κατηγοριών. Η θετική κατηγορία είναι &gt;50K. Μεγαλύτερη τιμή υποδηλώνει καλύτερη διάκριση στο συγκεκριμένο σύνολο.</td>
+</tr>
+<tr>
+<td><code>balanced_accuracy</code></td>
+<td>Μέσος όρος των ποσοστών ορθής αναγνώρισης σε καθεμία από τις δύο κατηγορίες. Θετική πρόβλεψη όταν η εκτιμώμενη πιθανότητα είναι ≥0,5.</td>
+</tr>
+<tr>
+<td><code>average_precision</code></td>
+<td>Μέση ακρίβεια ανάκτησης (Average Precision, AP) ως σύνοψη της σχέσης precision–recall για τη θετική κατηγορία. Διατηρούνται ολόκληρες οι ομάδες ισόβαθμων προβλέψεων.</td>
+</tr>
+<tr>
+<td><code>accuracy</code></td>
+<td>Αναλογία ορθών ταξινομήσεων στο σύνολο των 15.060 εγγραφών. Περιγραφικό μέτρο, το οποίο επηρεάζεται από την αναλογία των κατηγοριών.</td>
+</tr>
+<tr>
+<td><code>auroc_ci95_low</code>, <code>auroc_ci95_high</code></td>
+<td>Κάτω και άνω άκρο του ζευγαρωμένου, στρωματοποιημένου διαστήματος bootstrap 95% για το AUROC.</td>
+</tr>
+</tbody></table></div>
+<p>Στη σχέση precision–recall, η precision είναι η αναλογία ορθών θετικών προβλέψεων μεταξύ όλων των θετικών προβλέψεων. Η recall, ή ανάκληση, είναι η αναλογία των πραγματικά θετικών εγγραφών που αναγνωρίζονται ως θετικές. Η θετική κατηγορία <code>&gt;50K</code> σημαίνει ετήσιο εισόδημα άνω των 50.000 δολαρίων.</p>
+<p>Δεν παρέχονται διαστήματα για balanced accuracy, AP ή accuracy. Τα διαστήματα αφορούν τα σταθερά εκπαιδευμένα μοντέλα και τον συγκεκριμένο διαχωρισμό δεδομένων.</p>
+<h2>Απλός ταξινομητής αναφοράς: <code>dummy_baseline.csv</code></h2>
+<p>Τα <code>accuracy</code>, <code>auroc</code>, <code>average_precision</code>, <code>balanced_accuracy</code> έχουν το ίδιο νόημα με τους ορισμούς του προηγούμενου πίνακα. Το <code>threshold</code> είναι το όριο θετικής πρόβλεψης. Το <code>intervals</code> παραμένει <code>NA</code>, επειδή δεν δημοσιεύθηκαν διαστήματα.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Στήλη ή ζεύγος στηλών</th>
+<th>Ερμηνεία</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>fitted_class_prior_negative</code>, <code>fitted_class_prior_positive</code></td>
+<td>Αναλογίες των κατηγοριών ≤50K και &gt;50K στο σύνολο εκπαίδευσης, τις οποίες ο ταξινομητής αποδίδει ως τις ίδιες πιθανότητες σε κάθε εγγραφή ελέγχου.</td>
+</tr>
+<tr>
+<td><code>training_class_counts_negative</code>, <code>training_class_counts_positive</code></td>
+<td>Πλήθη των δύο κατηγοριών στο σύνολο εκπαίδευσης, με αυτή τη σειρά.</td>
+</tr>
+<tr>
+<td><code>holdout_class_counts_negative</code>, <code>holdout_class_counts_positive</code></td>
+<td>Πλήθη των δύο κατηγοριών στο σύνολο ελέγχου, με αυτή τη σειρά.</td>
+</tr>
+</tbody></table></div>
+<p>Ο ταξινομητής αυτός δεν είναι διαμόρφωση δημοσίευσης και δεν περιλαμβάνεται στις υποψήφιες λύσεις της σύγκρισης κατά Pareto.</p>
+<h2>Απώλεια AUROC: <code>paired_delta_auroc.csv</code></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Στήλη</th>
+<th>Ερμηνεία</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>point_estimate</code></td>
+<td>AUROC της CFG00 μείον AUROC της συγκεκριμένης ανωνυμοποιημένης εξόδου. Θετική τιμή σημαίνει απώλεια διακριτικής ικανότητας.</td>
+</tr>
+<tr>
+<td><code>direction</code></td>
+<td>Υπενθύμιση της σειράς αφαίρεσης, <code>AUROC_CFG00_minus_AUROC_release</code>.</td>
+</tr>
+<tr>
+<td><code>ci95_low</code>, <code>ci95_high</code></td>
+<td>Άκρα του διαστήματος 95% για τη ζευγαρωμένη διαφορά. Δεν προκύπτουν με αφαίρεση των άκρων δύο ανεξάρτητων διαστημάτων AUROC.</td>
+</tr>
+</tbody></table></div>
+<h2>Δομικές μεταβολές: <code>structural.csv</code></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Στήλη</th>
+<th>Ερμηνεία και παρονομαστής</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>arx_loss</code></td>
+<td>Η καταγεγραμμένη τιμή της συνάρτησης απώλειας πληροφοριών του ARX. Δεν ταυτίζεται με την απώλεια AUROC.</td>
+</tr>
+<tr>
+<td><code>arx_loss_status</code></td>
+<td><code>NA_RAW_REFERENCE</code> για CFG00, όπου δεν υπάρχει τιμή της βελτιστοποίησης ARX. <code>PUBLISHED</code> σημαίνει ότι υπάρχει καταγεγραμμένη τιμή.</td>
+</tr>
+<tr>
+<td><code>G</code></td>
+<td>Για κάθε οιονεί αναγνωριστικό, το επιλεγμένο επίπεδο γενίκευσης διαιρείται με το μέγιστο επίπεδο της αντίστοιχης ιεραρχίας. Ο G είναι ο απλός μέσος όρος των οκτώ λόγων. Δεν αθροίζεται με το S για να σχηματίσει νέο δείκτη.</td>
+</tr>
+<tr>
+<td><code>n_input</code></td>
+<td>Πλήθος αρχικών εγγραφών εκπαίδευσης, 30.162.</td>
+</tr>
+<tr>
+<td><code>n_retained</code></td>
+<td>Πλήθος εγγραφών που διατηρούνται στη δημοσίευση.</td>
+</tr>
+<tr>
+<td><code>n_suppressed</code></td>
+<td>Πλήθος κατασταλμένων εγγραφών.</td>
+</tr>
+<tr>
+<td><code>S</code></td>
+<td>Αναλογία καταστολής, <code>n_suppressed / n_input</code>.</td>
+</tr>
+<tr>
+<td><code>source_positive_prevalence</code></td>
+<td>Αναλογία &gt;50K στο αρχικό σύνολο, με παρονομαστή <code>n_input</code>.</td>
+</tr>
+<tr>
+<td><code>retained_positive_prevalence</code></td>
+<td>Αναλογία &gt;50K στις διατηρούμενες εγγραφές, με παρονομαστή <code>n_retained</code>.</td>
+</tr>
+<tr>
+<td><code>suppressed_positive_prevalence</code></td>
+<td>Αναλογία &gt;50K στις κατασταλμένες εγγραφές, με παρονομαστή <code>n_suppressed</code>. Είναι NA όταν δεν υπάρχουν κατασταλμένες εγγραφές.</td>
+</tr>
+<tr>
+<td><code>suppressed_prevalence_status</code></td>
+<td><code>NA_NO_SUPPRESSED_ROWS</code> όταν ο παραπάνω παρονομαστής είναι μηδέν.</td>
+</tr>
+<tr>
+<td><code>prevalence_absolute_error</code></td>
+<td>Απόλυτη διαφορά της αναλογίας &gt;50K μεταξύ διατηρούμενου και αρχικού συνόλου.</td>
+</tr>
+<tr>
+<td><code>prevalence_difference_retained_minus_source</code></td>
+<td>Προσημασμένη διαφορά: αναλογία &gt;50K στο διατηρούμενο μείον στο αρχικό σύνολο.</td>
+</tr>
+<tr>
+<td><code>prevalence_difference_percentage_points</code></td>
+<td>Η ίδια διαφορά εκφρασμένη σε ποσοστιαίες μονάδες. Δεν πολλαπλασιάζεται ξανά επί 100.</td>
+</tr>
+<tr>
+<td><code>suppressed_minus_retained_prevalence</code></td>
+<td>Αναλογία &gt;50K στο κατασταλμένο μείον στο διατηρούμενο σύνολο. NA όταν δεν υπάρχουν κατασταλμένες εγγραφές.</td>
+</tr>
+</tbody></table></div>
+<p>Στο <code>generalization_levels.csv</code> οι οκτώ στήλες γνωρισμάτων περιέχουν τα επιλεγμένα ακέραια επίπεδα γενίκευσης. Το επίπεδο 0 δηλώνει το αρχικό επίπεδο. Τα επίπεδα διαφορετικών γνωρισμάτων δεν θεωρούνται αυτομάτως συγκρίσιμα σε σημασία.</p>
+<p>Στο <code>salary_class_counts.csv</code>, τα προθέματα <code>source</code>, <code>retained</code>, <code>suppressed</code> δηλώνουν αντίστοιχα αρχικές, διατηρούμενες και κατασταλμένες εγγραφές. Το επίθημα <code>negative_count</code> δηλώνει το πλήθος ≤50K και το <code>positive_count</code> το πλήθος &gt;50K.</p>
+<h2>Αποστάσεις κατανομών: <code>tvd.csv</code></h2>
+<p>Όλες οι τιμές είναι αποστάσεις ολικής μεταβολής στην κλίμακα 0–1. Το σύνολο δημοσίευσης συγκρίνεται με το πλήρες αρχικό σύνολο μετασχηματισμένο στα ίδια επιλεγμένα επίπεδα γενίκευσης, χωρίς καταστολή.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Μορφή ονόματος στήλης</th>
+<th>Ερμηνεία</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>TVD_marginal__&lt;γνώρισμα&gt;</code></td>
+<td>Απόσταση της οριακής κατανομής του συγκεκριμένου οιονεί αναγνωριστικού. Υπάρχουν οκτώ τέτοιες στήλες.</td>
+</tr>
+<tr>
+<td><code>TVD_QI_salary__&lt;γνώρισμα&gt;</code></td>
+<td>Απόσταση της κοινής κατανομής του γνωρίσματος και της εισοδηματικής κατηγορίας: συγκρίνονται οι αναλογίες κάθε ζεύγους τιμών γνωρίσματος και εισοδήματος. Υπάρχουν οκτώ τέτοιες στήλες, μία για κάθε οιονεί αναγνωριστικό.</td>
+</tr>
+<tr>
+<td><code>TVD_marginal__unweighted_mean</code>, <code>TVD_QI_salary__unweighted_mean</code></td>
+<td>Απλός, μη σταθμισμένος μέσος όρος των οκτώ αποστάσεων της αντίστοιχης οικογένειας.</td>
+</tr>
+<tr>
+<td><code>TVD_marginal__maximum</code>, <code>TVD_QI_salary__maximum</code></td>
+<td>Μέγιστη από τις οκτώ αποστάσεις της αντίστοιχης οικογένειας.</td>
+</tr>
+</tbody></table></div>
+<p>Μηδενική τιμή δηλώνει ισότητα των συγκεκριμένων συγκρινόμενων κατανομών. Δεν αποδεικνύει μηδενική απώλεια πληροφοριών από τη γενίκευση σε σχέση με τα αρχικά δεδομένα.</p>
+<h2>Κλάσεις ισοδυναμίας: <code>equivalence_classes.csv</code></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Στήλη</th>
+<th>Ερμηνεία και μονάδα</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>kind</code></td>
+<td><code>QI</code>: ομαδοποίηση με βάση τα οκτώ οιονεί αναγνωριστικά. <code>full</code>: ομαδοποίηση με βάση και τα εννέα πεδία, περιλαμβανομένου του εισοδήματος.</td>
+</tr>
+<tr>
+<td><code>item_count</code></td>
+<td>Πλήθος κλάσεων, όχι πλήθος εγγραφών.</td>
+</tr>
+<tr>
+<td><code>size_sum</code></td>
+<td>Άθροισμα των μεγεθών των κλάσεων, ίσο με το πλήθος εγγραφών του εξεταζόμενου συνόλου.</td>
+</tr>
+<tr>
+<td><code>minimum</code>, <code>maximum</code></td>
+<td>Ελάχιστο και μέγιστο μέγεθος κλάσης, σε εγγραφές.</td>
+</tr>
+<tr>
+<td><code>median</code></td>
+<td>Διάμεσος του μεγέθους κλάσης, σε εγγραφές. Κάθε κλάση έχει ίσο βάρος.</td>
+</tr>
+<tr>
+<td><code>p95</code></td>
+<td>95ο εκατοστημόριο του μεγέθους κλάσης, σε εγγραφές, με γραμμική παρεμβολή τύπου 7.</td>
+</tr>
+<tr>
+<td><code>unique_rows</code></td>
+<td>Πλήθος εγγραφών που βρίσκονται σε κλάσεις μεγέθους 1.</td>
+</tr>
+<tr>
+<td><code>uniqueness</code></td>
+<td><code>unique_rows / size_sum</code>, αναλογία εγγραφών που είναι μοναδικές με βάση τα πεδία του συγκεκριμένου <code>kind</code>.</td>
+</tr>
+</tbody></table></div>
+<p>Δεκαδικές τιμές στη διάμεσο ή στο p95 προκύπτουν από τον ορισμό του στατιστικού μέτρου. Δεν δηλώνουν κλάσεις με κλασματικό αριθμό εγγραφών. Στο <code>equivalence_class_histograms.csv</code>, το <code>size</code> είναι μέγεθος κλάσης και το <code>frequency</code> είναι πλήθος κλάσεων αυτού του μεγέθους.</p>
+<h2>Σπάνια τιμή χώρας: <code>native_country.csv</code></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Στήλη</th>
+<th>Ερμηνεία</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>source_value</code></td>
+<td>Η αρχική τιμή Holand-Netherlands του γνωρίσματος native-country.</td>
+</tr>
+<tr>
+<td><code>source_count</code></td>
+<td>Πλήθος εμφανίσεων αυτής της τιμής στο αρχικό σύνολο.</td>
+</tr>
+<tr>
+<td><code>final_level</code></td>
+<td>Επιλεγμένο επίπεδο γενίκευσης του native-country.</td>
+</tr>
+<tr>
+<td><code>fate</code></td>
+<td>Καταγεγραμμένη κατάσταση της τιμής. Στα παρόντα αποτελέσματα είναι <code>RETAINED</code>, δηλαδή η αντίστοιχη αρχική εγγραφή διατηρείται σε όλες τις διαμορφώσεις.</td>
+</tr>
+<tr>
+<td><code>rule_status</code></td>
+<td><code>PASS</code>: ικανοποιείται ο ειδικός κανόνας ελέγχου που περιγράφεται στην εργασία. <code>RAW_REFERENCE</code>: αρχικό σύνολο CFG00.</td>
+</tr>
+</tbody></table></div>
+<p>Ο πίνακας αναφέρεται αποκλειστικά στη συγκεκριμένη τιμή και στις εξεταζόμενες διαμορφώσεις. Δεν θεμελιώνει γενικό κανόνα για όλες τις σπάνιες τιμές.</p>
+<h2>Οριακές κατανομές: <code>suppressed_retained_profiles.csv</code>, <code>marginal_profile_values.csv</code></h2>
+<p>Ο κύριος πίνακας καταγράφει τις 153 οικογένειες διαμόρφωσης και γνωρίσματος. Ο βοηθητικός πίνακας προσθέτει μία γραμμή ανά αρχική τιμή του γνωρίσματος. Η ανάλυση αφορά τις αρχικές, μη γενικευμένες τιμές των εννέα γνωρισμάτων.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Στήλη</th>
+<th>Ερμηνεία και παρονομαστής</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>n_source</code>, <code>n_retained</code>, <code>n_suppressed</code></td>
+<td>Συνολικά πλήθη εγγραφών στις τρεις ομάδες.</td>
+</tr>
+<tr>
+<td><code>value</code></td>
+<td>Αρχική τιμή του γνωρίσματος, όχι αναγνωριστικό εγγραφής.</td>
+</tr>
+<tr>
+<td><code>source_count</code>, <code>retained_count</code>, <code>suppressed_count</code></td>
+<td>Πλήθη εμφανίσεων της τιμής στις αντίστοιχες ομάδες.</td>
+</tr>
+<tr>
+<td><code>source_proportion</code></td>
+<td><code>source_count / n_source</code>.</td>
+</tr>
+<tr>
+<td><code>retained_proportion</code></td>
+<td><code>retained_count / n_retained</code>.</td>
+</tr>
+<tr>
+<td><code>suppressed_proportion</code></td>
+<td><code>suppressed_count / n_suppressed</code>. NA όταν <code>n_suppressed=0</code>.</td>
+</tr>
+<tr>
+<td><code>suppressed_minus_retained_proportion</code></td>
+<td>Διαφορά των δύο παραπάνω αναλογιών, κατασταλμένη μείον διατηρούμενη ομάδα. NA όταν δεν ορίζεται η πρώτη.</td>
+</tr>
+</tbody></table></div>
+<p>Τα αθροίσματα συχνοτήτων διαφορετικών γνωρισμάτων δεν αποτελούν πλήθη διαφορετικών προσώπων. Οι ίδιες εγγραφές συμμετέχουν στην οριακή κατανομή κάθε γνωρίσματος.</p>
+<h2>Συντακτικά κριτήρια: <code>privacy_summary.csv</code></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Στήλη</th>
+<th>Ερμηνεία</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>k_required</code>, <code>k_hat</code></td>
+<td>Απαιτούμενο k και παρατηρούμενο ελάχιστο μέγεθος κλάσης στα οκτώ οιονεί αναγνωριστικά.</td>
+</tr>
+<tr>
+<td><code>l_required</code>, <code>l_hat</code></td>
+<td>Απαιτούμενο ℓ και παρατηρούμενο ελάχιστο πλήθος διαφορετικών εισοδηματικών κατηγοριών ανά κλάση. NA στο required σημαίνει ότι το κριτήριο δεν επιβάλλεται.</td>
+</tr>
+<tr>
+<td><code>t_required</code>, <code>t_hat_original_global</code></td>
+<td>Απαιτούμενο όριο t και παρατηρούμενη μέγιστη απόκλιση της κατανομής εισοδήματος μιας κλάσης από την αρχική συνολική κατανομή. Δεν χρησιμοποιείται ως αναφορά η κατανομή μετά την καταστολή.</td>
+</tr>
+<tr>
+<td><code>u_qi</code>, <code>u_full</code></td>
+<td>Αναλογίες των εγγραφών που σχηματίζουν κλάση με μία μόνο εγγραφή, με βάση οκτώ και εννέα πεδία, αντίστοιχα. Παρονομαστής είναι το πλήθος όλων των διατηρούμενων εγγραφών της αντίστοιχης εξόδου.</td>
+</tr>
+<tr>
+<td><code>equivalence_class_count</code></td>
+<td>Πλήθος κλάσεων με βάση τα οκτώ οιονεί αναγνωριστικά.</td>
+</tr>
+<tr>
+<td><code>equivalence_class_size_min</code>, <code>equivalence_class_size_max</code></td>
+<td>Ελάχιστο και μέγιστο μέγεθος αυτών των κλάσεων, σε εγγραφές.</td>
+</tr>
+</tbody></table></div>
+<p>Η CFG00 έχει NA σε αυτή την οικογένεια, όπως και στην πηγή. Τα περιγραφικά στοιχεία των αρχικών κλάσεων βρίσκονται στο <code>equivalence_classes.csv</code>. Η απουσία στο παρόν αρχείο δεν αναιρεί την ύπαρξή τους εκεί.</p>
+<h2>Ισοπαλίες: <code>ties.csv</code></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Στήλη</th>
+<th>Ερμηνεία και μονάδα</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>pair_count</code></td>
+<td>Όλα τα ζεύγη στόχου και επανάληψης, 5.000 × 30 = 150.000.</td>
+</tr>
+<tr>
+<td><code>item_count</code></td>
+<td>Πλήθος προσπαθειών χωρίς αποχή που συμμετέχουν στην κατανομή μεγεθών ισοπαλίας.</td>
+</tr>
+<tr>
+<td><code>abstention_count</code></td>
+<td>Πλήθος ζευγών στα οποία η διαδικασία απέχει από σύνδεση.</td>
+</tr>
+<tr>
+<td><code>minimum</code>, <code>maximum</code></td>
+<td>Ελάχιστος και μέγιστος αριθμός ισόβαθμων καλύτερων υποψηφίων ανά προσπάθεια χωρίς αποχή.</td>
+</tr>
+<tr>
+<td><code>median</code>, <code>p95</code></td>
+<td>Διάμεσος και 95ο εκατοστημόριο αυτού του αριθμού, με κάθε προσπάθεια να έχει ίσο βάρος και παρεμβολή τύπου 7.</td>
+</tr>
+<tr>
+<td><code>size_sum</code></td>
+<td>Άθροισμα των μεγεθών ισοπαλίας σε όλες τις προσπάθειες χωρίς αποχή. Δεν είναι πλήθος μοναδικών υποψηφίων ή προσώπων.</td>
+</tr>
+<tr>
+<td><code>empty_status</code></td>
+<td>Ένδειξη κενής κατανομής, αν υπάρχει. Το NA σε αυτή τη στήλη σημαίνει ότι δεν υπάρχει ειδική ένδειξη κενού και όχι ότι απουσιάζουν οι παρατηρήσεις.</td>
+</tr>
+</tbody></table></div>
+<p>Στο <code>tie_histograms.csv</code>, το <code>size</code> είναι ο αριθμός ισόβαθμων καλύτερων υποψηφίων και το <code>frequency</code> το πλήθος προσπαθειών με αυτόν τον αριθμό. Διατηρούνται και οι 30 επαναλήψεις του S3.</p>
+<h2>Κίνδυνος και συνθήκες αναφοράς: <code>risk_points_and_controls.csv</code></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Στήλη</th>
+<th>Ερμηνεία</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>actual_R_all</code></td>
+<td>Μέση πιθανότητα επιτυχούς σύνδεσης στο σύνολο των δειγματοληπτημένων στόχων και επαναλήψεων, με παρονομαστή <code>target_count × draw_count</code>. Κατασταλμένοι στόχοι και αποχές δεν αποφέρουν επιτυχή σύνδεση.</td>
+</tr>
+<tr>
+<td><code>actual_R_released</code></td>
+<td>Αντίστοιχη μέση πιθανότητα μόνο για στόχους που διατηρούνται, με παρονομαστή <code>retained_target_count × draw_count</code>.</td>
+</tr>
+<tr>
+<td><code>permuted_R_all</code>, <code>permuted_R_released</code></td>
+<td>Ίδιοι ορισμοί παρονομαστών στον αρνητικό έλεγχο μετάθεσης των αντιστοιχίσεων. Δεν εφαρμόζεται αριθμητικό όριο αποδοχής κινδύνου σε αυτόν τον έλεγχο.</td>
+</tr>
+<tr>
+<td><code>uniform_R_all</code>, <code>uniform_R_released</code></td>
+<td>Αναφορά ομοιόμορφης τυχαίας επιλογής από όλες τις εγγραφές του δημοσιευμένου πίνακα, ανεξάρτητα από τη βαθμολογία συμβατότητας. Για τη CFG00 χρησιμοποιείται ο αρχικός πίνακας αναφοράς. Οι δύο μετρικές έχουν τους αντίστοιχους παρονομαστές στόχων.</td>
+</tr>
+<tr>
+<td><code>target_count</code></td>
+<td>Πλήθος δειγματοληπτημένων στόχων, 5.000.</td>
+</tr>
+<tr>
+<td><code>draw_count</code></td>
+<td>Πλήθος επαναλήψεων ανά στόχο, 30.</td>
+</tr>
+<tr>
+<td><code>pair_count</code></td>
+<td>Συνολικό πλήθος ζευγών στόχου και επανάληψης, 150.000.</td>
+</tr>
+<tr>
+<td><code>retained_target_count</code></td>
+<td>Πλήθος στόχων των οποίων η εγγραφή διατηρείται.</td>
+</tr>
+<tr>
+<td><code>candidate_row_count</code></td>
+<td>Πλήθος όλων των διαθέσιμων εγγραφών της εξόδου από τις οποίες αναζητείται σύνδεση. Δεν είναι το πλήθος των καλύτερων ισόβαθμων υποψηφίων μιας συγκεκριμένης προσπάθειας.</td>
+</tr>
+<tr>
+<td><code>attempt_count</code></td>
+<td>Πλήθος προσπαθειών χωρίς αποχή πριν από την επιβολή πρόσθετου ορίου μεγέθους ισοπαλίας.</td>
+</tr>
+<tr>
+<td><code>abstention_count</code></td>
+<td>Πλήθος αποχών.</td>
+</tr>
+<tr>
+<td><code>true_row_in_best_count</code></td>
+<td>Πλήθος ζευγών για τα οποία η σωστή εγγραφή βρίσκεται στο σύνολο καλύτερων υποψηφίων. Δεν είναι πλήθος επιτυχών μοναδικών συνδέσεων, επειδή μπορεί να υπάρχουν ισοπαλίες.</td>
+</tr>
+</tbody></table></div>
+<p>Ισχύει <code>R_all = (retained_target_count / target_count) × R_released</code>. Ο αριθμητής δεν αντικαθίσταται από το πλήθος εγγραφών του δημοσιευμένου πίνακα. Όταν υπάρχουν περισσότεροι ισόβαθμοι καλύτεροι υποψήφιοι, η πιθανότητα επιτυχίας κατανέμεται μεταξύ τους, σύμφωνα με τη μέθοδο της εργασίας.</p>
+<h2>Κάλυψη και υπό συνθήκη επιτυχία: <code>success_coverage.csv</code></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Στήλη</th>
+<th>Ερμηνεία και παρονομαστής</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>maximum_tie_size</code></td>
+<td>Όριο m, με τιμές 1, 2, 5 ή 10. Γίνεται αποδεκτή μια προσπάθεια χωρίς αποχή εφόσον το πλήθος των ισόβαθμων καλύτερων υποψηφίων δεν υπερβαίνει αυτό το όριο.</td>
+</tr>
+<tr>
+<td><code>attempt_count</code></td>
+<td>Πλήθος προσπαθειών που πληρούν το συγκεκριμένο όριο. Δεν ταυτίζεται υποχρεωτικά με το attempt_count του προηγούμενου πίνακα.</td>
+</tr>
+<tr>
+<td><code>coverage</code></td>
+<td>Αναλογία αποδεκτών προσπαθειών στο σύνολο των ζευγών στόχου και επανάληψης.</td>
+</tr>
+<tr>
+<td><code>coverage_denominator_pairs</code></td>
+<td>Παρονομαστής κάλυψης, 150.000.</td>
+</tr>
+<tr>
+<td><code>conditional_success</code></td>
+<td>Μέση πιθανότητα επιτυχίας μόνο στις αποδεκτές προσπάθειες, με παρονομαστή <code>attempt_count</code>.</td>
+</tr>
+<tr>
+<td><code>conditional_success_status</code></td>
+<td><code>DEFINED</code> όταν η τιμή ορίζεται. Το <code>NA_NO_ATTEMPTS</code> δηλώνει ότι δεν υπήρξαν αποδεκτές προσπάθειες και το conditional_success είναι NA.</td>
+</tr>
+</tbody></table></div>
+<p>Μηδενική κάλυψη δεν επιτρέπει να συμπεράνουμε μηδενική υπό συνθήκη επιτυχία. Δεν υπήρξαν προσπάθειες στις οποίες να εκτιμηθεί το δεύτερο μέτρο.</p>
+<h2>Διαστήματα κινδύνου: <code>risk_intervals.csv</code></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Στήλη</th>
+<th>Ερμηνεία</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>kind</code></td>
+<td><code>R_all</code>: σημειακός κίνδυνος. <code>difference_vs_raw</code>: διαφορά από CFG00. <code>suppression_differences</code>: διαφορά ζεύγους διαμορφώσεων με και χωρίς δυνατότητα καταστολής.</td>
+</tr>
+<tr>
+<td><code>comparison_id</code></td>
+<td>Η διαμόρφωση ή το συγκεκριμένο ζεύγος αφαίρεσης.</td>
+</tr>
+<tr>
+<td><code>point_estimate</code></td>
+<td>Η σημειακή εκτίμηση του μέτρου που ορίζει το kind.</td>
+</tr>
+<tr>
+<td><code>stability95_low</code>, <code>stability95_high</code></td>
+<td>Κάτω και άνω άκρο του υπό συνθήκη διαστήματος σταθερότητας 95%.</td>
+</tr>
+<tr>
+<td><code>direction</code></td>
+<td><code>risk_probability</code>: πιθανότητα R_all. <code>R_all_CFG_minus_R_all_CFG00</code>: κίνδυνος της διαμόρφωσης μείον κίνδυνος της CFG00. <code>R_all_smax_0.05_minus_R_all_smax_0</code>: κίνδυνος της διαμόρφωσης που επιτρέπει καταστολή έως 5% μείον κίνδυνος της αντίστοιχης διαμόρφωσης χωρίς καταστολή.</td>
+</tr>
+<tr>
+<td><code>endpoint_sign_classification</code></td>
+<td><code>strictly_positive</code>: και τα δύο άκρα είναι θετικά. <code>strictly_negative</code>: και τα δύο είναι αρνητικά. <code>contains_zero</code>: το διάστημα περιλαμβάνει το μηδέν. Δεν αποτελεί νέο στατιστικό έλεγχο ούτε συμπέρασμα διορθωμένο για πολλαπλές συγκρίσεις.</td>
+</tr>
+</tbody></table></div>
+<p>Το 5% στη σήμανση της τελευταίας σύγκρισης είναι επιτρεπόμενο ανώτατο όριο καταστολής. Δεν σημαίνει ότι αφαιρέθηκε ακριβώς το 5% σε κάθε διαμόρφωση. Η σύγκριση μπορεί να περιλαμβάνει και διαφορετικά επιλεγμένα επίπεδα γενίκευσης και δεν απομονώνει αιτιώδη επίδραση της καταστολής. Οι τιμές κινδύνου και οι διαφορές τους στα CSV είναι αναλογίες. Στα Σχήματα 5.2 και 5.3 πολλαπλασιάζονται επί 100, ώστε να παρουσιαστούν αντίστοιχα σε ποσοστό και σε ποσοστιαίες μονάδες. Ανά σενάριο υπάρχουν 17 εκτιμήσεις κινδύνου (για τις 16 εξόδους και την CFG00), 16 διαφορές από CFG00 και 6 διαφορές ζευγών, συνολικά 39 διαστήματα.</p>
+<h2>Κωδικοποίηση κατηγοριών: <code>ohe_unknown_categories.csv</code></h2>
+<p>Η κωδικοποίηση κατηγοριών με δυαδικές στήλες (one-hot encoding, OHE) αναπαριστά κάθε γνώρισμα με μία στήλη για κάθε κατηγορία που έχει μάθει από την εκπαίδευση. Οι παρακάτω μετρήσεις υπολογίζονται χωριστά για κάθε εκπαιδευμένο μοντέλο και γνώρισμα και αφορούν κατηγορίες του συνόλου ελέγχου που δεν είχαν εμφανιστεί στις τιμές με τις οποίες εκπαιδεύτηκε ο αντίστοιχος κωδικοποιητής. Η «άγνωστη κατηγορία» δεν είναι ελλείπουσα τιμή· είναι τιμή που ο συγκεκριμένος κωδικοποιητής δεν έχει συναντήσει στην εκπαίδευση.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Στήλη</th>
+<th>Ερμηνεία και παρονομαστής</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>prediction_row_count</code></td>
+<td>Πλήθος γραμμών πρόβλεψης, 15.060.</td>
+</tr>
+<tr>
+<td><code>fitted_category_count</code></td>
+<td>Πλήθος κατηγοριών που έμαθε ο κωδικοποιητής για το συγκεκριμένο γνώρισμα.</td>
+</tr>
+<tr>
+<td><code>distinct_unknown_value_count</code></td>
+<td>Πλήθος διαφορετικών τιμών του γνωρίσματος που δεν είχαν εμφανιστεί στις κατηγορίες εκπαίδευσης. Οι ίδιες οι τιμές δεν δημοσιεύονται.</td>
+</tr>
+<tr>
+<td><code>unknown_row_count</code></td>
+<td>Πλήθος γραμμών με άγνωστη τιμή στο συγκεκριμένο γνώρισμα.</td>
+</tr>
+<tr>
+<td><code>unknown_row_rate</code></td>
+<td><code>unknown_row_count / prediction_row_count</code>.</td>
+</tr>
+<tr>
+<td><code>all_zero_block_row_count</code></td>
+<td>Πλήθος γραμμών στις οποίες όλες οι δυαδικές στήλες του συγκεκριμένου γνωρίσματος είναι μηδενικές. Δεν σημαίνει ότι ολόκληρο το διάνυσμα χαρακτηριστικών είναι μηδενικό.</td>
+</tr>
+</tbody></table></div>
+<h2>Σύνοψη κωδικοποίησης: <code>ohe_model_summary.csv</code></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Στήλη</th>
+<th>Ερμηνεία</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>qi_count</code></td>
+<td>Πλήθος οιονεί αναγνωριστικών, 8.</td>
+</tr>
+<tr>
+<td><code>qi_with_unknown_rows_count</code></td>
+<td>Πόσα από τα οκτώ γνωρίσματα παρουσιάζουν τουλάχιστον μία γραμμή με άγνωστη τιμή.</td>
+</tr>
+<tr>
+<td><code>total_unknown_row_qi_incidences</code></td>
+<td>Άθροισμα των unknown_row_count στα οκτώ γνωρίσματα. Η ίδια γραμμή μπορεί να μετρηθεί περισσότερες από μία φορές.</td>
+</tr>
+<tr>
+<td><code>total_distinct_unknown_levels_per_qi</code></td>
+<td>Άθροισμα του πλήθους διαφορετικών άγνωστων τιμών ανά γνώρισμα. Δεν είναι πλήθος επηρεαζόμενων προσώπων.</td>
+</tr>
+<tr>
+<td><code>unknown_levels_by_qi_text</code></td>
+<td>Αναγνώσιμη περιγραφή του πλήθους διαφορετικών άγνωστων τιμών ανά γνώρισμα.</td>
+</tr>
+<tr>
+<td><code>unknown_rows_by_qi_text</code></td>
+<td>Αναγνώσιμη περιγραφή επηρεαζόμενων γραμμών ανά γνώρισμα με τον παρονομαστή τους.</td>
+</tr>
+</tbody></table></div>
+<p>Το <code>prediction_row_count</code> έχει τον ίδιο ορισμό με τον αναλυτικό πίνακα. </p>
+<h2>Ακριβείς αναπαραστάσεις στο <code>aggregates.json</code></h2>
+<p>Σε ορισμένα μέτρα η πηγή αποθηκεύει ταυτόχρονα <code>decimal</code>, <code>numerator</code>, <code>denominator</code> και <code>fraction</code>. Το CSV χρησιμοποιεί την έτοιμη δεκαδική συμβολοσειρά. Το JSON διατηρεί και το ακριβές κλάσμα. Ο παρονομαστής του κλάσματος μπορεί να έχει απλοποιηθεί και δεν ισούται υποχρεωτικά με το πλήθος των παρατηρήσεων. Ο ουσιαστικός στατιστικός παρονομαστής ορίζεται παραπάνω για κάθε μέτρο. Το <code>float_hex</code>, όπου υπάρχει, είναι η ακριβής δεκαεξαδική αναπαράσταση μιας καταγεγραμμένης τιμής κινητής υποδιαστολής.</p>
+<p>Τα συγκεντρωτικά <code>size_frequency_histogram</code>, <code>levels</code> και <code>nonzero_unknown_diagnostics</code> αποτελούν φωλιασμένες αναπαραστάσεις των αντίστοιχων πινάκων CSV. Δεν είναι ατομικές προβλέψεις ή αντιστοιχίσεις εγγραφών.</p>
+<footer class="foot"><a href="DATA_DICTIONARY_EL.md">Κείμενο σε Markdown</a></footer></main></body></html>

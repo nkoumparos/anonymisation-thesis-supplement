@@ -1,0 +1,128 @@
+<!doctype html><html lang="el"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ιεραρχίες γενίκευσης</title><style>
+:root{--ink:#19313c;--muted:#506775;--accent:#176b73;--line:#d5e2e6;--paper:#fff;--soft:#edf4f5}
+*{box-sizing:border-box}body{margin:0;background:#f3f6f7;color:var(--ink);font:17px/1.65 'Segoe UI',Arial,sans-serif}
+.top{background:#153c49;color:white;padding:16px max(24px,calc((100vw - 1180px)/2));display:flex;flex-wrap:wrap;gap:12px 25px;font-size:14px;align-items:center}
+.top a{color:#d8eff1;text-decoration:none}.top .brand{font-weight:700;color:white;margin-right:auto}
+main{max-width:1180px;margin:38px auto 50px;padding:44px 54px;background:var(--paper);border:1px solid var(--line);border-radius:8px;box-shadow:0 8px 24px #173b4710}
+.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:12px;color:var(--accent);font-weight:700;margin-bottom:12px}
+img{max-width:100%;height:auto}h1{font-size:34px;line-height:1.25;letter-spacing:-.02em;margin:0 0 22px;color:#153c49;max-width:1000px}
+h2{font-size:24px;line-height:1.4;margin:34px 0 14px;border-top:1px solid var(--line);padding-top:26px;color:#175360}
+h3{font-size:20px;margin:26px 0 12px}p{margin:12px 0 18px}li{margin:8px 0}a{color:#126572;text-decoration-thickness:1px;text-underline-offset:3px;overflow-wrap:anywhere}
+code{font-family:Consolas,monospace;font-size:.87em;background:#eff3f5;padding:2px 5px;border-radius:3px;overflow-wrap:anywhere}
+pre{background:#15313d;color:#f2f7f7;border-radius:6px;padding:18px 22px;overflow:auto;line-height:1.5}pre code{background:none;color:inherit;padding:0;overflow-wrap:normal}
+.table-wrap{overflow:auto;margin:20px 0 25px;border:1px solid var(--line);border-radius:5px}table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.5}
+th{background:#e7f0f1;color:#153c49;text-align:left;font-weight:650}th,td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}tr:last-child td{border-bottom:0}tr:nth-child(even) td{background:#f8fafb}td code{font-size:12px;word-break:normal}blockquote{border-left:4px solid #2d8790;background:#f2f8f8;margin:22px 0;padding:8px 22px}
+.foot{border-top:1px solid var(--line);margin-top:38px;padding-top:18px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:760px){body{font-size:16px}.top{padding:14px 18px}main{margin:14px 10px;padding:25px 20px}h1{font-size:27px}h2{font-size:21px}table{min-width:570px}th,td{padding:9px 11px}}
+@media print{body{background:white}main{margin:0;padding:0;box-shadow:none;border:0;max-width:none}.top{display:none}.table-wrap{overflow:visible}table{font-size:10px}a{color:inherit}h2{break-after:avoid}tr{break-inside:avoid}}
+</style></head><body><nav class="top"><a class="brand" href="../index.html">Συμπληρωματικό υλικό</a><a href="../contents.html">Ευρετήριο</a><a href="../guide.html">Οδηγός ανάγνωσης</a><a href="../results/DATA_DICTIONARY_EL.html">Λεξικό στηλών</a></nav><main><h1>Ιεραρχίες γενίκευσης</h1>
+<p>Μια ιεραρχία ορίζει πώς μια αρχική τιμή αντικαθίσταται σταδιακά από ευρύτερες κατηγορίες. Κάθε γραμμή των αρχείων του ARX ξεκινά από μια αρχική τιμή και συνεχίζει με τις διαδοχικές γενικεύσεις της. Η τελευταία τιμή <code>*</code> είναι η κοινή ρίζα, στην οποία δεν διακρίνονται πλέον οι αρχικές τιμές του συγκεκριμένου πεδίου.</p>
+<p>Οι οκτώ ιεραρχίες αποκτώνται από τις δηλωμένες πηγές. Τα αρχεία δεν περιλαμβάνονται· οι σχετικές πληροφορίες αδειών δίνονται στις <a href="../data_sources/RIGHTS_AND_SOURCES.html">πηγές και άδειες</a>.</p>
+<h2>Ποια αρχεία χρειάζονται</h2>
+<p>Όλα τα ακριβή URL, τα μεγέθη σε bytes και τα αναμενόμενα SHA-256 περιλαμβάνονται στο <a href="../data_sources/source_registry.csv">μητρώο πηγών</a>. Για κάθε αρχείο η πρώτη στήλη αντιστοιχεί στο επίπεδο 0, δηλαδή στην αρχική τιμή. Επομένως, πέντε επίπεδα μαζί με το αρχικό σημαίνουν τέσσερα δυνατά βήματα γενίκευσης.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Πεδίο</th>
+<th>Αρχικό αρχείο</th>
+<th align="right">Πλήθος αρχικών τιμών</th>
+<th align="right">Πλήθος επιπέδων μαζί με το αρχικό</th>
+<th align="right">Μέγιστο επίπεδο</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ηλικία</td>
+<td><code>adult_hierarchy_age.csv</code></td>
+<td align="right">100</td>
+<td align="right">5</td>
+<td align="right">4</td>
+</tr>
+<tr>
+<td>Εκπαίδευση</td>
+<td><code>adult_hierarchy_education.csv</code></td>
+<td align="right">16</td>
+<td align="right">4</td>
+<td align="right">3</td>
+</tr>
+<tr>
+<td>Οικογενειακή κατάσταση</td>
+<td><code>adult_hierarchy_marital-status.csv</code></td>
+<td align="right">7</td>
+<td align="right">3</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td>Χώρα καταγωγής</td>
+<td><code>adult_hierarchy_native-country.csv</code></td>
+<td align="right">41</td>
+<td align="right">3</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td>Κατηγορία απασχόλησης</td>
+<td><code>adult_hierarchy_workclass.csv</code></td>
+<td align="right">8</td>
+<td align="right">3</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td>Επάγγελμα</td>
+<td><code>adult_hierarchy_occupation.csv</code></td>
+<td align="right">14</td>
+<td align="right">3</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td>Φυλετική κατηγορία</td>
+<td><code>adult_hierarchy_race.csv</code></td>
+<td align="right">5</td>
+<td align="right">2</td>
+<td align="right">1</td>
+</tr>
+<tr>
+<td>Φύλο</td>
+<td><code>adult_hierarchy_sex.csv</code></td>
+<td align="right">2</td>
+<td align="right">2</td>
+<td align="right">1</td>
+</tr>
+</tbody></table></div>
+<p>Τα πλήθη του πίνακα περιγράφουν τις ιεραρχίες. Δεν σημαίνουν ότι όλες οι αρχικές τιμές εμφανίζονται σε κάθε σύνολο δεδομένων. Για παράδειγμα, η ιεραρχία ηλικίας περιέχει φύλλα από το 1 έως το 100, ενώ τα δεδομένα χρησιμοποιούν υποσύνολό τους.</p>
+<p>Κάθε αρχείο αποκτάται από το ακριβές URL του μητρώου και ελέγχεται ως προς το μέγεθος και το SHA-256. Δεν χρησιμοποιείται ιεραρχία για την εισοδηματική κατηγορία.</p>
+<h2>Διόρθωση των ετικετών ηλικίας</h2>
+<p>Στην αρχική ιεραρχία ηλικίας οι ενδιάμεσες ετικέτες έχουν άκρα μικρότερα κατά μία μονάδα από τις πραγματικές τιμές που περιλαμβάνει κάθε ομάδα. Για παράδειγμα, η ομάδα με τις ηλικίες 1 έως 5 φέρει την ετικέτα <code>0-4</code>. Η διόρθωση αντικαθιστά την ετικέτα με <code>1-5</code>.</p>
+<p>Στα επίπεδα 1, 2 και 3, κάθε νέα ετικέτα σχηματίζεται από την ελάχιστη και τη μέγιστη αρχική ηλικία της ήδη υπάρχουσας ομάδας. Έτσι διορθώνονται 35 διαφορετικές ετικέτες: 20 στο επίπεδο 1, 10 στο επίπεδο 2 και 5 στο επίπεδο 3. Στο αρχείο των 100 γραμμών αλλάζουν 300 κελιά, επειδή η ετικέτα κάθε ομάδας επαναλαμβάνεται στις γραμμές των ηλικιών που περιέχει.</p>
+<p>Οι αρχικές ηλικίες, η σειρά τους, η συμμετοχή τους στις ομάδες και η ρίζα <code>*</code> διατηρούνται. Διορθώνεται το κείμενο της ετικέτας, χωρίς αλλαγή των ομάδων γενίκευσης. Ο αριθμός διακριτών τιμών ανά επίπεδο παραμένει <code>100, 20, 10, 5, 1</code>.</p>
+<p>Η ιεραρχία ηλικίας που χρησιμοποιήθηκε στην εργασία είναι η διορθωμένη <code>adult_hierarchy_age_semantic.csv</code> και όχι το αρχικό <code>adult_hierarchy_age.csv</code>.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Έλεγχος</th>
+<th>Αναμενόμενη τιμή</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Αρχικό μέγεθος</td>
+<td>2.232 bytes</td>
+</tr>
+<tr>
+<td>Αρχικό SHA-256</td>
+<td><code>463f35372e8b1ad31fc624eb73c5da9297878a044ae5d61038eaf7b431ac55ca</code></td>
+</tr>
+<tr>
+<td>Παράγωγο αρχείο</td>
+<td><code>adult_hierarchy_age_semantic.csv</code></td>
+</tr>
+<tr>
+<td>Παράγωγο μέγεθος</td>
+<td>2.282 bytes</td>
+</tr>
+<tr>
+<td>Παράγωγο SHA-256</td>
+<td><code>de2a5bdc9b0ad72a31ca8199e7be5d39346646da604bf1fb8954afc7626e0ba5</code></td>
+</tr>
+</tbody></table></div>
+<p>Ο <a href="../code/verified_sources/python/build_age_semantic_hierarchy.py">κώδικας παραγωγής της διορθωμένης ιεραρχίας</a> καταγράφει τη συγκεκριμένη διαδικασία και τους ελέγχους ταυτότητας. Η υλοποίηση ελέγχει, επίσης, ότι κάθε αρχική τιμή ανήκει στις ίδιες ομάδες πριν και μετά τη διόρθωση. Οι πληροφορίες αυτές συνδέονται με την §4.2 της εργασίας. Για τις προϋποθέσεις εκτέλεσης, βλ. <a href="../code/README.html">οδηγό κώδικα</a>.</p>
+<h2>Όρια ερμηνείας</h2>
+<p>Ο έλεγχος της δομής και της κάλυψης επιβεβαιώνει ότι οι τιμές των δεδομένων μπορούν να ακολουθήσουν τις διαδρομές της ιεραρχίας. Δεν αποδεικνύει ότι κάθε ομαδοποίηση αποτελεί την καταλληλότερη ουσιαστική ταξινόμηση. Ειδικότερα, στη χρησιμοποιημένη ιεραρχία χώρας η ετικέτα <code>South</code> αντιστοιχίζεται στην <code>Africa</code>, ενώ οι ομάδες επαγγελμάτων ακολουθούν τις συμβάσεις του αρχικού παραδείγματος αναφοράς. Αυτές οι επιλογές διατηρούνται ως συγκεκριμένες ερευνητικές παραδοχές και δεν παρουσιάζονται ως ανεξάρτητα επιβεβαιωμένες γεωγραφικές ή επαγγελματικές ταξινομήσεις.</p>
+<footer class="foot"><a href="README.md">Κείμενο σε Markdown</a></footer></main></body></html>

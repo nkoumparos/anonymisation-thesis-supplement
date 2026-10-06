@@ -1,0 +1,62 @@
+<!doctype html><html lang="el"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Συμπληρωματικό υλικό διπλωματικής εργασίας</title><style>
+:root{--ink:#19313c;--muted:#506775;--accent:#176b73;--line:#d5e2e6;--paper:#fff;--soft:#edf4f5}
+*{box-sizing:border-box}body{margin:0;background:#f3f6f7;color:var(--ink);font:17px/1.65 'Segoe UI',Arial,sans-serif}
+.top{background:#153c49;color:white;padding:16px max(24px,calc((100vw - 1180px)/2));display:flex;flex-wrap:wrap;gap:12px 25px;font-size:14px;align-items:center}
+.top a{color:#d8eff1;text-decoration:none}.top .brand{font-weight:700;color:white;margin-right:auto}
+main{max-width:1180px;margin:38px auto 50px;padding:44px 54px;background:var(--paper);border:1px solid var(--line);border-radius:8px;box-shadow:0 8px 24px #173b4710}
+.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:12px;color:var(--accent);font-weight:700;margin-bottom:12px}
+img{max-width:100%;height:auto}h1{font-size:34px;line-height:1.25;letter-spacing:-.02em;margin:0 0 22px;color:#153c49;max-width:1000px}
+h2{font-size:24px;line-height:1.4;margin:34px 0 14px;border-top:1px solid var(--line);padding-top:26px;color:#175360}
+h3{font-size:20px;margin:26px 0 12px}p{margin:12px 0 18px}li{margin:8px 0}a{color:#126572;text-decoration-thickness:1px;text-underline-offset:3px;overflow-wrap:anywhere}
+code{font-family:Consolas,monospace;font-size:.87em;background:#eff3f5;padding:2px 5px;border-radius:3px;overflow-wrap:anywhere}
+pre{background:#15313d;color:#f2f7f7;border-radius:6px;padding:18px 22px;overflow:auto;line-height:1.5}pre code{background:none;color:inherit;padding:0;overflow-wrap:normal}
+.table-wrap{overflow:auto;margin:20px 0 25px;border:1px solid var(--line);border-radius:5px}table{width:100%;border-collapse:collapse;font-size:14px;line-height:1.5}
+th{background:#e7f0f1;color:#153c49;text-align:left;font-weight:650}th,td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}tr:last-child td{border-bottom:0}tr:nth-child(even) td{background:#f8fafb}td code{font-size:12px;word-break:normal}blockquote{border-left:4px solid #2d8790;background:#f2f8f8;margin:22px 0;padding:8px 22px}
+.foot{border-top:1px solid var(--line);margin-top:38px;padding-top:18px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:760px){body{font-size:16px}.top{padding:14px 18px}main{margin:14px 10px;padding:25px 20px}h1{font-size:27px}h2{font-size:21px}table{min-width:570px}th,td{padding:9px 11px}}
+@media print{body{background:white}main{margin:0;padding:0;box-shadow:none;border:0;max-width:none}.top{display:none}.table-wrap{overflow:visible}table{font-size:10px}a{color:inherit}h2{break-after:avoid}tr{break-inside:avoid}}
+</style></head><body><nav class="top"><a class="brand" href="./index.html">Συμπληρωματικό υλικό</a><a href="./contents.html">Ευρετήριο</a><a href="./guide.html">Οδηγός ανάγνωσης</a><a href="./results/DATA_DICTIONARY_EL.html">Λεξικό στηλών</a></nav><main><h1>Συμπληρωματικό υλικό διπλωματικής εργασίας</h1>
+<p><strong>Προστασία ιδιωτικότητας με χρήση τεχνικών ανωνυμοποίησης</strong></p>
+<p>Συγκεντρωτικά αποτελέσματα, πηγές δεδομένων, τεκμηρίωση των ιεραρχιών γενίκευσης, πειραματικές ρυθμίσεις και πηγαίος κώδικας.</p>
+<p>Αποθετήριο: <a href="https://github.com/nkoumparos/anonymisation-thesis-supplement">nkoumparos/anonymisation-thesis-supplement</a></p>
+<h2>Ανάγνωση του υλικού</h2>
+<p>Ανοίξτε το <code>index.html</code> για ανάγνωση χωρίς σύνδεση στο διαδίκτυο. Το <a href="contents.html">ευρετήριο</a> αντιστοιχίζει τα αρχεία στις ενότητες και στους πίνακες της εργασίας. Ο <a href="guide.html">οδηγός ανάγνωσης</a> εξηγεί τις βασικές μετρήσεις και το <a href="results/DATA_DICTIONARY_EL.html">λεξικό στηλών</a> ορίζει κάθε πεδίο των CSV.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Φάκελος</th>
+<th>Περιεχόμενο</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="results/RESULTS_README_EL.html">results/</a></td>
+<td>16 κύριοι και 5 βοηθητικοί πίνακες CSV, μαζί με τις πλήρεις συγκεντρωτικές δομές σε JSON.</td>
+</tr>
+<tr>
+<td><a href="data_sources/README.html">data_sources/</a></td>
+<td>Πηγές Adult, αποτυπώματα SHA-256 και οδηγίες απόκτησης και προετοιμασίας.</td>
+</tr>
+<tr>
+<td><a href="hierarchies/README.html">hierarchies/</a></td>
+<td>Τεκμηρίωση για τις οκτώ ιεραρχίες γενίκευσης και τη διόρθωση των ετικετών ηλικίας.</td>
+</tr>
+<tr>
+<td><a href="configuration/README.html">configuration/</a></td>
+<td>Διαμορφώσεις, σενάρια, παράμετροι μοντέλου και σπόροι ψευδοτυχαίων διεργασιών.</td>
+</tr>
+<tr>
+<td><a href="figures/README.html">figures/</a></td>
+<td>Τα πέντε σχήματα σε PNG, SVG και PDF, με σημειώσεις και δεδομένα απεικόνισης.</td>
+</tr>
+<tr>
+<td><a href="environment/README.html">environment/</a></td>
+<td>Εκδόσεις εργαλείων και εξαρτήσεις Python.</td>
+</tr>
+<tr>
+<td><a href="code/README.html">code/</a></td>
+<td>Επιλεγμένα αρχεία της υλοποίησης και εργαλείο αναδημιουργίας των CSV.</td>
+</tr>
+</tbody></table></div>
+<p>Τα δεδομένα Adult αποκτώνται χωριστά από τις δηλωμένες πηγές. Δεν περιλαμβάνονται ατομικές προβλέψεις, αντιστοιχίσεις εγγραφών ή έξοδοι με ευθυγραμμισμένη σειρά εγγραφών. Η πλήρης επανεκτέλεση των πειραμάτων σε νέο περιβάλλον δεν παρέχεται ως έτοιμη λειτουργία.</p>
+<p>Οι <a href="docs/VALIDATION_AND_USE.html">οδηγίες ελέγχου και χρήσης</a> καλύπτουν την ακεραιότητα των αρχείων και τα όρια αναπαραγωγής. Οι <a href="data_sources/RIGHTS_AND_SOURCES.html">πηγές και άδειες</a> προσδιορίζονται χωριστά ανά κατηγορία υλικού.</p>
+<footer class="foot"><a href="README.md">Κείμενο σε Markdown</a></footer></main></body></html>
